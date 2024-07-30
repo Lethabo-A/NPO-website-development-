@@ -15,7 +15,7 @@ namespace CMPG223_group20_0_
 {
     public partial class frmLogin : Form
     {
-        string connection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\StaffDatabase.mdf;Integrated Security=True;Connect Timeout=30";
+        string connection = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\OrganizationDatabase.mdf;Integrated Security=True;Connect Timeout=30";
         public frmLogin()
         {
             InitializeComponent();
