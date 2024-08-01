@@ -6,26 +6,40 @@ namespace CMPG223_project
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
-        //the |dataDirectory| in the connection string is going to point to a file called appdata keep that in mind when you want to use the connection string
         string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\OrganizationDatabase.mdf;Integrated Security=True;Connect Timeout=30";
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            try
+            if (!IsPostBack)
             {
-                using (SqlConnection connection = new SqlConnection(connectionString))
+            }
+        }
+
+        protected void btnLogin_Click(object sender, EventArgs e)
+        {
+            string userNumber = txtUserNumber.Text.Trim();
+            string password = txtPassword.Text.Trim();
+
+            try {
+                SqlConnection connection = new SqlConnection(connectionString);
+                //SQL login code here
+
+                if (password == "password" && userNumber == "lethabo")
                 {
-                    connection.Open();
-                    connection.Close();
+                    //add name of next page in inverted commas
+                    Response.Redirect("");
                 }
+                else
+                {
+                    //ADD ERROR MESSAGE LBL AND CODE
+
+                }
+
             }
             catch (SqlException ex)
             {
-                //if the database doesnt connect a pop up is going to show explaining what the issue is
-                ClientScript.RegisterStartupScript(this.GetType(), "alert", $"alert('Database connection failed: {ex.Message}');", true);
+                
             }
-            string usernumber = txtUserNumber.Text;
-            string password = txtPassord.Text;
         }
     }
 }
