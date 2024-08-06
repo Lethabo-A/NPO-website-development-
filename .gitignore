@@ -6,3 +6,9 @@
 /CMPG223_project/.vs/CMPG223_project/FileContentIndex/b7386cd6-0578-4615-a5e9-18b27866013b.vsidx
 /.vs/CMPG223_group20(0)/FileContentIndex/7c32e014-af27-41f7-aef2-3faa568088c1.vsidx
 CMPG223_project/.vs/CMPG223_project/FileContentIndex/2464262a-3700-4447-ab2c-611bdf08b60e.vsidx
+
+echo "CMPG223_project/App_Data/OrganizationDatabase.mdf" >> .gitignore
+git rm --cached CMPG223_project/App_Data/OrganizationDatabase.mdf
+git add .gitignore
+git commit -m "Ignore OrganizationDatabase.mdf"
+git push origin main
