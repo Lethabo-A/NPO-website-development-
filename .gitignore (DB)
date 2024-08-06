@@ -1,0 +1,5 @@
+echo "CMPG223_project/App_Data/OrganizationDatabase.mdf" >> .gitignore
+git rm --cached CMPG223_project/App_Data/OrganizationDatabase.mdf
+git add .gitignore
+git commit -m "Ignore OrganizationDatabase.mdf"
+git push origin main
