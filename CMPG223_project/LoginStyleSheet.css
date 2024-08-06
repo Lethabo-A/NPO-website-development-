@@ -51,32 +51,23 @@ input[type="password"] {
         outline: none;
     }
 
-button {
-    width: 100%;
-    padding: 12px;
-    background: linear-gradient(135deg, #007bff, #0056b3);
-    color: #fff;
-    border: none;
-    border-radius: 50px;
+.login-button {
+    background-color: #4CAF50; 
+    border: none; 
+    color: white; 
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none; 
+    display: inline-block; 
+    font-size: 16px; 
+    margin: 4px 2px;
     cursor: pointer;
-    font-size: 16px;
-    transition: all 0.3s ease;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    font-weight: bold;
+    border-radius: 4px; 
 }
 
-    button:hover {
-        background: linear-gradient(135deg, #0056b3, #004080);
-        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-        transform: translateY(-2px);
+    .login-button:hover {
+        background-color: #45a049; /* Darker green on hover */
     }
-
-    button:active {
-        background: linear-gradient(135deg, #004080, #003366);
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        transform: translateY(1px);
-    }
-
 
 
 

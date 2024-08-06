@@ -1,39 +1,45 @@
 ﻿using System;
 using System.Web.UI;
 using System.Data.SqlClient;
+using System.Data;
 
 namespace CMPG223_project
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
         string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\OrganizationDatabase.mdf;Integrated Security=True;Connect Timeout=30";
+        SqlConnection connection = new SqlConnection();
+        SqlCommand command = new SqlCommand();
+        SqlDataAdapter adapter = new SqlDataAdapter();
+        DataTable dt = new DataTable();
+        public string chosenLanguage;
+        public string username, password, sqlcommand;
 
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (!IsPostBack)
-            {
-            }
+           
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            string userNumber = txtUserNumber.Text.Trim();
-            string password = txtPassword.Text.Trim();
-            
+            username = txtUserNumber.Text;
+            password = txtPassword.Text;
 
-            try {
-                SqlConnection connection = new SqlConnection(connectionString);
-                //SQL login code here
+            try
+            {
+                // SQL login code here
 
-                if (password == "password" && userNumber == "lethabo")
+                if (password == "password" && username == "lethabo")
                 {
-                    //add name of next page in inverted commas
+                    // Add name of next page in inverted commas
                     Response.Redirect("Financial_Page_Form.aspx");
                 }
                 else
                 {
-                    //ADD ERROR MESSAGE LBL AND CODE
-
+                    lblErrorMessage.Text = "incorrect password or user name try again";
+                    txtPassword.Text = "";
+                    txtUserNumber.Text = "";
+                    txtUserNumber.Focus();
                 }
 
             }

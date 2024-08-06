@@ -8,7 +8,6 @@
 </head>
 <body>
     <form id="form1" runat="server">
-            
         <div>
             <h2>Login</h2>
         </div>
@@ -19,11 +18,14 @@
         <div>
             <asp:Label ID="Label2" runat="server" Text="Password:" AssociatedControlID="txtPassword"></asp:Label>
             <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
+             <asp:Label ID="lblErrorMessage" runat="server" ForeColor="Red"></asp:Label>
+           
         </div>
+         <asp:Button ID="btnLogin" runat="server" Text="Log in" OnClick="btnLogin_Click" CssClass="login-button" />
+        <asp:Image runat="server"></asp:Image>
         <div>
-            <button type="submit" id="btnLogin" class="login-button">Log in</button>
-        </div>
-        <div>
+           
+           
         </div>
     </form>
 </body>
