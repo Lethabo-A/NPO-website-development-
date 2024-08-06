@@ -1,0 +1,10 @@
+C:\Users\Morena Themane\Documents\GitHub\CMPG223_group20Project\bin\Debug\CMPG223_group20(0).exe.config
+C:\Users\Morena Themane\Documents\GitHub\CMPG223_group20Project\bin\Debug\CMPG223_group20(0).exe
+C:\Users\Morena Themane\Documents\GitHub\CMPG223_group20Project\bin\Debug\CMPG223_group20(0).pdb
+C:\Users\Morena Themane\Documents\GitHub\CMPG223_group20Project\obj\Debug\CMPG223_group20(0).csproj.AssemblyReference.cache
+C:\Users\Morena Themane\Documents\GitHub\CMPG223_group20Project\obj\Debug\CMPG223_group20_0_.frmLogin.resources
+C:\Users\Morena Themane\Documents\GitHub\CMPG223_group20Project\obj\Debug\CMPG223_group20_0_.Properties.Resources.resources
+C:\Users\Morena Themane\Documents\GitHub\CMPG223_group20Project\obj\Debug\CMPG223_group20(0).csproj.GenerateResource.cache
+C:\Users\Morena Themane\Documents\GitHub\CMPG223_group20Project\obj\Debug\CMPG223_group20(0).csproj.CoreCompileInputs.cache
+C:\Users\Morena Themane\Documents\GitHub\CMPG223_group20Project\obj\Debug\CMPG223_group20(0).exe
+C:\Users\Morena Themane\Documents\GitHub\CMPG223_group20Project\obj\Debug\CMPG223_group20(0).pdb

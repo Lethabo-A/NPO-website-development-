@@ -19,6 +19,7 @@ namespace CMPG223_project
         {
             string userNumber = txtUserNumber.Text.Trim();
             string password = txtPassword.Text.Trim();
+            
 
             try {
                 SqlConnection connection = new SqlConnection(connectionString);
@@ -27,7 +28,7 @@ namespace CMPG223_project
                 if (password == "password" && userNumber == "lethabo")
                 {
                     //add name of next page in inverted commas
-                    Response.Redirect("");
+                    Response.Redirect("Financial_Page_Form.aspx");
                 }
                 else
                 {
