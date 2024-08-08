@@ -25,6 +25,7 @@
         <asp:DropDownList ID="DropDownList4" runat="server" OnSelectedIndexChanged="DropDownList4_SelectedIndexChanged">
             <asp:ListItem>Expenses</asp:ListItem>
             <asp:ListItem>Add expenses</asp:ListItem>
+            <asp:ListItem>Edit expenses</asp:ListItem>
         </asp:DropDownList>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:DropDownList ID="DropDownList5" runat="server">

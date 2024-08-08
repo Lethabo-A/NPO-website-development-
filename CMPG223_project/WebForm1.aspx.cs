@@ -25,16 +25,52 @@ namespace CMPG223_project
                 SqlConnection connection = new SqlConnection(connectionString);
                 //SQL login code here
 
-                if (password == "password" && userNumber == "lethabo")
+                connection.Open();
+                SqlCommand command;
+                SqlDataReader reader;
+                String sql,database_password = "", database_username = "";
+                //int database_username;
+                sql = "select StaffNumber,password from Staff";
+                command = new SqlCommand(sql, connection);
+                reader = command.ExecuteReader();
+                while (reader.Read())
+                {
+                    //database_username = database_username + reader.GetValue(0);
+                    //database_password = database_password + reader.GetValue(5);
+                    database_username = reader["StaffNumber"].ToString();
+                    database_password = reader["password"].ToString();
+
+                    if (password == database_password && userNumber == database_username)
                 {
                     //add name of next page in inverted commas
                     Response.Redirect("Financial_Page_Form.aspx");
+                    
                 }
-                else
+                else if (password == null)
                 {
                     //ADD ERROR MESSAGE LBL AND CODE
-
+                    
                 }
+                    
+                }
+
+                
+
+                
+
+                if (password == database_password && userNumber == database_username)
+                {
+                    //add name of next page in inverted commas
+                    Response.Redirect("Financial_Page_Form.aspx");
+                    
+                }
+                else if (password == null)
+                {
+                    //ADD ERROR MESSAGE LBL AND CODE
+                    
+                }
+
+                connection.Close();
 
             }
             catch (SqlException ex)

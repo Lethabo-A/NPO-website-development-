@@ -60,13 +60,13 @@ namespace CMPG223_project
         protected global::System.Web.UI.WebControls.Label Label6;
 
         /// <summary>
-        /// TextBox2 control.
+        /// ExpenseName_TextBox control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox2;
+        protected global::System.Web.UI.WebControls.TextBox ExpenseName_TextBox;
 
         /// <summary>
         /// Label5 control.
@@ -103,5 +103,14 @@ namespace CMPG223_project
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox TextBox4;
+
+        /// <summary>
+        /// AddExpense_Button control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button AddExpense_Button;
     }
 }
