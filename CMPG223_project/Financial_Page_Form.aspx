@@ -26,10 +26,14 @@
             <asp:ListItem>Expenses</asp:ListItem>
             <asp:ListItem>Add expenses</asp:ListItem>
             <asp:ListItem>Edit expenses</asp:ListItem>
+            <asp:ListItem>Expense reports</asp:ListItem>
         </asp:DropDownList>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-        <asp:DropDownList ID="DropDownList5" runat="server">
+        <asp:DropDownList ID="DropDownList5" runat="server" OnSelectedIndexChanged="DropDownList5_SelectedIndexChanged">
             <asp:ListItem>Income</asp:ListItem>
+            <asp:ListItem>Add income</asp:ListItem>
+            <asp:ListItem>Income reports</asp:ListItem>
+            <asp:ListItem>Funding and Donors</asp:ListItem>
         </asp:DropDownList>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:DropDownList ID="DropDownList6" runat="server">
@@ -42,15 +46,11 @@
         <br />
         <br />
         <br />
-        <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>
         <br />
         <table style="width:100%;">
             <tr>
                 <td>
                     <br />
-                    <asp:DropDownList ID="DropDownList8" runat="server">
-                        <asp:ListItem>Funding and Donors</asp:ListItem>
-                    </asp:DropDownList>
                 </td>
                 <td>&nbsp;</td>
                 <td>&nbsp;</td>
