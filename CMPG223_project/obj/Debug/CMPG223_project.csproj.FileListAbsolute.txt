@@ -68,7 +68,6 @@ C:\Users\27685\Documents\GitHub\CMPG223_group20Project\CMPG223_project\bin\Micro
 C:\Users\27685\Documents\GitHub\CMPG223_group20Project\CMPG223_project\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
 C:\Users\27685\Documents\GitHub\CMPG223_group20Project\CMPG223_project\obj\Debug\CMPG223_project.csproj.AssemblyReference.cache
 C:\Users\27685\Documents\GitHub\CMPG223_group20Project\CMPG223_project\obj\Debug\CMPG223_project.csproj.CoreCompileInputs.cache
-C:\Users\27685\Documents\GitHub\CMPG223_group20Project\CMPG223_project\obj\Debug\CMPG223_project.csproj.CopyComplete
 C:\Users\27685\Documents\GitHub\CMPG223_group20Project\CMPG223_project\obj\Debug\CMPG223_project.dll
 C:\Users\27685\Documents\GitHub\CMPG223_group20Project\CMPG223_project\obj\Debug\CMPG223_project.pdb
 C:\Users\Morena Themane\Documents\GitHub\CMPG223_group20Project\CMPG223_project\bin\CMPG223_project.dll.config
@@ -217,3 +216,4 @@ C:\Users\Gibson\Documents\GitHub\CMPG223_group20Project\CMPG223_project\obj\Debu
 C:\Users\Gibson\Documents\GitHub\CMPG223_group20Project\CMPG223_project\obj\Debug\CMPG223_.2F3D8BC0.Up2Date
 C:\Users\Gibson\Documents\GitHub\CMPG223_group20Project\CMPG223_project\obj\Debug\CMPG223_project.dll
 C:\Users\Gibson\Documents\GitHub\CMPG223_group20Project\CMPG223_project\obj\Debug\CMPG223_project.pdb
+C:\Users\27685\Documents\GitHub\CMPG223_group20Project\CMPG223_project\obj\Debug\CMPG223_.2F3D8BC0.Up2Date
