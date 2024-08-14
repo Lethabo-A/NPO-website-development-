@@ -15,3 +15,6 @@ CMPG223_project/App_Data/OrganizationDatabase.mdf
 /CMPG223_project/.vs/CMPG223_project/FileContentIndex/39bc5773-1c35-45db-b8da-5c93e04856f9.vsidx
 /CMPG223_project/.vs/CMPG223_project/FileContentIndex/4924c86d-204f-4386-a03e-baf5c43cc7ed.vsidx
 /CMPG223_project/.vs/CMPG223_project/FileContentIndex/f95a224d-2d52-477d-84c1-f50924ce5b63.vsidx
+CMPG223_project/App_Data/OrganizationDatabase_log.ldf
+*.vsidx
+CMPG223_project/App_Data/OrganizationDatabase_log.ldf
