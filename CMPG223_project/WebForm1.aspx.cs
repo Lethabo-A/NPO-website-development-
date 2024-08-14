@@ -35,13 +35,14 @@ namespace CMPG223_project
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
+            
             usernumber = txtUserNumber.Text;
             password = txtPassword.Text;
             connection.Open();
             try
             {
                 
-                sqlcommand = @"SELECT * FROM Staff where IDNumber ='" + txtUserNumber.Text + "' AND password = '" + txtPassword.Text + "'";
+                sqlcommand = @"SELECT * FROM Staff where StaffNumber ='" + txtUserNumber.Text + "' AND password = '" + txtPassword.Text + "'";
                 adapter = new SqlDataAdapter(sqlcommand, connection);
                 adapter.Fill(dt);
                 if (dt.Rows.Count > 0)
@@ -54,8 +55,9 @@ namespace CMPG223_project
                 }
                 else
                 {
-                    txtUserNumber.Text = "";
+                    lblErrorMessage.Text = "incorrect login details please try again";
                     txtUserNumber.Focus();
+                    txtPassword.Text = "";
                 }
                 connection.Close();
             }
