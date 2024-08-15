@@ -42,7 +42,7 @@ namespace CMPG223_project
             try
             {
                 
-                sqlcommand = @"SELECT * FROM Staff where StaffNumber ='" + txtUserNumber.Text + "' AND password = '" + txtPassword.Text + "'";
+                sqlcommand = @"SELECT * FROM Staff where usernumber ='" + txtUserNumber.Text + "' AND password = '" + txtPassword.Text + "'";
                 adapter = new SqlDataAdapter(sqlcommand, connection);
                 adapter.Fill(dt);
                 if (dt.Rows.Count > 0)
