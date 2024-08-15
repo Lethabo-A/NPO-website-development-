@@ -1,53 +1,26 @@
 {
   "Version": 1,
-<<<<<<< Updated upstream
-  "WorkspaceRootPath": "C:\\Users\\27685\\OneDrive\\school work\\Third year\\sem2\\cmpg223\\CMPG223_group20Project\\CMPG223_project\\",
-  "Documents": [
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\27685\\onedrive\\school work\\third year\\sem2\\cmpg223\\cmpg223_group20project\\cmpg223_project\\webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|C:\\Users\\27685\\OneDrive\\school work\\Third year\\sem2\\cmpg223\\CMPG223_group20Project\\CMPG223_project\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|C:\\Users\\27685\\OneDrive\\school work\\Third year\\sem2\\cmpg223\\CMPG223_group20Project\\CMPG223_project\\loginstylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:loginstylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|C:\\Users\\27685\\OneDrive\\school work\\Third year\\sem2\\cmpg223\\CMPG223_group20Project\\CMPG223_project\\financial_page_form.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:financial_page_form.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|C:\\Users\\27685\\OneDrive\\school work\\Third year\\sem2\\cmpg223\\CMPG223_group20Project\\CMPG223_project\\add_expense_form.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-=======
   "WorkspaceRootPath": "C:\\Users\\Gibson\\Desktop\\GitD\\CMPG223_group20Project\\CMPG223_project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\desktop\\gitd\\cmpg223_group20project\\cmpg223_project\\donations.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:donations.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Gibson\\Desktop\\GitD\\CMPG223_group20Project\\CMPG223_project\\WebForm1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebForm1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|C:\\Users\\Gibson\\Desktop\\GitD\\CMPG223_group20Project\\CMPG223_project\\loginstylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:loginstylesheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Gibson\\Desktop\\GitD\\CMPG223_group20Project\\CMPG223_project\\WebForm1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:WebForm1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|C:\\Users\\Gibson\\Desktop\\GitD\\CMPG223_group20Project\\CMPG223_project\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Gibson\\Desktop\\GitD\\CMPG223_group20Project\\CMPG223_project\\Add_Expense_Form.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Add_Expense_Form.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\desktop\\gitd\\cmpg223_group20project\\cmpg223_project\\donationscss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:donationscss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Gibson\\Desktop\\GitD\\CMPG223_group20Project\\CMPG223_project\\Financial_Page_Form.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Financial_Page_Form.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|C:\\Users\\Gibson\\Desktop\\GitD\\CMPG223_group20Project\\CMPG223_project\\financial_page_form.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:financial_page_form.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\desktop\\gitd\\cmpg223_group20project\\cmpg223_project\\add_expense_form.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
->>>>>>> Stashed changes
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:add_expense_form.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Gibson\\Desktop\\GitD\\CMPG223_group20Project\\CMPG223_project\\LoginStyleSheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:LoginStyleSheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -57,106 +30,28 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 5,
           "Children": [
-            {
-<<<<<<< Updated upstream
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "Add_Expense_Form.aspx",
-              "DocumentMoniker": "C:\\Users\\27685\\OneDrive\\school work\\Third year\\sem2\\cmpg223\\CMPG223_group20Project\\CMPG223_project\\Add_Expense_Form.aspx",
-              "RelativeDocumentMoniker": "Add_Expense_Form.aspx",
-              "ToolTip": "C:\\Users\\27685\\OneDrive\\school work\\Third year\\sem2\\cmpg223\\CMPG223_group20Project\\CMPG223_project\\Add_Expense_Form.aspx",
-              "RelativeToolTip": "Add_Expense_Form.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-08-13T21:26:29.21Z",
-              "EditorCaption": ""
-=======
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
->>>>>>> Stashed changes
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-<<<<<<< Updated upstream
-              "Title": "Financial_Page_Form.aspx",
-              "DocumentMoniker": "C:\\Users\\27685\\OneDrive\\school work\\Third year\\sem2\\cmpg223\\CMPG223_group20Project\\CMPG223_project\\Financial_Page_Form.aspx",
-              "RelativeDocumentMoniker": "Financial_Page_Form.aspx",
-              "ToolTip": "C:\\Users\\27685\\OneDrive\\school work\\Third year\\sem2\\cmpg223\\CMPG223_group20Project\\CMPG223_project\\Financial_Page_Form.aspx",
-              "RelativeToolTip": "Financial_Page_Form.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-08-06T15:29:24.921Z",
-              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "LoginStyleSheet.css",
-              "DocumentMoniker": "C:\\Users\\27685\\OneDrive\\school work\\Third year\\sem2\\cmpg223\\CMPG223_group20Project\\CMPG223_project\\LoginStyleSheet.css",
-              "RelativeDocumentMoniker": "LoginStyleSheet.css",
-              "ToolTip": "C:\\Users\\27685\\OneDrive\\school work\\Third year\\sem2\\cmpg223\\CMPG223_group20Project\\CMPG223_project\\LoginStyleSheet.css",
-              "RelativeToolTip": "LoginStyleSheet.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEEAAAABAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-06T11:10:52.987Z",
-=======
-              "Title": "DonationsCSS.css",
-              "DocumentMoniker": "C:\\Users\\Gibson\\Desktop\\GitD\\CMPG223_group20Project\\CMPG223_project\\DonationsCSS.css",
-              "RelativeDocumentMoniker": "DonationsCSS.css",
-              "ToolTip": "C:\\Users\\Gibson\\Desktop\\GitD\\CMPG223_group20Project\\CMPG223_project\\DonationsCSS.css",
-              "RelativeToolTip": "DonationsCSS.css",
-              "ViewState": "AQIAACcAAAAAAAAAAAAAAEsAAAAQAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-15T14:01:27.096Z",
->>>>>>> Stashed changes
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-<<<<<<< Updated upstream
-              "Title": "WebForm1.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\27685\\OneDrive\\school work\\Third year\\sem2\\cmpg223\\CMPG223_group20Project\\CMPG223_project\\WebForm1.aspx.cs",
-              "RelativeDocumentMoniker": "WebForm1.aspx.cs",
-              "ToolTip": "C:\\Users\\27685\\OneDrive\\school work\\Third year\\sem2\\cmpg223\\CMPG223_group20Project\\CMPG223_project\\WebForm1.aspx.cs*",
-              "RelativeToolTip": "WebForm1.aspx.cs*",
-              "ViewState": "AQIAACMAAAAAAAAAAAAwwEYAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-08-06T11:10:57.426Z",
-=======
-              "Title": "Donations.aspx",
-              "DocumentMoniker": "C:\\Users\\Gibson\\Desktop\\GitD\\CMPG223_group20Project\\CMPG223_project\\Donations.aspx",
-              "RelativeDocumentMoniker": "Donations.aspx",
-              "ToolTip": "C:\\Users\\Gibson\\Desktop\\GitD\\CMPG223_group20Project\\CMPG223_project\\Donations.aspx",
-              "RelativeToolTip": "Donations.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-08-15T13:43:43.963Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
               "Title": "Add_Expense_Form.aspx",
               "DocumentMoniker": "C:\\Users\\Gibson\\Desktop\\GitD\\CMPG223_group20Project\\CMPG223_project\\Add_Expense_Form.aspx",
               "RelativeDocumentMoniker": "Add_Expense_Form.aspx",
               "ToolTip": "C:\\Users\\Gibson\\Desktop\\GitD\\CMPG223_group20Project\\CMPG223_project\\Add_Expense_Form.aspx",
               "RelativeToolTip": "Add_Expense_Form.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-08-15T13:38:29.916Z",
+              "WhenOpened": "2024-08-15T19:00:40.006Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 3,
               "Title": "Financial_Page_Form.aspx",
               "DocumentMoniker": "C:\\Users\\Gibson\\Desktop\\GitD\\CMPG223_group20Project\\CMPG223_project\\Financial_Page_Form.aspx",
               "RelativeDocumentMoniker": "Financial_Page_Form.aspx",
@@ -164,64 +59,49 @@
               "RelativeToolTip": "Financial_Page_Form.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-08-06T15:29:24.921Z",
->>>>>>> Stashed changes
+              "WhenOpened": "2024-08-15T19:00:40.095Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "LoginStyleSheet.css",
               "DocumentMoniker": "C:\\Users\\Gibson\\Desktop\\GitD\\CMPG223_group20Project\\CMPG223_project\\LoginStyleSheet.css",
               "RelativeDocumentMoniker": "LoginStyleSheet.css",
               "ToolTip": "C:\\Users\\Gibson\\Desktop\\GitD\\CMPG223_group20Project\\CMPG223_project\\LoginStyleSheet.css",
               "RelativeToolTip": "LoginStyleSheet.css",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAABQAAAAbAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAEEAAAABAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-08-06T11:10:52.987Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-08-15T19:00:40.104Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 1,
+              "Title": "WebForm1.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Gibson\\Desktop\\GitD\\CMPG223_group20Project\\CMPG223_project\\WebForm1.aspx.cs",
+              "RelativeDocumentMoniker": "WebForm1.aspx.cs",
+              "ToolTip": "C:\\Users\\Gibson\\Desktop\\GitD\\CMPG223_group20Project\\CMPG223_project\\WebForm1.aspx.cs",
+              "RelativeToolTip": "WebForm1.aspx.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAwwDkAAABUAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-08-15T19:00:40.111Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
               "Title": "WebForm1.aspx",
-<<<<<<< Updated upstream
-              "DocumentMoniker": "C:\\Users\\27685\\OneDrive\\school work\\Third year\\sem2\\cmpg223\\CMPG223_group20Project\\CMPG223_project\\WebForm1.aspx",
-              "RelativeDocumentMoniker": "WebForm1.aspx",
-              "ToolTip": "C:\\Users\\27685\\OneDrive\\school work\\Third year\\sem2\\cmpg223\\CMPG223_group20Project\\CMPG223_project\\WebForm1.aspx",
-=======
               "DocumentMoniker": "C:\\Users\\Gibson\\Desktop\\GitD\\CMPG223_group20Project\\CMPG223_project\\WebForm1.aspx",
               "RelativeDocumentMoniker": "WebForm1.aspx",
               "ToolTip": "C:\\Users\\Gibson\\Desktop\\GitD\\CMPG223_group20Project\\CMPG223_project\\WebForm1.aspx",
->>>>>>> Stashed changes
               "RelativeToolTip": "WebForm1.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-08-06T11:11:00.467Z",
+              "WhenOpened": "2024-08-15T19:00:40.118Z",
               "EditorCaption": ""
             }
           ]
-        },
-        {
-          "DockedHeight": 200,
-          "SelectedChildIndex": -1,
-          "Children": []
         }
       ]
-    },
-    {
-      "Orientation": 0,
-      "VerticalTabListWidth": 256,
-      "FloatingWindowState": {
-        "Id": "c0bcff37-1fe2-4697-b529-25d95d61d248",
-        "Display": 1,
-        "X": -5,
-        "Y": 461,
-        "Width": 1496,
-        "Height": 396,
-        "WindowState": 2
-      },
-      "DocumentGroups": []
     }
   ]
 }
