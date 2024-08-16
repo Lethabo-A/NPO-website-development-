@@ -120,9 +120,13 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="Donations.aspx" />
+    <Content Include="DonationsCSS.css" />
     <Content Include="favicon.ico" />
     <Content Include="Financial_Page_Form.aspx" />
     <Content Include="Global.asax" />
+    <Content Include="images\Finance1.jpg" />
+    <Content Include="images\rightColumn.jpg" />
     <Content Include="LoginStyleSheet.css" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -194,6 +198,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Donations.aspx.cs">
+      <DependentUpon>Donations.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Donations.aspx.designer.cs">
+      <DependentUpon>Donations.aspx</DependentUpon>
     </Compile>
     <Compile Include="Financial_Page_Form.aspx.cs">
       <DependentUpon>Financial_Page_Form.aspx</DependentUpon>
