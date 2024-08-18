@@ -132,6 +132,7 @@
     <Content Include="Global.asax" />
     <Content Include="images\ExpenseBackground.jpg" />
     <Content Include="images\Finance1.jpg" />
+    <Content Include="images\header.jpg" />
     <Content Include="images\NGOs.png" />
     <Content Include="images\rightColumn.jpg" />
     <Content Include="LoginStyleSheet.css" />
