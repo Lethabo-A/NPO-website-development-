@@ -8,17 +8,14 @@
     justify-content: center;
 }
 /* Design for the header */
-div {
+.header {
     background-color: mediumpurple;
     text-align: center;
     color: aliceblue;
     font-size: 25px;
     text-transform: uppercase;
     padding: 6px;
-    
-}
-div:hover{
-    opacity: 0.7;
+    border-radius: 50px;
 }
 
 line {
@@ -36,6 +33,7 @@ line {
     }
 /* Styling the navigation bar */
 .topnav {
+    border-radius: 10px;
     overflow: hidden;
     background-color: black;
 }
@@ -61,7 +59,7 @@ line {
     left: 30%;
     color: black;
     font-size: 10px;
-    border-radius: 5px;
+    border-radius: 25px;
     background-color: #f2f2f2;
     padding: 20px;
     top: 50%;
@@ -94,8 +92,8 @@ line {
         border-block-end-style: dashed;
         box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
-    input[type=submit]:hover{
-        background-color: lightgreen;
+    input[type=submit]:hover {
+        background-color: forestgreen;
     }
 .footer {
     border-spacing: 20px;
