@@ -18,16 +18,21 @@
         <div>
             <asp:Label ID="Label2" runat="server" Text="Password:" AssociatedControlID="txtPassword"></asp:Label>
             <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
-             <asp:Label ID="lblErrorMessage" runat="server" ForeColor="Red"></asp:Label>
-           
         </div>
-         <asp:Button ID="btnLogin" runat="server" Text="Log in" OnClick="btnLogin_Click" CssClass="login-button" />
-        
-        <asp:Image runat="server"></asp:Image>
+
+        <!-- Register Link Label directly under the password textbox -->
         <div>
-           
-           
+            <asp:HyperLink ID="lnkRegister" runat="server" NavigateUrl="~/Donations.aspx" CssClass="register-link">
+                New user? Register here
+            </asp:HyperLink>
         </div>
+        
+        <!-- Error message label -->
+        <div>
+            <asp:Label ID="lblErrorMessage" runat="server" CssClass="lblErrorMessage" ForeColor="Red"></asp:Label>
+        </div>
+
+        <asp:Button ID="btnLogin" runat="server" Text="Log in" OnClick="btnLogin_Click" CssClass="login-button" />
     </form>
 </body>
 </html>
