@@ -3,3 +3,8 @@ CMPG223_project/.vs/CMPG223_project/FileContentIndex/0f0e10ee-6da6-4244-99f9-48b
 *.vsidx
 *.json
 /CMPG223_project/.vs/CMPG223_project/v17/DocumentLayout.json
+/.vs/CMPG223_group20Project/v17/.wsuo
+/.vs/slnx.sqlite
+/CMPG223_project/obj/Release/.NETFramework,Version=v4.7.2.AssemblyAttributes.cs
+/CMPG223_project/obj/Release/CMPG223_project.csproj.AssemblyReference.cache
+/.gitignore
