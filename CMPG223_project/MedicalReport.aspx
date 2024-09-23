@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MedicalReport.aspx.cs" Inherits="CMPG223_project.MedicalReport" %>
+<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MedicalReport.aspx.cs" Inherits="CMPG223_project.MedicalReport" %>
 
 <!DOCTYPE html>
 
@@ -10,6 +10,16 @@
             text-align: center;
             font-size: xx-large;
         }
+        .auto-style2 {
+            text-align: left;
+            width: 489px;
+        }
+        .auto-style3 {
+            width: 489px;
+        }
+        .auto-style4 {
+            width: 167px;
+        }
     </style>
 </head>
 <body>
@@ -17,12 +27,16 @@
         <div>
             <h4 class="auto-style1">Detailed Report On All Patients housed in the facilities<table style="width:100%;">
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style2">
+                        <asp:Label ID="Label1" runat="server" Text="Select category to filter the report by"></asp:Label>
+                    </td>
+                    <td class="auto-style4">&nbsp;</td>
+                    <td>
+                        <asp:Label ID="Label2" runat="server" Text="View all "></asp:Label>
+                    </td>
                 </tr>
                 <tr>
-                    <td>
+                    <td class="auto-style3">
                         <asp:DropDownList ID="dropCat" runat="server">
                              <asp:ListItem>Choose a category..</asp:ListItem>
  <asp:ListItem Value="gender">Gender</asp:ListItem>
@@ -38,14 +52,16 @@
                         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT * FROM [patients]"></asp:SqlDataSource>
                         <asp:Button ID="btnFilter" runat="server" OnClick="btnFilter_Click" Text="Filter" />
                     </td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style4">&nbsp;</td>
                     <td>
                         <asp:Button ID="btnViewAll" runat="server" OnClick="btnViewAll_Click" Text="View All" />
                     </td>
                 </tr>
                 <tr>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
+                    <td class="auto-style3">&nbsp;</td>
+                    <td class="auto-style4">
+                        <asp:Button ID="btnReport" runat="server" OnClick="btnReport_Click1" Text="Generate Physical Report" />
+                    </td>
                     <td>&nbsp;</td>
                 </tr>
                 </table>

@@ -8,6 +8,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Configuration;
 using System.Windows;
+using System.IO;
 
 namespace CMPG223_project
 {
@@ -22,24 +23,16 @@ namespace CMPG223_project
         DataSet ds = new DataSet();
         protected void Page_Load(object sender, EventArgs e)
         {
-            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString); ;
-            conn.Open();
-            /*try
+            
+            try
             {
-                ds = new DataSet();
-                sql = @"Select * from [patients] ";
-                cmd = new SqlCommand(sql, conn);
-                SqlDataReader dr = cmd.ExecuteReader();
-                if (dr.HasRows == true)
-                {
-                    GridView1.DataSource = dr;
-                    GridView1.DataBind();
-                }
+                conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString); ;
+            conn.Open();
             }
             catch (SqlException sqlEx)
             {
                 MessageBox.Show(sqlEx.Message);
-            }*/
+            }
         }
 
         protected void btnViewAll_Click(object sender, EventArgs e)
@@ -66,7 +59,7 @@ namespace CMPG223_project
             }
 
         }
-
+       
         protected void btnFilter_Click(object sender, EventArgs e)
         {
             //takes value from the selected dropdownlist
@@ -87,6 +80,30 @@ namespace CMPG223_project
             {
                 MessageBox.Show(sqlEx.Message);
             }
+        }
+        public override void VerifyRenderingInServerForm(Control control)
+        {
+            //this is required to avoid the error that pops up
+        }
+        protected void btnReport_Click1(object sender, EventArgs e)
+        {
+            //this code generates a excel file that the user can save and it has all the information from the database in
+            Response.Clear();
+            Response.Buffer = true;
+            Response.ClearContent();
+            Response.ClearHeaders();
+            Response.Charset = "";
+            string FileName = "MedicalReport" + DateTime.Now + ".xls";
+            StringWriter writer = new StringWriter();
+            HtmlTextWriter htmltxtwrt = new HtmlTextWriter(writer);
+            Response.Cache.SetCacheability(HttpCacheability.NoCache);
+            Response.ContentType = "application/vnd.ms-excel";
+            Response.AddHeader("Content-Disposition", "attachment;filename=" + FileName);
+            GridView1.GridLines = GridLines.Both;
+            GridView1.HeaderStyle.Font.Bold = true;
+            GridView1.RenderControl(htmltxtwrt);
+            Response.Write(writer.ToString());
+            Response.End();
         }
     }
 }
