@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Data;
@@ -9,7 +9,7 @@ using System.Web.UI.WebControls;
 using System.Configuration;
 using System.Windows;
 
-namespace WebApplication1
+namespace CMPG223_project
 {
     public partial class MedicalReport : System.Web.UI.Page
     {
@@ -69,16 +69,19 @@ namespace WebApplication1
 
         protected void btnFilter_Click(object sender, EventArgs e)
         {
+            //takes value from the selected dropdownlist
             string category = dropCat.SelectedValue;
             try
             {
-                
-                ds = new DataSet();
-                sql = @"Select "+category+" from [patients] ";
-                cmd = new SqlCommand(sql, conn);
-                dr = cmd.ExecuteReader();
-                GridView1.DataSource = dr;
-                GridView1.DataBind();
+                if (dropCat.SelectedIndex > 0)
+                {
+                    ds = new DataSet();
+                    sql = @"Select " + category + "  from [patients] ";
+                    cmd = new SqlCommand(sql, conn);
+                    dr = cmd.ExecuteReader();
+                    GridView1.DataSource = dr;
+                    GridView1.DataBind();
+                }
             }
             catch (SqlException sqlEx)
             {
