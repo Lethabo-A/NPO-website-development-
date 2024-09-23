@@ -1,4 +1,4 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MedicalReport.aspx.cs" Inherits="WebApplication1.MedicalReport" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="MedicalReport.aspx.cs" Inherits="CMPG223_project.MedicalReport" %>
 
 <!DOCTYPE html>
 
