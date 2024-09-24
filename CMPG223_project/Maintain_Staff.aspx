@@ -48,7 +48,6 @@
                         <asp:TextBox ID="txtName" runat="server" Width="206px"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:Button ID="btnAdd" runat="server" OnClick="btnAdd_Click" Text="Add Staff" Width="101px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:Label ID="lblAdd" runat="server" Text="[add]"></asp:Label>
                     </td>
@@ -66,7 +65,6 @@
                         <asp:TextBox ID="txtSurname" runat="server" Width="206px"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:Button ID="btnUpdate" runat="server" Text="Update Staff" Width="100px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:Label ID="lblUpdate" runat="server" Text="[update]"></asp:Label>
                     </td>
@@ -84,7 +82,6 @@
                         <asp:TextBox ID="txtContact" runat="server" Width="206px"></asp:TextBox>
                     </td>
                     <td>
-                        <asp:Button ID="btnRemove" runat="server" Text="Remove Staff" Width="100px" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:Label ID="lblRemove" runat="server" Text="[Remove]"></asp:Label>
                     </td>
@@ -120,9 +117,14 @@
             </table>
         </div>
         <p>
-            &nbsp;</p>
+                        <asp:Button ID="btnAdd0" runat="server" OnClick="btnAdd_Click" Text="Add Staff" Width="125px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Button ID="btnUpdate0" runat="server" Text="Update Staff" Width="129px" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <asp:Button ID="btnRemove0" runat="server" Text="Remove Staff" Width="130px" />
+        </p>
         <p>
-            <asp:Button ID="btnSearch" runat="server" Text="Search" Width="103px" />
+            <asp:Button ID="btnSearch" runat="server" Text="Search" Width="103px" OnClick="btnSearch_Click" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
             <asp:TextBox ID="txtSearch" runat="server" Width="207px"></asp:TextBox>
         </p>

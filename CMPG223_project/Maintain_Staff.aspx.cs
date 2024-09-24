@@ -38,5 +38,10 @@ namespace CMPG223_project
             lblAdd.Text = "A staff was successfully added..";
             GridView1.DataBind();
         }
+
+        protected void btnSearch_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
