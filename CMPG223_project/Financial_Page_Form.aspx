@@ -35,6 +35,7 @@
         <asp:DropDownList ID="DropDownList5" runat="server" OnSelectedIndexChanged="DropDownList5_SelectedIndexChanged">
             <asp:ListItem>Income</asp:ListItem>
             <asp:ListItem>Add income</asp:ListItem>
+            <asp:ListItem>Edit income</asp:ListItem>
             <asp:ListItem>Income reports</asp:ListItem>
             <asp:ListItem>Funding and Donors</asp:ListItem>
         </asp:DropDownList>
