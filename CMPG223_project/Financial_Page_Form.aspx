@@ -16,10 +16,13 @@
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:DropDownList ID="DropDownList2" runat="server">
             <asp:ListItem>Budget Information</asp:ListItem>
+            <asp:ListItem>Financial year budget</asp:ListItem>
         </asp:DropDownList>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:DropDownList ID="DropDownList3" runat="server">
             <asp:ListItem>Financial reports</asp:ListItem>
+            <asp:ListItem>Monthly reports</asp:ListItem>
+            <asp:ListItem>Year report</asp:ListItem>
         </asp:DropDownList>
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
         <asp:DropDownList ID="DropDownList4" runat="server" OnSelectedIndexChanged="DropDownList4_SelectedIndexChanged">
@@ -32,6 +35,7 @@
         <asp:DropDownList ID="DropDownList5" runat="server" OnSelectedIndexChanged="DropDownList5_SelectedIndexChanged">
             <asp:ListItem>Income</asp:ListItem>
             <asp:ListItem>Add income</asp:ListItem>
+            <asp:ListItem>Edit income</asp:ListItem>
             <asp:ListItem>Income reports</asp:ListItem>
             <asp:ListItem>Funding and Donors</asp:ListItem>
         </asp:DropDownList>

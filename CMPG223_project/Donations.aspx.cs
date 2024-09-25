@@ -11,7 +11,18 @@ namespace CMPG223_project
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            
+        }
 
+        protected void myButton_Click(object sender, EventArgs e)
+        {
+            string donorName = Request.Form["firstname"];
+            string donorLastName = Request.Form["lastname"];
+            string donorEmail = Request.Form["eMail"];
+            string donorPhoneNumb = Request.Form["phoneNumb"];
+            string date = Request.Form["date"];
+            string donatedAmount = Request.Form["dAmount"];
+            string bankAccount = Request.Form["banks"];
         }
     }
 }

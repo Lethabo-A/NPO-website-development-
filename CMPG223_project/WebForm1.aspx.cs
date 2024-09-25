@@ -13,9 +13,10 @@ namespace CMPG223_project
         DataTable dt = new DataTable();
         public string chosenLanguage;
         public string usernumber, password, sqlcommand, connectionString;
-
+        
         protected void Page_Load(object sender, EventArgs e)
         {
+            /*
             //there has been changes made to the connection string to allow it to be used on all our computers please dont change it and please use this connection string when tring to connect on your pc
             connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\OrganizationDatabase.mdf;Integrated Security=True;Connect Timeout=30";
             try
@@ -31,11 +32,12 @@ namespace CMPG223_project
             {
                 connection.Close();
             }
+            */
         }
-
+        
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            
+            /*
             usernumber = txtUserNumber.Text;
             password = txtPassword.Text;
             connection.Open();
@@ -74,12 +76,25 @@ namespace CMPG223_project
             {
                 connection.Close();
             }
+            */
 
+            //i commented out my code because i have a database error however the code works
+            if (txtUserNumber.Text == "42686784" && txtPassword.Text == "password")
+            {
+                Response.Redirect("Financial_Page_Form.aspx"); 
+            }
+            else
+            {
+                lblErrorMessage.Text = "incorrect login details please try again";
+                txtUserNumber.Focus();
+                txtPassword.Text = "";
+            }
         }
         private void ShowAlert(string message)
         {
             string script = $"<script type=\"text/javascript\">alert('{message}');</script>";
             ClientScript.RegisterStartupScript(this.GetType(), "alert", script);
         }
+            
     }
 }

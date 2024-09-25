@@ -24,7 +24,10 @@ namespace CMPG223_project
                 //Label1.Text = "sdeafgdfgdsfgd";
                 Response.Redirect("Add_Expense_Form.aspx");
             }
-
+            else if (DropDownList4.SelectedIndex == 3)
+            {
+                Response.Redirect("Expense report.aspx");
+            }
         }
 
         protected void DropDownList5_SelectedIndexChanged(object sender, EventArgs e)
@@ -41,6 +44,14 @@ namespace CMPG223_project
 
                 //Label1.Text = "sdeafgdfgdsfgd";
                 Response.Redirect("Add_Expense_Form.aspx");
+            }
+            else if(DropDownList4.SelectedIndex == 3)
+            {
+                Response.Redirect("Income report.aspx");
+            }
+            else if (DropDownList4.SelectedIndex == 4)
+            {
+                Response.Redirect("Donations.aspx");
             }
         }
     }
