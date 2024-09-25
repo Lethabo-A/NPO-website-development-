@@ -11,7 +11,9 @@ namespace CMPG223_project
 {
     public partial class ViewOccupants : System.Web.UI.Page
     {
-        private SqlConnection con = new SqlConnection("");
+        // Established connection string
+        private SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Tadiwa\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\App_Data\\OrganizationDatabase.mdf;Integrated Security=True;Connect Timeout=30");
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -53,12 +55,12 @@ namespace CMPG223_project
             }
             catch (Exception ex)
             {
-                
+                // Handle exception (log or display a message)
                 Response.Write("An error occurred: " + ex.Message);
             }
             finally
             {
-                
+                // Ensure connection is closed
                 if (con.State == ConnectionState.Open)
                 {
                     con.Close();
@@ -68,7 +70,7 @@ namespace CMPG223_project
 
         private void DisplayRecordCount()
         {
-            
+            // SQL query to count records in the table
             string countQuery = "SELECT COUNT(*) FROM Occupants";
 
             try
@@ -79,9 +81,10 @@ namespace CMPG223_project
                     con.Open();
                 }
 
+                // Execute the count query
                 using (SqlCommand command = new SqlCommand(countQuery, con))
                 {
-                    
+                    // ExecuteScalar to get the count
                     int recordCount = (int)command.ExecuteScalar();
 
                     // Display the count in the label
@@ -90,7 +93,7 @@ namespace CMPG223_project
             }
             catch (Exception ex)
             {
-                
+                // Handle any errors (optional)
                 lblRecordCount.Text = "Error: " + ex.Message;
             }
             finally

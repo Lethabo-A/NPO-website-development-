@@ -11,7 +11,8 @@ namespace CMPG223_project
 {
     public partial class UpdateOccupants : System.Web.UI.Page
     {
-        private string connectionString = "";
+        private string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Tadiwa\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\App_Data\\OrganizationDatabase.mdf;Integrated Security=True;Connect Timeout=30";
+
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)

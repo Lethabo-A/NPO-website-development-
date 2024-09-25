@@ -11,8 +11,28 @@ namespace CMPG223_project
 {
     public partial class AddOccupants : System.Web.UI.Page
     {
-
         private SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Tadiwa\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\App_Data\\OrganizationDatabase.mdf;Integrated Security=True;Connect Timeout=30");
+        protected void Page_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void Radfemale_CheckedChanged(object sender, EventArgs e)
+        {
+
+            //string selectedGender = string.Empty;
+
+            // if (Radfemale.Checked)
+            // {
+            //   selectedGender = "Female";
+            //}
+            //else if (Radmale.Checked)
+            //{
+            //    selectedGender = "Male";
+            //}
+
+        }
+
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
 
@@ -89,6 +109,11 @@ namespace CMPG223_project
                     con.Close();
                 }
             }
+        }
+
+        protected void txtname_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

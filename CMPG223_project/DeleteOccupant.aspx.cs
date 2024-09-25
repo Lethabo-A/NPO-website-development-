@@ -11,7 +11,7 @@ namespace CMPG223_project
 {
     public partial class DeleteOccupant : System.Web.UI.Page
     {
-        private string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Tadiwa\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\App_Data\\OrganizationDatabase.mdf;Integrated Security=True;Connect Timeout=30";
+        private string connectionString = "";
 
         protected void Page_Load(object sender, EventArgs e)
         {
