@@ -23,6 +23,7 @@ namespace CMPG223_project
         protected void Button1_Click(object sender, EventArgs e)
         {
             //delete staff 
+            //input validation
             int staffNumber;
             if (int.TryParse(txtDeleteStaff.Text, out staffNumber))
             {

@@ -31,8 +31,9 @@ namespace CMPG223_project
         cookie = Request.Cookies["Info"];
         try
         {
-            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString); ;
-            conn.Open();
+                conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString); 
+                //conn = new SqlConnection(connectionString);
+                conn.Open();
         }
         catch (SqlException ex) { MessageBox.Show(ex.Message); }
         pID = cookie["ID"];
@@ -55,11 +56,11 @@ namespace CMPG223_project
         {
             //update the relevant patients information with the new diagnosis the doctor can come up with
             conn.Open();
-            string index = listCat.SelectedItem.Value;
+            string index = listCat.SelectedItem.Text;
             string updatedValue = txtChanges.Text;
             if (listCat.SelectedIndex > 0 && updatedValue != "")
             {
-                string updateQuery = "UPDATE [patients] SET " + index + " = @update WHERE ID = @id";
+                string updateQuery = "UPDATE [patients] SET '[" + index + "]' = @update WHERE ID = @id";
                 cmd = new SqlCommand(updateQuery, conn);
                 using (cmd)
                 {

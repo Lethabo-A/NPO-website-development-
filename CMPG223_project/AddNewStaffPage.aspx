@@ -16,20 +16,65 @@
             width: 100%;
         }
         .auto-style4 {
-            width: 180px;
+            width: 230px;
         }
         .auto-style5 {
-            width: 471px;
+            width: 346px;
+        }
+        .auto-style6 {
+            width: 230px;
+            height: 31px;
+        }
+        .auto-style7 {
+            width: 346px;
+            height: 31px;
+        }
+        .auto-style8 {
+            height: 31px;
+        }
+        .auto-style9 {
+            width: 231px;
+        }
+        .auto-style10 {
+            width: 347px;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server" class="auto-style1">
-        <strong>Add New Staff&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>
-        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="auto-style2" NavigateUrl="~/WebForm1.aspx">Logout</asp:HyperLink>
+        <br />
+        <strong>&nbsp;<br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Label ID="Label8" runat="server" CssClass="auto-style1" Text="Add New Staff"></asp:Label>
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong>
+        <asp:HyperLink ID="HyperLink1" runat="server" CssClass="auto-style2" NavigateUrl="~/Maintain_Staff.aspx">Back</asp:HyperLink>
+        <br />
+&nbsp;<br />
+                    <asp:Label ID="lblOutput" runat="server" CssClass="auto-style2" Text="[Output]"></asp:Label>
         <p>
             <asp:Label ID="Label1" runat="server" CssClass="auto-style2" Text="Please make sure to enter all the fields  below."></asp:Label>
         </p>
+        <table class="auto-style3">
+            <tr>
+                <td class="auto-style9">
+                    <asp:Label ID="Label9" runat="server" CssClass="auto-style2" Text="Choose department you work for:"></asp:Label>
+                </td>
+                <td class="auto-style10">
+                    <asp:DropDownList ID="staffDepart" runat="server" Width="273px">
+                        <asp:ListItem>Doctor</asp:ListItem>
+                        <asp:ListItem>Accountant</asp:ListItem>
+                        <asp:ListItem>General staff</asp:ListItem>
+                        <asp:ListItem>Admin</asp:ListItem>
+                        <asp:ListItem></asp:ListItem>
+                    </asp:DropDownList>
+                </td>
+                <td>&nbsp;</td>
+            </tr>
+            <tr>
+                <td class="auto-style9">&nbsp;</td>
+                <td class="auto-style10">&nbsp;</td>
+                <td>&nbsp;</td>
+            </tr>
+        </table>
         <table class="auto-style3">
             <tr>
                 <td class="auto-style4">
@@ -52,12 +97,14 @@
                 <td class="auto-style5">
                     <asp:TextBox ID="txtName" runat="server" Width="266px"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtName" CssClass="auto-style2" ErrorMessage="Enter name!" ForeColor="Red" ViewStateMode="Enabled"></asp:RequiredFieldValidator>
+                </td>
             </tr>
             <tr>
-                <td class="auto-style4">&nbsp;</td>
-                <td class="auto-style5">&nbsp;</td>
-                <td>&nbsp;</td>
+                <td class="auto-style6"></td>
+                <td class="auto-style7"></td>
+                <td class="auto-style8"></td>
             </tr>
             <tr>
                 <td class="auto-style4">
@@ -66,7 +113,9 @@
                 <td class="auto-style5">
                     <asp:TextBox ID="txtSurname" runat="server" Width="262px"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtSurname" CssClass="auto-style2" ErrorMessage="Enter surname!" ForeColor="Red"></asp:RequiredFieldValidator>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style4">&nbsp;</td>
@@ -80,7 +129,9 @@
                 <td class="auto-style5">
                     <asp:TextBox ID="txtContact" runat="server" Width="260px"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="txtContact" CssClass="auto-style2" ErrorMessage="Enter 10 digits!" ForeColor="Red"></asp:RangeValidator>
+                </td>
             </tr>
             <tr>
                 <td class="auto-style4">&nbsp;</td>
@@ -117,8 +168,7 @@
             </tr>
             <tr>
                 <td class="auto-style4">
-                    <asp:Label ID="lblOutput" runat="server" CssClass="auto-style2" Text="[Output]"></asp:Label>
-                </td>
+                    &nbsp;</td>
                 <td class="auto-style5">&nbsp;</td>
                 <td>&nbsp;</td>
             </tr>
@@ -129,12 +179,11 @@
             </tr>
             <tr>
                 <td class="auto-style4">
-                    <asp:Button ID="btnAdd" runat="server" OnClick="btnAdd_Click" Text="Add staff" Width="181px" />
+                    <asp:Button ID="btnAdd" runat="server" OnClick="btnAdd_Click" Text="Add staff" Width="146px" />
                 </td>
                 <td class="auto-style5">&nbsp;</td>
                 <td>
-                    <asp:Button ID="Button1" runat="server" OnClick="Button1_Click" Text="Update page" Width="189px" />
-                </td>
+                    &nbsp;</td>
             </tr>
         </table>
     </form>
