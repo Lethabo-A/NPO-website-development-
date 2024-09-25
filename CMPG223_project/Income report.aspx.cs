@@ -46,6 +46,11 @@ namespace CMPG223_project
             }
         }
 
+        public override void VerifyRenderingInServerForm(Control control)
+        {
+            //this is required to avoid the error that pops up
+        }
+
         protected void btnReport_Click1(object sender, EventArgs e)
         {
             Response.Clear();

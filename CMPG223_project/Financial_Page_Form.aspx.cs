@@ -33,26 +33,43 @@ namespace CMPG223_project
         protected void DropDownList5_SelectedIndexChanged(object sender, EventArgs e)
         {
             string add_income = DropDownList4.SelectedItem.ToString();
-            if (DropDownList4.SelectedIndex == 1)
+            if (DropDownList5.SelectedIndex == 1)
             {
+                /*
                 Add_Expense_Form add_Expense_Form = new Add_Expense_Form();
                 add_Expense_Form.changeLabel1("Adding Income");
                 add_Expense_Form.changeLabel2("Income category:");
                 add_Expense_Form.changeLabel6("Income name");
                 add_Expense_Form.changeLabel5("Date of income");
                 add_Expense_Form.hide_add_expense_button();
-
+                */
+                
                 //Label1.Text = "sdeafgdfgdsfgd";
-                Response.Redirect("Add_Expense_Form.aspx");
+                Response.Redirect("Add_Income_Form.aspx");
             }
-            else if(DropDownList4.SelectedIndex == 3)
+            else if(DropDownList5.SelectedIndex == 3)
             {
                 Response.Redirect("Income report.aspx");
             }
-            else if (DropDownList4.SelectedIndex == 4)
+            else if (DropDownList5.SelectedIndex == 4)
             {
                 Response.Redirect("Donations.aspx");
             }
+        }
+
+        protected void DropDownList3_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        protected void DropDownList6_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

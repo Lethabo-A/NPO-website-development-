@@ -103,8 +103,12 @@
     <Content Include="About.aspx" />
     <Content Include="AddExpenseCSS.css" />
     <Content Include="AddNewPatient.aspx" />
+    <Content Include="AddNewPatient.css" />
     <Content Include="AddOccupants.aspx" />
-    <Content Include="Add_Expense_FormAnd_Income.aspx" />
+    <Content Include="Add_Expense.css" />
+    <Content Include="Add_Expense_Form.aspx" />
+    <Content Include="Add_Income.css" />
+    <Content Include="Add_Income_Form.aspx" />
     <Content Include="Approve.aspx" />
     <Content Include="App_Data\NGO.mdf" />
     <Content Include="App_Data\NGO_log.ldf">
@@ -132,14 +136,16 @@
     <Content Include="DefaultOccupants.aspx" />
     <Content Include="DeleteOccupant.aspx" />
     <Content Include="DisplayPatientInfo.aspx" />
+    <Content Include="DisplayPatientInfocss.css" />
     <Content Include="Donations.aspx" />
     <Content Include="DonationsCSS.css" />
     <Content Include="Expense report.aspx" />
+    <Content Include="ExpenseReportcss.css" />
     <Content Include="favicon.ico" />
-    <Content Include="Financial.aspx" />
     <Content Include="Financial_Page.css" />
     <Content Include="Financial_Page_Form.aspx" />
     <Content Include="FindPatient.aspx" />
+    <Content Include="FindPatient.css" />
     <Content Include="Global.asax" />
     <Content Include="images\ExpenseBackground.jpg" />
     <Content Include="images\Finance1.jpg" />
@@ -147,9 +153,11 @@
     <Content Include="images\NGOs.png" />
     <Content Include="images\rightColumn.jpg" />
     <Content Include="Income report.aspx" />
+    <Content Include="IncomeReport.css" />
     <Content Include="LoginStyleSheet.css" />
     <Content Include="Maintain_Staff.aspx" />
     <Content Include="MedicalReport.aspx" />
+    <Content Include="MedicalReport.css" />
     <Content Include="ReportOccupant.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
@@ -208,12 +216,19 @@
     <Compile Include="AddOccupants.aspx.designer.cs">
       <DependentUpon>AddOccupants.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Add_Expense_FormAnd_Income.aspx.cs">
-      <DependentUpon>Add_Expense_FormAnd_Income.aspx</DependentUpon>
+    <Compile Include="Add_Expense_Form.aspx.cs">
+      <DependentUpon>Add_Expense_Form.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Add_Expense_FormAnd_Income.aspx.designer.cs">
-      <DependentUpon>Add_Expense_FormAnd_Income.aspx</DependentUpon>
+    <Compile Include="Add_Expense_Form.aspx.designer.cs">
+      <DependentUpon>Add_Expense_Form.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Add_Income_Form.aspx.cs">
+      <DependentUpon>Add_Income_Form.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Add_Income_Form.aspx.designer.cs">
+      <DependentUpon>Add_Income_Form.aspx</DependentUpon>
     </Compile>
     <Compile Include="Approve.aspx.cs">
       <DependentUpon>Approve.aspx</DependentUpon>
@@ -279,13 +294,6 @@
     </Compile>
     <Compile Include="Expense report.aspx.designer.cs">
       <DependentUpon>Expense report.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="Financial.aspx.cs">
-      <DependentUpon>Financial.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="Financial.aspx.designer.cs">
-      <DependentUpon>Financial.aspx</DependentUpon>
     </Compile>
     <Compile Include="Financial_Page_Form.aspx.cs">
       <DependentUpon>Financial_Page_Form.aspx</DependentUpon>
