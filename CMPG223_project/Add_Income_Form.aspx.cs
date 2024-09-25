@@ -1,6 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Data.SqlClient;
+using System.Drawing;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -28,7 +30,7 @@ namespace CMPG223_project
 
             try
             {
-                SqlConnection connection = new SqlConnection(connectionString);
+                SqlConnection connection =  new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString); ;
                 connection.Open();
                 SqlCommand command;
                 SqlDataAdapter adapter = new SqlDataAdapter();

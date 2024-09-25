@@ -2,12 +2,13 @@
 using System.Web.UI;
 using System.Data.SqlClient;
 using System.Data;
+using System.Configuration;
 
 namespace CMPG223_project
 {
     public partial class WebForm1 : System.Web.UI.Page
     {
-        SqlConnection connection = new SqlConnection();
+        SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
         SqlCommand command = new SqlCommand();
         SqlDataAdapter adapter = new SqlDataAdapter();
         DataTable dt = new DataTable();
@@ -21,7 +22,7 @@ namespace CMPG223_project
             connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\OrganizationDatabase.mdf;Integrated Security=True;Connect Timeout=30";
             try
             {
-                connection = new SqlConnection(connectionString);
+                connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
                 connection.Open();
             }
             catch (SqlException ex)
@@ -34,7 +35,7 @@ namespace CMPG223_project
             }
             */
         }
-        
+
         protected void btnLogin_Click(object sender, EventArgs e)
         {
             /*

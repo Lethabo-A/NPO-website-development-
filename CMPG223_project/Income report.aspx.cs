@@ -8,6 +8,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Windows;
 using System.IO;
+using System.Configuration;
 
 namespace CMPG223_project
 {
@@ -22,7 +23,7 @@ namespace CMPG223_project
         DataSet ds = new DataSet();
         protected void Page_Load(object sender, EventArgs e)
         {
-            conn = new SqlConnection(connectionString);
+            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
             try
             {
                 ds = new DataSet();
