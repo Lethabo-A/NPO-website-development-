@@ -13,7 +13,7 @@ namespace CMPG223_project
     public partial class Maintain_Staff : System.Web.UI.Page
     {
         //declaring gloabal vaariables 
-        SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\User\\Documents\\CMPG223\\CMPG223_Project_Staff\\CMPG223_group20Project\\CMPG223_project\\App_Data\\NGO.mdf;Integrated Security=True"].ConnectionString);
+        SqlConnection con =  new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
 
         protected void Page_Load(object sender, EventArgs e)
         {
