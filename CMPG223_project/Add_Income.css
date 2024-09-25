@@ -15,7 +15,7 @@
     font-size: 25px;
     text-transform: uppercase;
     padding: 6px;
-    border-radius: 50px;
+    border-radius: 0.5px;
 }
 
 line {
@@ -33,7 +33,7 @@ line li {
 }
 
 .topnav {
-    border-radius: 10px;
+    border-radius: 0.5px;
     overflow: hidden;
     background-color: black;
 }
