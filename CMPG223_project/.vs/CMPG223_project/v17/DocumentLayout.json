@@ -3,60 +3,32 @@
   "WorkspaceRootPath": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\viewoccupants.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:viewoccupants.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\removestaffpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:removestaffpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\viewoccupants.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:viewoccupants.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\removestaffpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:removestaffpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\updateoccupants.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:updateoccupants.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\RemoveStaff.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RemoveStaff.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\updateoccupants.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:updateoccupants.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\updatenewstaffpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:updatenewstaffpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\reportoccupant.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:reportoccupant.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\updatenewstaffpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:updatenewstaffpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\reportoccupant.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:reportoccupant.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\addnewstaffpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:addnewstaffpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\deleteoccupant.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:deleteoccupant.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\deleteoccupant.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:deleteoccupant.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\defaultoccupants.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:defaultoccupants.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\defaultoccupants.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:defaultoccupants.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\approve.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:approve.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\approve.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:approve.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\addoccupants.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:addoccupants.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\addoccupants.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:addoccupants.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\addnewstaffpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:addnewstaffpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -66,192 +38,101 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "ViewOccupants.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\ViewOccupants.aspx.cs",
-              "RelativeDocumentMoniker": "ViewOccupants.aspx.cs",
-              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\ViewOccupants.aspx.cs",
-              "RelativeToolTip": "ViewOccupants.aspx.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAUwGUAAAA2AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:24:30.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ViewOccupants.aspx",
-              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\ViewOccupants.aspx",
-              "RelativeDocumentMoniker": "ViewOccupants.aspx",
-              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\ViewOccupants.aspx",
-              "RelativeToolTip": "ViewOccupants.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-25T13:22:32.838Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UpdateOccupants.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\UpdateOccupants.aspx.cs",
-              "RelativeDocumentMoniker": "UpdateOccupants.aspx.cs",
-              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\UpdateOccupants.aspx.cs",
-              "RelativeToolTip": "UpdateOccupants.aspx.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAxwGoAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:20:11.432Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UpdateOccupants.aspx",
-              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\UpdateOccupants.aspx",
-              "RelativeDocumentMoniker": "UpdateOccupants.aspx",
-              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\UpdateOccupants.aspx",
-              "RelativeToolTip": "UpdateOccupants.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-25T13:18:51.477Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ReportOccupant.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\ReportOccupant.aspx.cs",
-              "RelativeDocumentMoniker": "ReportOccupant.aspx.cs",
-              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\ReportOccupant.aspx.cs",
-              "RelativeToolTip": "ReportOccupant.aspx.cs",
-              "ViewState": "AgIAACQAAAAAAAAAAAAowBYAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:15:12.112Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ReportOccupant.aspx",
-              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\ReportOccupant.aspx",
-              "RelativeDocumentMoniker": "ReportOccupant.aspx",
-              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\ReportOccupant.aspx",
-              "RelativeToolTip": "ReportOccupant.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-25T13:12:03.458Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "DeleteOccupant.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DeleteOccupant.aspx.cs",
-              "RelativeDocumentMoniker": "DeleteOccupant.aspx.cs",
-              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DeleteOccupant.aspx.cs",
-              "RelativeToolTip": "DeleteOccupant.aspx.cs",
-              "ViewState": "AgIAAFMAAAAAAAAAAAAIwBMAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T13:07:28.787Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "DeleteOccupant.aspx",
-              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DeleteOccupant.aspx",
-              "RelativeDocumentMoniker": "DeleteOccupant.aspx",
-              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DeleteOccupant.aspx",
-              "RelativeToolTip": "DeleteOccupant.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-25T13:06:30.802Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "DefaultOccupants.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DefaultOccupants.aspx.cs",
-              "RelativeDocumentMoniker": "DefaultOccupants.aspx.cs",
-              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DefaultOccupants.aspx.cs",
-              "RelativeToolTip": "DefaultOccupants.aspx.cs",
-              "ViewState": "AgIAAAgAAAAAAAAAAAAAAB8AAABCAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T12:57:56.089Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DefaultOccupants.aspx",
-              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DefaultOccupants.aspx",
-              "RelativeDocumentMoniker": "DefaultOccupants.aspx",
-              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DefaultOccupants.aspx",
-              "RelativeToolTip": "DefaultOccupants.aspx",
-              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-25T12:56:50.684Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Approve.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\Approve.aspx.cs",
-              "RelativeDocumentMoniker": "Approve.aspx.cs",
-              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\Approve.aspx.cs",
-              "RelativeToolTip": "Approve.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA1AAAAAAAAAA==",
+              "DocumentIndex": 0,
+              "Title": "RemoveStaffPage.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\RemoveStaffPage.aspx.cs",
+              "RelativeDocumentMoniker": "RemoveStaffPage.aspx.cs",
+              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\RemoveStaffPage.aspx.cs",
+              "RelativeToolTip": "RemoveStaffPage.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T12:43:50.963Z",
+              "WhenOpened": "2024-09-25T15:13:28.327Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "Approve.aspx",
-              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\Approve.aspx",
-              "RelativeDocumentMoniker": "Approve.aspx",
-              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\Approve.aspx",
-              "RelativeToolTip": "Approve.aspx",
+              "DocumentIndex": 1,
+              "Title": "RemoveStaffPage.aspx",
+              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\RemoveStaffPage.aspx",
+              "RelativeDocumentMoniker": "RemoveStaffPage.aspx",
+              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\RemoveStaffPage.aspx",
+              "RelativeToolTip": "RemoveStaffPage.aspx",
               "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-25T12:41:45.784Z",
+              "WhenOpened": "2024-09-25T15:12:41.24Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "AddOccupants.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddOccupants.aspx.cs",
-              "RelativeDocumentMoniker": "AddOccupants.aspx.cs",
-              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddOccupants.aspx.cs",
-              "RelativeToolTip": "AddOccupants.aspx.cs",
-              "ViewState": "AgIAAEoAAAAAAAAAAAAwwHEAAABGAAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "RemoveStaff.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\RemoveStaff.aspx.cs",
+              "RelativeDocumentMoniker": "RemoveStaff.aspx.cs",
+              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\RemoveStaff.aspx.cs",
+              "RelativeToolTip": "RemoveStaff.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T12:30:48.588Z",
+              "WhenOpened": "2024-09-25T15:12:15.933Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "AddOccupants.aspx",
-              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddOccupants.aspx",
-              "RelativeDocumentMoniker": "AddOccupants.aspx",
-              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddOccupants.aspx",
-              "RelativeToolTip": "AddOccupants.aspx",
+              "DocumentIndex": 3,
+              "Title": "UpdateNewStaffPage.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\UpdateNewStaffPage.aspx.cs",
+              "RelativeDocumentMoniker": "UpdateNewStaffPage.aspx.cs",
+              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\UpdateNewStaffPage.aspx.cs",
+              "RelativeToolTip": "UpdateNewStaffPage.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T15:11:01.264Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "UpdateNewStaffPage.aspx",
+              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\UpdateNewStaffPage.aspx",
+              "RelativeDocumentMoniker": "UpdateNewStaffPage.aspx",
+              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\UpdateNewStaffPage.aspx",
+              "RelativeToolTip": "UpdateNewStaffPage.aspx",
               "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-25T12:25:10.255Z",
+              "WhenOpened": "2024-09-25T15:10:20.258Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "AddNewStaffPage.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewStaffPage.aspx.cs",
+              "RelativeDocumentMoniker": "AddNewStaffPage.aspx.cs",
+              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewStaffPage.aspx.cs",
+              "RelativeToolTip": "AddNewStaffPage.aspx.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAACYAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T15:08:26.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AddNewStaffPage.aspx",
+              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewStaffPage.aspx",
+              "RelativeDocumentMoniker": "AddNewStaffPage.aspx",
+              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewStaffPage.aspx",
+              "RelativeToolTip": "AddNewStaffPage.aspx",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-09-25T15:07:19.841Z",
               "EditorCaption": ""
             }
           ]
