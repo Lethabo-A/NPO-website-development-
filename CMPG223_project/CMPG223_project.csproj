@@ -106,6 +106,7 @@
     <Content Include="AddNewStaffPage.aspx" />
     <Content Include="AddOccupants.aspx" />
     <Content Include="AddOccupants.css" />
+    <Content Include="addstaffStyleSheet.css" />
     <Content Include="Add_Expense.css" />
     <Content Include="Add_Expense_Form.aspx" />
     <Content Include="Add_Income.css" />
@@ -221,6 +222,7 @@
     </Compile>
     <Compile Include="AddNewStaffPage.aspx.cs">
       <DependentUpon>AddNewStaffPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="AddNewStaffPage.aspx.designer.cs">
       <DependentUpon>AddNewStaffPage.aspx</DependentUpon>
@@ -352,6 +354,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="RemoveStaffPage.aspx.cs">
       <DependentUpon>RemoveStaffPage.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="RemoveStaffPage.aspx.designer.cs">
       <DependentUpon>RemoveStaffPage.aspx</DependentUpon>
@@ -386,6 +389,7 @@
     </Compile>
     <Compile Include="UpdateStaff.aspx.cs">
       <DependentUpon>UpdateStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="UpdateStaff.aspx.designer.cs">
       <DependentUpon>UpdateStaff.aspx</DependentUpon>
