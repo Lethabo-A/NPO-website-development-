@@ -20,6 +20,7 @@ namespace CMPG223_project
 
         protected void btnAdd_Click(object sender, EventArgs e)
         {
+            
             //adding new staff
 
             SqlCommand cmd = new SqlCommand("insert into Staff values ('" + txtName.Text + "','" + txtSurname.Text + "','" + txtContact.Text + "','" + txtAddress.Text + "','" + txtWord.Text + "')", con);
