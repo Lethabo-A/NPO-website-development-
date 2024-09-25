@@ -41,7 +41,7 @@
                 <td>
                     <asp:Label ID="Label2" runat="server" Text="Expense Category:"></asp:Label>
                     <br />
-                    <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True">
+                    <asp:DropDownList ID="DropDownList1" runat="server">
                         <asp:ListItem>Program Expenses:
 </asp:ListItem>
                         <asp:ListItem>Administrative Expenses</asp:ListItem>
@@ -68,7 +68,8 @@
                     <asp:Label ID="Label4" runat="server" Text="Add supporting documents(receipts, invoices, bank statements):"></asp:Label>
                 </td>
                 <td class="auto-style2">
-                    <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
+                    <asp:FileUpload ID="FileUpload" runat="server" />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                 </td>
                 <td>&nbsp;</td>
             </tr>
@@ -82,7 +83,8 @@
             <tr>
                 <td class="auto-style5"></td>
                 <td class="auto-style7">
-                    <asp:Button ID="AddExpense_Button" runat="server" Height="36px" OnClick="AddExpense_Button_Click" Text="Add" Width="179px" />
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Button ID="AddExpense_Button" runat="server" Height="36px" OnClick="AddExpense_Button_Click" Text="Add Expense" Width="179px" />
                 </td>
                 <td class="auto-style6"></td>
             </tr>
@@ -93,7 +95,7 @@
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style2">&nbsp;</td>
+                <td class="auto-style2">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
                 <td>&nbsp;</td>
             </tr>
         </table>

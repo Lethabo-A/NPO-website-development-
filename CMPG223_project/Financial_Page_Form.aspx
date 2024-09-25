@@ -43,10 +43,7 @@
             <tr>
                 <td>
 
-        <asp:DropDownList ID="DropDownList1" runat="server" Height="56px" AutoPostBack="True">
-            <asp:ListItem>Financial statements</asp:ListItem>
-        </asp:DropDownList>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    &nbsp;
         <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="True">
             <asp:ListItem>Budget Information</asp:ListItem>
             <asp:ListItem>Financial year budget</asp:ListItem>

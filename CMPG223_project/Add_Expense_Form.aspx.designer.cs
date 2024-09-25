@@ -87,13 +87,13 @@ namespace CMPG223_project
         protected global::System.Web.UI.WebControls.Label Label4;
 
         /// <summary>
-        /// TextBox4 control.
+        /// FileUpload control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox TextBox4;
+        protected global::System.Web.UI.WebControls.FileUpload FileUpload;
 
         /// <summary>
         /// AddExpense_Button control.
