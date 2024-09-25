@@ -13,7 +13,7 @@ namespace CMPG223_project
 {
     public partial class Expense_report : System.Web.UI.Page
     {
-        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=""C:\Users\User\Downloads\223 doctor\WebApplication1\App_Data\NGO.mdf"";Integrated Security=True";
+        string connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\NGO.mdf;Integrated Security=True;Connect Timeout=30";
         String sql = "";
         SqlConnection conn;
         SqlCommand cmd;
@@ -23,10 +23,11 @@ namespace CMPG223_project
         protected void Page_Load(object sender, EventArgs e)
         {
             conn = new SqlConnection(connectionString);
+            conn.Open();
             try
             {
                 ds = new DataSet();
-                sql = @"Select Expense_ID,Expense_Category,Expense_Name,Date_Of_Expense from [Add_Expense_Table] ";
+                sql = @"Select ExpenseID,Expense_Category,Expense_Name,Date_Of_Expense from [Add_Expense_Table] ";
                 cmd = new SqlCommand(sql, conn);
                 dr = cmd.ExecuteReader();
                 if (dr.HasRows == true)
@@ -38,12 +39,18 @@ namespace CMPG223_project
                 conn.Close();
                 dr.Close();
                 dr.Dispose();
+                conn.Close();
 
             }
             catch (SqlException sqlEx)
             {
                 MessageBox.Show(sqlEx.Message);
             }
+        }
+
+        public override void VerifyRenderingInServerForm(Control control)
+        {
+            //this is required to avoid the error that pops up
         }
 
         protected void btnReport_Click1(object sender, EventArgs e)

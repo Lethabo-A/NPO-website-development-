@@ -4,71 +4,33 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Add New Patient</title>
+    <link href="AddNewPatient.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
-        .auto-style1 {
-            text-align: center;
-        }
-        .auto-style2 {
-            height: 81px;
+        .form{
+        align-content: center;
         }
         .auto-style3 {
-            height: 110px;
-        }
-        .auto-style4 {
-            height: 147px;
-        }
-        .auto-style5 {
-            height: 81px;
-            width: 525px;
-        }
-        .auto-style6 {
-            height: 147px;
-            width: 525px;
-        }
-        .auto-style7 {
-            height: 110px;
-            width: 525px;
-        }
-        .auto-style9 {
-            font-size: xx-large;
-        }
-        .auto-style11 {
-            width: 556px;
-            height: 70px;
-        }
-        .auto-style12 {
-            height: 70px;
-        }
-        .auto-style13 {
-            height: 81px;
-            text-align: center;
-        }
-        .auto-style14 {
-            height: 147px;
-            text-align: center;
-        }
-        .auto-style15 {
-            height: 110px;
-            text-align: center;
-        }
-        .auto-style16 {
-            width: 525px;
-        }
-        .auto-style17 {
-            height: 70px;
-            width: 525px;
-        }
-        .auto-style18 {
-            width: 556px;
-            text-align: center;
+            width: 113px;
+            height: 108px;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
+
+        <div class="header">
+            <img src="images/NGOs.png" alt="logo" class="auto-style3" />&nbsp;<h1>Adding a New Patient</h1>
+        </div>
+
+        <div class="topnav">
+            <a href="#">Home</a>
+            <a href="Financial_Page_Form.aspx">Back</a>
+            <a href="WebForm1.aspx">Logout</a>
+        </div>
+
         <div class="auto-style1">
-            <h4 class="auto-style9">Add a new patient</h4>
+            <h4 class="auto-style9">&nbsp;</h4>
         </div>
         <table style="width:100%;">
             <tr>
@@ -163,6 +125,11 @@
         <p>
             <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/FindPatient.aspx">back</asp:HyperLink>
         </p>
+
+        <div class="footer">
+            <p>Copyright © 2024 NGOs office Company. All rights reserved.</p>
+        </div>
+
     </form>
 </body>
 </html>
