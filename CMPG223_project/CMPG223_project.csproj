@@ -101,15 +101,16 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
-    <Content Include="AddExpenseCSS.css" />
     <Content Include="AddNewPatient.aspx" />
     <Content Include="AddNewPatient.css" />
     <Content Include="AddOccupants.aspx" />
+    <Content Include="AddOccupants.css" />
     <Content Include="Add_Expense.css" />
     <Content Include="Add_Expense_Form.aspx" />
     <Content Include="Add_Income.css" />
     <Content Include="Add_Income_Form.aspx" />
     <Content Include="Approve.aspx" />
+    <Content Include="Approve.css" />
     <Content Include="App_Data\NGO.mdf" />
     <Content Include="App_Data\NGO_log.ldf">
       <DependentUpon>NGO.mdf</DependentUpon>
@@ -134,7 +135,9 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="DefaultOccupants.aspx" />
+    <Content Include="DefaultOccupants.css" />
     <Content Include="DeleteOccupant.aspx" />
+    <Content Include="DeleteOccupant.css" />
     <Content Include="DisplayPatientInfo.aspx" />
     <Content Include="DisplayPatientInfocss.css" />
     <Content Include="Donations.aspx" />
@@ -156,9 +159,11 @@
     <Content Include="IncomeReport.css" />
     <Content Include="LoginStyleSheet.css" />
     <Content Include="Maintain_Staff.aspx" />
+    <Content Include="Maintain_Staff.css" />
     <Content Include="MedicalReport.aspx" />
     <Content Include="MedicalReport.css" />
     <Content Include="ReportOccupant.aspx" />
+    <Content Include="ReportOccupant.css" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -171,7 +176,9 @@
     <Content Include="Scripts\jquery-3.7.1.slim.js" />
     <Content Include="Scripts\jquery-3.7.1.slim.min.js" />
     <Content Include="UpdateOccupants.aspx" />
+    <Content Include="UpdateOccupants.css" />
     <Content Include="ViewOccupants.aspx" />
+    <Content Include="ViewOccupants.css" />
     <Content Include="WebForm1.aspx" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
