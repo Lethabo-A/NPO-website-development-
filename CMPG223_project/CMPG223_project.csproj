@@ -103,6 +103,7 @@
     <Content Include="About.aspx" />
     <Content Include="AddExpenseCSS.css" />
     <Content Include="AddNewPatient.aspx" />
+    <Content Include="AddNewStaff.aspx" />
     <Content Include="Add_Expense_FormAnd_Income.aspx" />
     <Content Include="App_Data\NGO.mdf" />
     <Content Include="App_Data\NGO_log.ldf">
@@ -146,6 +147,7 @@
     <Content Include="LoginStyleSheet.css" />
     <Content Include="Maintain_Staff.aspx" />
     <Content Include="MedicalReport.aspx" />
+    <Content Include="RemoveStaff.aspx" />
     <Content Include="Scripts\bootstrap.bundle.js" />
     <Content Include="Scripts\bootstrap.bundle.min.js" />
     <Content Include="Scripts\bootstrap.esm.js" />
@@ -157,6 +159,7 @@
     <Content Include="Scripts\jquery-3.7.1.min.js" />
     <Content Include="Scripts\jquery-3.7.1.slim.js" />
     <Content Include="Scripts\jquery-3.7.1.slim.min.js" />
+    <Content Include="UpdateStaff.aspx" />
     <Content Include="WebForm1.aspx" />
     <Content Include="Scripts\modernizr-2.8.3.js" />
     <Content Include="Scripts\WebForms\DetailsView.js" />
@@ -193,6 +196,13 @@
     </Compile>
     <Compile Include="AddNewPatient.aspx.designer.cs">
       <DependentUpon>AddNewPatient.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="AddNewStaff.aspx.cs">
+      <DependentUpon>AddNewStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="AddNewStaff.aspx.designer.cs">
+      <DependentUpon>AddNewStaff.aspx</DependentUpon>
     </Compile>
     <Compile Include="Add_Expense_FormAnd_Income.aspx.cs">
       <DependentUpon>Add_Expense_FormAnd_Income.aspx</DependentUpon>
@@ -291,6 +301,13 @@
       <DependentUpon>MedicalReport.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RemoveStaff.aspx.cs">
+      <DependentUpon>RemoveStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="RemoveStaff.aspx.designer.cs">
+      <DependentUpon>RemoveStaff.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -304,6 +321,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UpdateStaff.aspx.cs">
+      <DependentUpon>UpdateStaff.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UpdateStaff.aspx.designer.cs">
+      <DependentUpon>UpdateStaff.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
