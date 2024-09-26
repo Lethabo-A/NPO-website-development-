@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    background: url('../images/login-background.jpg') no-repeat center center fixed;
+    background: url('../images/ExpenseBackground.jpg') no-repeat center center fixed;
     background-size: cover;
     display: flex;
     justify-content: center;
@@ -14,45 +14,6 @@ body {
     height: 100vh;
     margin: 0;
 }
-
-form {
-    background-color: #ffffff;
-    padding: 40px;
-    border-radius: 10px;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
-    width: 100%;
-    max-width: 600px;
-    text-align: center;
-    animation: fadeIn 0.7s ease-in-out;
-    position: relative;
-    overflow: hidden;
-}
-
-    form::before {
-        content: '';
-        position: absolute;
-        top: -20px;
-        left: -20px;
-        right: -20px;
-        bottom: -20px;
-        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
-        z-index: -1;
-        border-radius: 10px;
-    }
-
-    form div {
-        text-align: left;
-        position: relative;
-        padding-left: 20px;
-        margin-bottom: 15px; /* Ensures consistent spacing between fields */
-    }
-
-    form div {
-        text-align: left;
-        position: relative;
-        padding-left: 20px;
-    }
-
 .header {
     background-color: mediumpurple;
     text-align: center;
@@ -98,17 +59,54 @@ line {
         background-color: #ddd;
         color: black;
     }
-
-.footer {
-    border-spacing: 20px;
-    background-color: #f1f1f1;
-    padding: 10px;
+.form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+form {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 600px;
     text-align: center;
-    font-size: 10px;
-    margin-bottom: 10px;
-    color: black;
+    animation: fadeIn 0.7s ease-in-out;
+    position: relative;
+    overflow: hidden;
 }
 
+    form::before {
+        content: '';
+        position: absolute;
+        top: -20px;
+        left: -20px;
+        right: -20px;
+        bottom: -20px;
+        background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
+        z-index: -1;
+        border-radius: 10px;
+    }
+
+    form div {
+        text-align: left;
+        position: relative;
+        padding-left: 20px;
+        margin-bottom: 15px; /* Ensures consistent spacing between fields */
+    }
+    form div {
+        text-align: left;
+        position: relative;
+        padding-left: 20px;
+    }
+h2 {
+    margin-bottom: 20px;
+    color: #4a148c;
+    font-size: 24px;
+}
 .dropdown-style {
     width: calc(100% - 20px);
     padding: 10px;
@@ -117,16 +115,13 @@ line {
     box-sizing: border-box;
     margin-bottom: 15px;
 }
-
-@keyframes fadeIn {
-    from {
-        opacity: 0;
-        transform: translateY(-20px);
-    }
-
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.footer {
+    border-spacing: 20px;
+    background-color: #f1f1f1;
+    padding: 10px;
+    text-align: center;
+    font-size: 10px;
+    margin-bottom: 10px;
+    color: black;
 }
 
