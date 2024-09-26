@@ -11,7 +11,7 @@ namespace CMPG223_project
 {
 
 
-    public partial class Financial_Page_Form
+    public partial class Financial_Page_Formaspx
     {
 
         /// <summary>

@@ -84,7 +84,7 @@ namespace CMPG223_project
         {
             try
             {
-                String delete = txtDeleteID.Text;
+                String delete = txtID.Text;
                 sql = @"Delete from [patients] WHERE [ID] = '" + delete + "'";
                 cmd = new SqlCommand(sql, conn);
                 int x = cmd.ExecuteNonQuery();

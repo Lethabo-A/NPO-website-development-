@@ -149,9 +149,10 @@
     <Content Include="ExpenseReportcss.css" />
     <Content Include="favicon.ico" />
     <Content Include="Financial Reports.aspx" />
+    <Content Include="FinancialP.css" />
     <Content Include="FinancialReports.css" />
-    <Content Include="Financial_Page.css" />
-    <Content Include="Financial_Page_Form.aspx" />
+    <Content Include="Financial_Page_Formaspx.aspx" />
+    <Content Include="Financial_Policies_And_Proceduresaspx.aspx" />
     <Content Include="FindPatient.aspx" />
     <Content Include="FindPatient.css" />
     <Content Include="Global.asax" />
@@ -167,6 +168,7 @@
     <Content Include="Maintain_Staff.css" />
     <Content Include="MedicalReport.aspx" />
     <Content Include="MedicalReport.css" />
+    <Content Include="PoliciesAndProcedures.css" />
     <Content Include="RemoveStaffPage.aspx" />
     <Content Include="ReportOccupant.aspx" />
     <Content Include="ReportOccupant.css" />
@@ -323,12 +325,19 @@
     <Compile Include="Financial Reports.aspx.designer.cs">
       <DependentUpon>Financial Reports.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Financial_Page_Form.aspx.cs">
-      <DependentUpon>Financial_Page_Form.aspx</DependentUpon>
+    <Compile Include="Financial_Page_Formaspx.aspx.cs">
+      <DependentUpon>Financial_Page_Formaspx.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Financial_Page_Form.aspx.designer.cs">
-      <DependentUpon>Financial_Page_Form.aspx</DependentUpon>
+    <Compile Include="Financial_Page_Formaspx.aspx.designer.cs">
+      <DependentUpon>Financial_Page_Formaspx.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial_Policies_And_Proceduresaspx.aspx.cs">
+      <DependentUpon>Financial_Policies_And_Proceduresaspx.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial_Policies_And_Proceduresaspx.aspx.designer.cs">
+      <DependentUpon>Financial_Policies_And_Proceduresaspx.aspx</DependentUpon>
     </Compile>
     <Compile Include="FindPatient.aspx.cs">
       <DependentUpon>FindPatient.aspx</DependentUpon>
