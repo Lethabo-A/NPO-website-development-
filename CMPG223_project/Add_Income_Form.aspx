@@ -17,90 +17,56 @@
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div class="header">
-            <img src="images/NGOs.png" alt="logo" class="auto-style3" />&nbsp;<h1>Adding Income</h1>
-        </div>
+    <div class="header">
+        <img src="images/NGOs.png" alt="logo" class="auto-style3" />&nbsp;<h1>Adding Income</h1>
+    </div>
 
-        <div class="topnav">
-            <a href="#">Home</a>
-            <a href="Financial_Page_Form.aspx">Back</a>
-            <a href="WebForm1.aspx">Logout</a>
-        </div>
+    <div class="topnav">
+        <a href="Financial_Page_Form.aspx">Back</a>
+        <a href="WebForm1.aspx">Logout</a>
+    </div>
+    <div class="form-container">
+        <form id="form1" runat="server">
+            <h1>Add the income details below:</h1>
+            &nbsp;
+            <div>
+                <asp:Label ID="Label2" runat="server" Text="Income Category:"></asp:Label>
+                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True">
+                    <asp:ListItem>Governemnt Funding</asp:ListItem>
+                    <asp:ListItem>Investments</asp:ListItem>
+                    <asp:ListItem>Fundraising</asp:ListItem>
+                    <asp:ListItem>Corporate partnerships</asp:ListItem>
+                    <asp:ListItem>Sales of products/goods</asp:ListItem>
+                </asp:DropDownList>
+            </div>
 
-        <div>
-        &nbsp;<div>
-			</div>
-			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</div>
-        <p>
-            <br />
-        </p>
-        <table style="width:100%;">
-            <tr>
-                <td class="auto-style3">
-                    <asp:Label ID="Label2" runat="server" Text="Income Category:"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True">
-                        <asp:ListItem>Governemnt Funding</asp:ListItem>
-                        <asp:ListItem>Investments</asp:ListItem>
-                        <asp:ListItem>Fundraising</asp:ListItem>
-                        <asp:ListItem>Corporate partnerships</asp:ListItem>
-                        <asp:ListItem>Sales of products/goods</asp:ListItem>
-                    </asp:DropDownList>
-                </td>
-                <td class="auto-style5">
-                    <asp:Label ID="Label6" runat="server" Text="Income name:"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:TextBox ID="IncomeName_TextBox" runat="server"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Label ID="Label5" runat="server" Text="Date of income:"></asp:Label>
-                </td>
-                <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                    <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style3">
-                    <asp:Label ID="Label7" runat="server" Text="Enter amount:"></asp:Label>
-                    <asp:TextBox ID="Amount_TextBox" runat="server"></asp:TextBox>
-                    &nbsp; </td>
-                <td class="auto-style5">
-                    <asp:Label ID="Label4" runat="server" Text="Add supporting documents(receipts, invoices, bank statements):"></asp:Label>
-                </td>
-                <td>
-                    <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
-                </td>
-            </tr>
-            <tr>
-                <td class="auto-style3">&nbsp;</td>
-                <td class="auto-style5">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
-                <td>&nbsp;</td>
-            </tr>
-        </table>
-        <table style="width:100%;">
-            <tr>
-                <td class="auto-style6">&nbsp;</td>
-                <td class="auto-style11">
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
-                <td>&nbsp;</td>
-            </tr>
-            <tr>
-                <td class="auto-style8"></td>
-                <td class="auto-style9">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<asp:Button ID="AddIncome_Button" runat="server" Height="36px" OnClick="AddIncome_Button_Click" Text="Add" Width="179px" />
-                </td>
-                <td class="auto-style10"></td>
-            </tr>
-            <tr>
-                <td class="auto-style6">&nbsp;</td>
-                <td class="auto-style11">&nbsp;</td>
-                <td>&nbsp;</td>
-            </tr>
-        </table>
+            <div>
+                <asp:Label ID="Label6" runat="server" Text="Income name:"></asp:Label>
+                <asp:TextBox ID="IncomeName_TextBox" runat="server" placeholder="Enter income name.."></asp:TextBox>
+            </div>
 
-        <div class="footer">
-            <p>Copyright © 2024 NGOs office Company. All rights reserved.</p>
-        </div>
+            <div>
+                <asp:Label ID="Label5" runat="server" Text="Date of income:"></asp:Label>
+                <asp:Calendar ID="Calendar1" runat="server" CssClass="cal"></asp:Calendar>
+            </div>
+            
+            <div>
+                <asp:Label ID="Label7" runat="server" Text="Enter amount:"></asp:Label>
+                <asp:TextBox ID="Amount_TextBox" runat="server" placeholder="Enter amount here.."></asp:TextBox>
+            </div>
 
-    </form>
+            <div>
+                <asp:Label ID="Label4" runat="server" Text="Add supporting documents(receipts, invoices, bank statements):"></asp:Label>
+                <asp:FileUpload ID="FileUpload1" runat="server" />
+            </div>
+
+            <div class="addButton_container">
+               <asp:Button ID="AddIncome_Button" runat="server" OnClick="AddIncome_Button_Click" Text="Add Income" CssClass="addIncome_button"/>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <p>Copyright © 2024 NGOs office Company. All rights reserved.</p>
+    </div>
 </body>
 </html>

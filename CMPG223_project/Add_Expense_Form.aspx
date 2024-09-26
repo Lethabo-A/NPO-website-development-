@@ -35,7 +35,7 @@
             <div>
                 <asp:Label ID="Label9" runat="server" Text="Choose a category:"></asp:Label>
                 <asp:DropDownList ID="DropDownList1" runat="server" CssClass="dropdown-style">
-                    <asp:ListItem>Program Expenses:</asp:ListItem>
+                    <asp:ListItem>Choose your option...</asp:ListItem>
                     <asp:ListItem>Administrative Expenses</asp:ListItem>
                     <asp:ListItem>Fundraising Expenses</asp:ListItem>
                     <asp:ListItem>Governance and Management Expenses</asp:ListItem>
@@ -46,7 +46,7 @@
            
             <div>
                 <asp:Label ID="Label3" runat="server" Text="Name:"></asp:Label>
-                <asp:TextBox ID="ExpenseName_TextBox" runat="server"></asp:TextBox>
+                <asp:TextBox ID="ExpenseName_TextBox" runat="server" placeholder="Enter expense name.."></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ExpenseName_TextBox" ErrorMessage="Enter expense name" ForeColor="Red"></asp:RequiredFieldValidator>
             </div>
             
@@ -54,10 +54,10 @@
                     <asp:Label ID="Label5" runat="server" Text="Date of expense:"></asp:Label>
                     <asp:Calendar ID="Calendar1" runat="server"></asp:Calendar>
             </div>
-            
+            &nbsp;
             <div>
                     <asp:Label ID="Label7" runat="server" Text="Enter amount:"></asp:Label>
-                    <asp:TextBox ID="Amount_TextBox" runat="server"></asp:TextBox>
+                    <asp:TextBox ID="Amount_TextBox" runat="server" placeholder="Enter cost amount.."></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="Amount_TextBox" ErrorMessage="Enter correct amount" ForeColor="Red"></asp:RequiredFieldValidator>
             </div>
             
