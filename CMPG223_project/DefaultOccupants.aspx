@@ -109,6 +109,14 @@
     	.auto-style1 {
 			height: 105px;
 		}
+
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
     </style>
     </head>
 <body style="height: 231px">
@@ -124,6 +132,8 @@
             &nbsp;</p>
         <p>
             &nbsp;</p>
+
+     <div class="form-container">
     <form id="form" runat="server">
          
         <h1>Select an option below:</h1>
@@ -151,7 +161,7 @@
          &nbsp;
         </div>
     </form>
-    
+    </div>
     &nbsp;&nbsp;&nbsp;&nbsp;
 
 		&nbsp;<p>
