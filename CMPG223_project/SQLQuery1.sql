@@ -1,15 +1,9 @@
-﻿CREATE TABLE patients (
-    ID INT PRIMARY KEY,
-    name VARCHAR(100),
-    surname VARCHAR(100),
-    age INT,
-    gender VARCHAR(10),
-    allergies VARCHAR(MAX),
-    prescriptions VARCHAR(MAX),
-    current_diagnosis VARCHAR(MAX),
-    past_medical_history VARCHAR(MAX),
-    past_surgical_history VARCHAR(MAX),
-    vaccine_status VARCHAR(MAX),
-    pregnancy_history VARCHAR(MAX),
-    social_history VARCHAR(MAX)
+﻿CREATE TABLE [dbo].[Staff] (
+    [Staff_number]   NVARCHAR(50)           NOT NULL,
+    [Password]       NVARCHAR (50) NOT NULL,
+    [Name]           NVARCHAR (50) NOT NULL,
+    [Surname]        NVARCHAR (50) NOT NULL,
+    [homeAddress]    NVARCHAR (50) NOT NULL,
+    [contact_number] NCHAR (10)    NOT NULL,
+    PRIMARY KEY CLUSTERED ([Staff_number] ASC)
 );
