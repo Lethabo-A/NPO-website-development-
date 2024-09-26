@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Configuration;
 using System.Data.SqlClient;
+using System.IO;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -25,7 +26,20 @@ namespace CMPG223_project
             name = ExpenseName_TextBox.Text;
             DateTime datetime = Calendar1.SelectedDate;
             date = datetime.ToString("yyyy-MMMM-dd");
+            //var fn = "";
+            string file = "";
+            string filename = "";
 
+            if (FileUpload.HasFile)
+            {
+
+                FileUpload.SaveAs(@"C:\temp\" + FileUpload.FileName);
+                //fn = Request.Files[0].FileName;
+                file = FileUpload.PostedFile.FileName;
+                filename = Path.GetFileName(file);
+            }
+
+            
 
             try
             {
@@ -33,7 +47,7 @@ namespace CMPG223_project
                 connection.Open();
                 SqlCommand command;
                 SqlDataAdapter adapter = new SqlDataAdapter();
-                String insert = "insert into Add_Expense_Table (Expense_Category,Expense_Name,Date_Of_Expense) values ('" + category + "','" + name + "'," + date + ")";
+                String insert = "insert into Add_Expense_Table (Expense_Category,Expense_Name,Date_Of_Expense,Supporting_Documents) values ('" + category + "','" + name + "'," + date + "'," + filename + ")";
                 command = new SqlCommand(insert, connection);
                 adapter.InsertCommand = new SqlCommand(insert, connection);
                 adapter.InsertCommand.ExecuteNonQuery();
@@ -47,8 +61,9 @@ namespace CMPG223_project
             }
             catch (SqlException ex)
             {
-
+                MessageBox.Show("Error,Check your data!");
             }
         }
+
     }
 }

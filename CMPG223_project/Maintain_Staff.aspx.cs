@@ -12,6 +12,7 @@ namespace CMPG223_project
 {
     public partial class Maintain_Staff : System.Web.UI.Page
     {
+        /*
         //declaring gloabal vaariables 
         SqlConnection con =  new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
 
@@ -43,5 +44,6 @@ namespace CMPG223_project
         {
 
         }
+        */
     }
 }
