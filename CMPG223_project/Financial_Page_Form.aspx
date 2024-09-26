@@ -11,6 +11,13 @@
         .auto-style1 {
             height: 105px;
         }
+        .form-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
     </style> 
 </head>
     
@@ -24,6 +31,7 @@
         <a href="Financial_Page_Form.aspx">Back</a>
         <a href="WebForm1.aspx">Logout</a>
      </div>
+    <div class="form-container">
     <form id="form1" runat="server">
         	&nbsp; &nbsp;
         <h2>Select Option Below:</h2>
@@ -77,6 +85,7 @@
         
         
     </form>
+    </div>
     <div class="footer">
 	    <p>Copyright © 2024 NGOs office Company. All rights reserved.</p>
     </div>
