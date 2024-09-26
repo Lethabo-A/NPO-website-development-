@@ -59,6 +59,7 @@
     <Reference Include="System.Data" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.DataVisualization" />
     <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Drawing" />
@@ -147,6 +148,8 @@
     <Content Include="Expense report.aspx" />
     <Content Include="ExpenseReportcss.css" />
     <Content Include="favicon.ico" />
+    <Content Include="Financial Reports.aspx" />
+    <Content Include="FinancialReports.css" />
     <Content Include="Financial_Page.css" />
     <Content Include="Financial_Page_Form.aspx" />
     <Content Include="FindPatient.aspx" />
@@ -312,6 +315,13 @@
     </Compile>
     <Compile Include="Expense report.aspx.designer.cs">
       <DependentUpon>Expense report.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Financial Reports.aspx.cs">
+      <DependentUpon>Financial Reports.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Financial Reports.aspx.designer.cs">
+      <DependentUpon>Financial Reports.aspx</DependentUpon>
     </Compile>
     <Compile Include="Financial_Page_Form.aspx.cs">
       <DependentUpon>Financial_Page_Form.aspx</DependentUpon>

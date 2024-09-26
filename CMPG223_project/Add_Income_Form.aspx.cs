@@ -22,6 +22,18 @@ namespace CMPG223_project
         protected void AddIncome_Button_Click(object sender, EventArgs e)
         {
             String category, name, date;
+            double amount;
+
+            if (Double.TryParse(Amount_TextBox.Text, out amount))
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("Error!! Enter correct type.");
+                ;
+            }
+
             category = DropDownList1.SelectedItem.ToString();
             name = IncomeName_TextBox.Text;
             DateTime datetime = Calendar1.SelectedDate;
@@ -34,7 +46,7 @@ namespace CMPG223_project
                 connection.Open();
                 SqlCommand command;
                 SqlDataAdapter adapter = new SqlDataAdapter();
-                String insert = "insert into Add_Income_Table (Income_Category,Income_Name,Date_Of_Income) values ('" + category + "','" + name + "'," + date + ")";
+                String insert = "insert into Add_Income_Table (Income_Category,Income_Name,Date_Of_Income,Income_Amount) values ('" + category + "','" + name + "'," + date + "'," + amount + ")";
                 command = new SqlCommand(insert, connection);
                 adapter.InsertCommand = new SqlCommand(insert, connection);
                 adapter.InsertCommand.ExecuteNonQuery();

@@ -22,6 +22,16 @@ namespace CMPG223_project
         protected void AddExpense_Button_Click(object sender, EventArgs e)
         {
             String category, name, date;
+            double amount;
+
+            if (Double.TryParse(Amount_TextBox.Text,out amount) )
+            {
+
+            }
+            else
+            {
+                MessageBox.Show("Error!! Enter correct type.");
+;            }
             category = DropDownList1.SelectedItem.ToString();
             name = ExpenseName_TextBox.Text;
             DateTime datetime = Calendar1.SelectedDate;
@@ -47,7 +57,7 @@ namespace CMPG223_project
                 connection.Open();
                 SqlCommand command;
                 SqlDataAdapter adapter = new SqlDataAdapter();
-                String insert = "insert into Add_Expense_Table (Expense_Category,Expense_Name,Date_Of_Expense,Supporting_Documents) values ('" + category + "','" + name + "'," + date + "'," + filename + ")";
+                String insert = "insert into Add_Expense_Table (Expense_Category,Expense_Name,Date_Of_Expense,Supporting_Documents,Expense_Amount) values ('" + category + "','" + name + "'," + date + "'," + filename + "'," + amount + ")";
                 command = new SqlCommand(insert, connection);
                 adapter.InsertCommand = new SqlCommand(insert, connection);
                 adapter.InsertCommand.ExecuteNonQuery();

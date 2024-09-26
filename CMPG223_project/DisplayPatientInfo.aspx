@@ -20,7 +20,7 @@
     <form id="form1" runat="server">
 
         <div class="header">
-            <img src="images/NGOs.png" alt="logo" class="auto-style3" />&nbsp;<h1>Adding a New Patient</h1>
+            <img src="images/NGOs.png" alt="logo" class="auto-style3" />&nbsp;<h1>Display Patients</h1>
         </div>
 
         <div class="topnav">

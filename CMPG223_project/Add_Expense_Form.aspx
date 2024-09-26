@@ -65,13 +65,17 @@
             </tr>
             <tr>
                 <td>
-                    <asp:Label ID="Label4" runat="server" Text="Add supporting documents(receipts, invoices, bank statements):"></asp:Label>
+                    <asp:Label ID="Label7" runat="server" Text="Enter amount:"></asp:Label>
+&nbsp;&nbsp;&nbsp;
+                    <asp:TextBox ID="Amount_TextBox" runat="server"></asp:TextBox>
                 </td>
                 <td class="auto-style2">
-                    <asp:FileUpload ID="FileUpload" runat="server" />
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <asp:Label ID="Label4" runat="server" Text="Add supporting documents(receipts, invoices, bank statements):"></asp:Label>
                 </td>
-                <td>&nbsp;</td>
+                <td>
+                    <asp:FileUpload ID="FileUpload" runat="server" />
+                </td>
             </tr>
             <tr>
                 <td>&nbsp;</td>

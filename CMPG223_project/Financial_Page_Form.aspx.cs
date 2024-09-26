@@ -59,7 +59,7 @@ namespace CMPG223_project
 
         protected void DropDownList3_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            Response.Redirect("Financial Reports.aspx");
         }
 
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)

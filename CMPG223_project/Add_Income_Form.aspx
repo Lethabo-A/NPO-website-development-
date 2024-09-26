@@ -61,12 +61,15 @@
             </tr>
             <tr>
                 <td class="auto-style3">
-                    <asp:Label ID="Label4" runat="server" Text="Add supporting documents(receipts, invoices, bank statements):"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+                    <asp:Label ID="Label7" runat="server" Text="Enter amount:"></asp:Label>
+                    <asp:TextBox ID="Amount_TextBox" runat="server"></asp:TextBox>
+                    &nbsp; </td>
                 <td class="auto-style5">
+                    <asp:Label ID="Label4" runat="server" Text="Add supporting documents(receipts, invoices, bank statements):"></asp:Label>
+                </td>
+                <td>
                     <asp:TextBox ID="TextBox4" runat="server"></asp:TextBox>
                 </td>
-                <td>&nbsp;</td>
             </tr>
             <tr>
                 <td class="auto-style3">&nbsp;</td>
