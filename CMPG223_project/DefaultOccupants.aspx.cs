@@ -19,17 +19,17 @@ namespace CMPG223_project
             Response.Redirect("Approve.aspx");
         }
 
-        protected void Bntupdate_Click(object sender, EventArgs e)
+        protected void BtnUpdate_Click(object sender, EventArgs e)
         {
             Response.Redirect("UpdateOccupants.aspx");
         }
 
-        protected void Bntremove_Click(object sender, EventArgs e)
+        protected void BtnRemove_Click(object sender, EventArgs e)
         {
             Response.Redirect("DeleteOccupant.aspx");
         }
 
-        protected void Btnreports_Click(object sender, EventArgs e)
+        protected void BtnReports_Click(object sender, EventArgs e)
         {
             Response.Redirect("ReportOccupant.aspx");
         }

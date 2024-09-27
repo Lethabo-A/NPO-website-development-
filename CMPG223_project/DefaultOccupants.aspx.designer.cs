@@ -33,6 +33,15 @@ namespace CMPG223_project
         protected global::System.Web.UI.WebControls.Label welcometext;
 
         /// <summary>
+        /// Bntview control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button Bntview;
+
+        /// <summary>
         /// Bntadd control.
         /// </summary>
         /// <remarks>
@@ -42,30 +51,30 @@ namespace CMPG223_project
         protected global::System.Web.UI.WebControls.Button Bntadd;
 
         /// <summary>
-        /// Bntupdate control.
+        /// BtnUpdate control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Bntupdate;
+        protected global::System.Web.UI.WebControls.Button BtnUpdate;
 
         /// <summary>
-        /// Bntremove control.
+        /// BtnRemove control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Bntremove;
+        protected global::System.Web.UI.WebControls.Button BtnRemove;
 
         /// <summary>
-        /// Btnreports control.
+        /// BtnReports control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Button Btnreports;
+        protected global::System.Web.UI.WebControls.Button BtnReports;
     }
 }
