@@ -1,102 +1,30 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\",
+  "WorkspaceRootPath": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\27685\\documents\\github\\cmpg223_group20project\\cmpg223_project\\updatestaff.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:updatestaff.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\reportoccupant.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:reportoccupant.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\RemoveStaffPage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:RemoveStaffPage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\reportoccupant.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:reportoccupant.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\27685\\documents\\github\\cmpg223_group20project\\cmpg223_project\\maintain_staff.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:maintain_staff.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\viewoccupants.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:viewoccupants.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\27685\\documents\\github\\cmpg223_group20project\\cmpg223_project\\maintain_staff.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:maintain_staff.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\viewoccupants.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:viewoccupants.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\UpdateNewStaffPage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UpdateNewStaffPage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\defaultoccupants.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:defaultoccupants.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewStaffPage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:AddNewStaffPage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewStaffPage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:AddNewStaffPage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\27685\\documents\\github\\cmpg223_group20project\\cmpg223_project\\donationsreport.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:donationsreport.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\27685\\documents\\github\\cmpg223_group20project\\cmpg223_project\\donationsreport.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:donationsreport.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\27685\\documents\\github\\cmpg223_group20project\\cmpg223_project\\displaymedical.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:displaymedical.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\27685\\documents\\github\\cmpg223_group20project\\cmpg223_project\\displaymedical.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:displaymedical.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\displaypatientinfo.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:displaypatientinfo.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\displaypatientinfo.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:displaypatientinfo.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\27685\\documents\\github\\cmpg223_group20project\\cmpg223_project\\webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:webform1.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\27685\\documents\\github\\cmpg223_group20project\\cmpg223_project\\webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:webform1.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\27685\\documents\\github\\cmpg223_group20project\\cmpg223_project\\findpatient.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:findpatient.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\medicalreport.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:medicalreport.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\medicalreport.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:medicalreport.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\addnewpatient.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:addnewpatient.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\addnewpatient.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:addnewpatient.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\findpatient.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:findpatient.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\RemoveStaff.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:RemoveStaff.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\UpdateNewStaffPage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:UpdateNewStaffPage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\RemoveStaffPage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:RemoveStaffPage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\defaultoccupants.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:defaultoccupants.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     }
   ],
   "DocumentGroupContainers": [
@@ -106,318 +34,88 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ReportOccupant.css",
+              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\ReportOccupant.css",
+              "RelativeDocumentMoniker": "ReportOccupant.css",
+              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\ReportOccupant.css*",
+              "RelativeToolTip": "ReportOccupant.css*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAD8AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-27T19:02:22.123Z",
+              "EditorCaption": ""
+            },
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "UpdateStaff.aspx",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\UpdateStaff.aspx",
-              "RelativeDocumentMoniker": "UpdateStaff.aspx",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\UpdateStaff.aspx",
-              "RelativeToolTip": "UpdateStaff.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Title": "ReportOccupant.aspx",
+              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\ReportOccupant.aspx",
+              "RelativeDocumentMoniker": "ReportOccupant.aspx",
+              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\ReportOccupant.aspx*",
+              "RelativeToolTip": "ReportOccupant.aspx*",
+              "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-27T17:02:55.895Z",
+              "WhenOpened": "2024-09-27T19:01:25.204Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "Maintain_Staff.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\Maintain_Staff.aspx.cs",
-              "RelativeDocumentMoniker": "Maintain_Staff.aspx.cs",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\Maintain_Staff.aspx.cs",
-              "RelativeToolTip": "Maintain_Staff.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T16:46:19.265Z",
+              "Title": "ViewOccupants.css",
+              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\ViewOccupants.css",
+              "RelativeDocumentMoniker": "ViewOccupants.css",
+              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\ViewOccupants.css",
+              "RelativeToolTip": "ViewOccupants.css",
+              "ViewState": "AgIAAEUAAAAAAAAAAAAowG4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-27T18:58:39.685Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "Maintain_Staff.aspx",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\Maintain_Staff.aspx",
-              "RelativeDocumentMoniker": "Maintain_Staff.aspx",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\Maintain_Staff.aspx",
-              "RelativeToolTip": "Maintain_Staff.aspx",
+              "Title": "ViewOccupants.aspx",
+              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\ViewOccupants.aspx",
+              "RelativeDocumentMoniker": "ViewOccupants.aspx",
+              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\ViewOccupants.aspx*",
+              "RelativeToolTip": "ViewOccupants.aspx*",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-27T16:45:38.934Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DisplayMedical.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DisplayMedical.aspx.cs",
-              "RelativeDocumentMoniker": "DisplayMedical.aspx.cs",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DisplayMedical.aspx.cs",
-              "RelativeToolTip": "DisplayMedical.aspx.cs",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T16:33:24.965Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "DisplayMedical.aspx",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DisplayMedical.aspx",
-              "RelativeDocumentMoniker": "DisplayMedical.aspx",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DisplayMedical.aspx",
-              "RelativeToolTip": "DisplayMedical.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-27T16:33:22.46Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "RemoveStaffPage.aspx",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\RemoveStaffPage.aspx",
-              "RelativeDocumentMoniker": "RemoveStaffPage.aspx",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\RemoveStaffPage.aspx",
-              "RelativeToolTip": "RemoveStaffPage.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-25T15:12:41.24Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "donationsReport.aspx",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\donationsReport.aspx",
-              "RelativeDocumentMoniker": "donationsReport.aspx",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\donationsReport.aspx",
-              "RelativeToolTip": "donationsReport.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-27T16:36:08.706Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UpdateNewStaffPage.aspx",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\UpdateNewStaffPage.aspx",
-              "RelativeDocumentMoniker": "UpdateNewStaffPage.aspx",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\UpdateNewStaffPage.aspx",
-              "RelativeToolTip": "UpdateNewStaffPage.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-25T15:10:20.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "donationsReport.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\donationsReport.aspx.cs",
-              "RelativeDocumentMoniker": "donationsReport.aspx.cs",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\donationsReport.aspx.cs",
-              "RelativeToolTip": "donationsReport.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T16:36:13.579Z",
+              "WhenOpened": "2024-09-27T18:57:32.645Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "AddNewStaffPage.aspx",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewStaffPage.aspx",
-              "RelativeDocumentMoniker": "AddNewStaffPage.aspx",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewStaffPage.aspx",
-              "RelativeToolTip": "AddNewStaffPage.aspx",
+              "Title": "DefaultOccupants.css",
+              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DefaultOccupants.css",
+              "RelativeDocumentMoniker": "DefaultOccupants.css",
+              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DefaultOccupants.css",
+              "RelativeToolTip": "DefaultOccupants.css",
+              "ViewState": "AgIAAHgAAAAAAAAAAAAAAJIAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2024-09-27T18:52:58.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "DefaultOccupants.aspx",
+              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DefaultOccupants.aspx",
+              "RelativeDocumentMoniker": "DefaultOccupants.aspx",
+              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DefaultOccupants.aspx",
+              "RelativeToolTip": "DefaultOccupants.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-25T15:07:19.841Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "AddNewStaffPage.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewStaffPage.aspx.cs",
-              "RelativeDocumentMoniker": "AddNewStaffPage.aspx.cs",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewStaffPage.aspx.cs",
-              "RelativeToolTip": "AddNewStaffPage.aspx.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAAQwBsAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T15:08:26.834Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "WebForm1.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\WebForm1.aspx.cs",
-              "RelativeDocumentMoniker": "WebForm1.aspx.cs",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\WebForm1.aspx.cs",
-              "RelativeToolTip": "WebForm1.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-27T16:23:06.869Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "WebForm1.aspx",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\WebForm1.aspx",
-              "RelativeDocumentMoniker": "WebForm1.aspx",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\WebForm1.aspx",
-              "RelativeToolTip": "WebForm1.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-27T16:23:02.508Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DisplayPatientInfo.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DisplayPatientInfo.aspx.cs",
-              "RelativeDocumentMoniker": "DisplayPatientInfo.aspx.cs",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DisplayPatientInfo.aspx.cs",
-              "RelativeToolTip": "DisplayPatientInfo.aspx.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAowBUAAAAXAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T17:27:38.61Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "FindPatient.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\FindPatient.aspx.cs",
-              "RelativeDocumentMoniker": "FindPatient.aspx.cs",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\FindPatient.aspx.cs",
-              "RelativeToolTip": "FindPatient.aspx.cs",
-              "ViewState": "AgIAADcAAAAAAAAAAAAUwB8AAAASAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T17:21:49.51Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "DisplayPatientInfo.aspx",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DisplayPatientInfo.aspx",
-              "RelativeDocumentMoniker": "DisplayPatientInfo.aspx",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DisplayPatientInfo.aspx",
-              "RelativeToolTip": "DisplayPatientInfo.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-25T17:31:43.676Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "MedicalReport.aspx",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\MedicalReport.aspx",
-              "RelativeDocumentMoniker": "MedicalReport.aspx",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\MedicalReport.aspx",
-              "RelativeToolTip": "MedicalReport.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-25T17:27:09.066Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "AddNewPatient.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewPatient.aspx.cs",
-              "RelativeDocumentMoniker": "AddNewPatient.aspx.cs",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewPatient.aspx.cs",
-              "RelativeToolTip": "AddNewPatient.aspx.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAIBJwCAAAAAQAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T17:23:59.915Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "MedicalReport.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\MedicalReport.aspx.cs",
-              "RelativeDocumentMoniker": "MedicalReport.aspx.cs",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\MedicalReport.aspx.cs",
-              "RelativeToolTip": "MedicalReport.aspx.cs",
-              "ViewState": "AgIAABEAAAAAAAAAAAAAwBoAAAA3AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T17:23:15.664Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AddNewPatient.aspx",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewPatient.aspx",
-              "RelativeDocumentMoniker": "AddNewPatient.aspx",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewPatient.aspx",
-              "RelativeToolTip": "AddNewPatient.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-25T17:24:01.468Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "FindPatient.aspx",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\FindPatient.aspx",
-              "RelativeDocumentMoniker": "FindPatient.aspx",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\FindPatient.aspx",
-              "RelativeToolTip": "FindPatient.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-25T17:22:41.47Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "RemoveStaffPage.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\RemoveStaffPage.aspx.cs",
-              "RelativeDocumentMoniker": "RemoveStaffPage.aspx.cs",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\RemoveStaffPage.aspx.cs",
-              "RelativeToolTip": "RemoveStaffPage.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T15:13:28.327Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "RemoveStaff.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\RemoveStaff.aspx.cs",
-              "RelativeDocumentMoniker": "RemoveStaff.aspx.cs",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\RemoveStaff.aspx.cs",
-              "RelativeToolTip": "RemoveStaff.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T15:12:15.933Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "UpdateNewStaffPage.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\UpdateNewStaffPage.aspx.cs",
-              "RelativeDocumentMoniker": "UpdateNewStaffPage.aspx.cs",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\UpdateNewStaffPage.aspx.cs",
-              "RelativeToolTip": "UpdateNewStaffPage.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T15:11:01.264Z",
+              "WhenOpened": "2024-09-27T18:46:00.439Z",
               "EditorCaption": ""
             }
           ]
