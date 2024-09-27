@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Configuration;
 
 namespace CMPG223_project
 {
@@ -43,7 +44,7 @@ namespace CMPG223_project
         {
             string query = "DELETE FROM Staff WHERE Staff_number = @staffNumber";
 
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString))
             {
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {

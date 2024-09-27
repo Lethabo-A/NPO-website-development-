@@ -28,7 +28,7 @@ namespace CMPG223_project
             //establish connection
             try
             {
-                conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+                conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
                 //conn = new SqlConnection(connectionString);
                 conn.Open();
             }

@@ -22,7 +22,7 @@ namespace CMPG223_project
         DataSet ds = new DataSet();
         protected void Page_Load(object sender, EventArgs e)
         {
-            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString); ;
+            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
             conn.Open();
             try
             {

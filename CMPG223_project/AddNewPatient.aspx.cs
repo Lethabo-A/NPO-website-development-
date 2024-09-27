@@ -29,7 +29,7 @@ namespace CMPG223_project
             //establish that connection to the database
             try
             {
-                conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+                conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
                 //conn = new SqlConnection(connectionString);
             }
             catch (SqlException ex)

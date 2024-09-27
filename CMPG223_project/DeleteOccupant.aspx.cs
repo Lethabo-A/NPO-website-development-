@@ -25,7 +25,7 @@ namespace CMPG223_project
         // Method to bind data to GridView
         private void BindGridView()
         {
-            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString))
             {
                 try
                 {

@@ -14,7 +14,7 @@ namespace CMPG223_project
     {
         /*
         //declaring gloabal vaariables 
-        SqlConnection con =  new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+        SqlConnection con =  new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
 
         protected void Page_Load(object sender, EventArgs e)
         {
