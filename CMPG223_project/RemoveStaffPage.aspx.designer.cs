@@ -33,31 +33,22 @@ namespace CMPG223_project
         protected global::System.Web.UI.WebControls.Label Label3;
 
         /// <summary>
-        /// HyperLink2 control.
+        /// lblRemove control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.HyperLink HyperLink2;
+        protected global::System.Web.UI.WebControls.Label lblRemove;
 
         /// <summary>
-        /// lblRemoveMessage control.
+        /// gridRemove control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblRemoveMessage;
-
-        /// <summary>
-        /// GridView1 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.GridView GridView1;
+        protected global::System.Web.UI.WebControls.GridView gridRemove;
 
         /// <summary>
         /// Label2 control.
@@ -69,13 +60,13 @@ namespace CMPG223_project
         protected global::System.Web.UI.WebControls.Label Label2;
 
         /// <summary>
-        /// txtDeleteStaff control.
+        /// txtRemove control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtDeleteStaff;
+        protected global::System.Web.UI.WebControls.TextBox txtRemove;
 
         /// <summary>
         /// btnDeleteStaff control.
@@ -85,5 +76,14 @@ namespace CMPG223_project
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btnDeleteStaff;
+
+        /// <summary>
+        /// btnBack control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Button btnBack;
     }
 }

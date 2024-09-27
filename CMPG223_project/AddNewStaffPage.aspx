@@ -24,19 +24,16 @@
         <div>
             <asp:Label ID="Label3" runat="server" Text="Name:"></asp:Label>
             <asp:TextBox ID="txtName" runat="server"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="txtName" ErrorMessage="Enter name!" ForeColor="Red"></asp:RequiredFieldValidator>
         </div>
 
         <div>
             <asp:Label ID="Label4" runat="server" Text="Surname:"></asp:Label>
             <asp:TextBox ID="txtSurname" runat="server"></asp:TextBox>
-            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="txtSurname" ErrorMessage="Enter surname!" ForeColor="Red"></asp:RequiredFieldValidator>
         </div>
 
         <div>
             <asp:Label ID="Label5" runat="server" Text="Contact number:"></asp:Label>
             <asp:TextBox ID="txtContact" runat="server"></asp:TextBox>
-            <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="txtContact" ErrorMessage="Enter 10 digits!" ForeColor="Red"></asp:RangeValidator>
         </div>
 
         <div>

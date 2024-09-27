@@ -18,32 +18,36 @@ namespace CMPG223_project
             {
                 BindGridView();
             }
+            lblRemove.Visible = false;
         }
 
         protected void Button1_Click(object sender, EventArgs e)
         {
-            //delete staff 
-            //input validation
-            int staffNumber;
-            if (int.TryParse(txtDeleteStaff.Text, out staffNumber))
+            lblRemove.Visible = true;
+            //initializing variables 
+            string staffNum = txtRemove.Text.Trim();
+
+            //validation
+            if (string.IsNullOrEmpty(staffNum))
             {
-                Remove_Staff(staffNumber);
+                lblRemove.ForeColor = System.Drawing.Color.Red;
+                lblRemove.Text = "Please enter the staff number of staff you want to remove.";
+                return;
+
             }
-            else
-            {
-                lblRemoveMessage.Text = "Please enter a valid Staff Number.";
-            }
+            //removing staff
+            removeStaff(staffNum);
         }
 
-        private void Remove_Staff(int Staff_number)
+        private void removeStaff(string staffNum)
         {
-            string query = "DELETE FROM staff WHERE Staff_number = @staffNumber";
+            string query = "DELETE FROM Staff WHERE Staff_number = @staffNumber";
 
             using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 using (SqlCommand cmd = new SqlCommand(query, conn))
                 {
-                    cmd.Parameters.AddWithValue("@staffNumber", Staff_number);
+                    cmd.Parameters.AddWithValue("@staffNumber", staffNum);
 
                     try
                     {
@@ -51,42 +55,60 @@ namespace CMPG223_project
                         int rowsAffected = cmd.ExecuteNonQuery();
                         if (rowsAffected > 0)
                         {
-                            lblRemoveMessage.Text = "Staff removed successfully!";
+                            lblRemove.ForeColor = System.Drawing.Color.Green;
+                            lblRemove.Text = "Staff removed successfully!";
                         }
                         else
                         {
-                            lblRemoveMessage.Text = "Staff number not found.";
+                            lblRemove.ForeColor = System.Drawing.Color.Red;
+                            lblRemove.Text = "Staff number not found.";
                         }
+                        BindGridView();
                     }
                     catch (Exception ex)
                     {
-                        lblRemoveMessage.Text = $"Error: {ex.Message}";
+                        lblRemove.ForeColor = System.Drawing.Color.Red;
+                        lblRemove.Text = $"Error: {ex.Message}";
                     }
+
                 }
             }
         }
+
+        protected void btnBack_Click(object sender, EventArgs e)
+        {
+            //go back to maintain staff page
+            Response.Redirect("Maintain_staff.aspx");
+        }
+
+
 
         //method to bind data to GridView
         private void BindGridView()
         {
-            using (SqlConnection con = new SqlConnection(connectionString))
+            using (SqlConnection conn = new SqlConnection(connectionString))
             {
                 try
                 {
-                    con.Open();
-                    SqlCommand cmd = new SqlCommand("SELECT * FROM Staff", con);
+                    conn.Open();
+                    string query = "SELECT* FROM Staff";
+                    SqlCommand cmd = new SqlCommand(query, conn);
                     SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                     DataTable dt = new DataTable();
                     adapter.Fill(dt);
-                    GridView1.DataSource = dt;
-                    GridView1.DataBind();
+                    gridRemove.DataSource = dt;
+                    gridRemove.DataBind();
+
                 }
                 catch (Exception ex)
                 {
-                    lblRemoveMessage.Text = "Error: " + ex.Message;
+                    lblRemove.ForeColor = System.Drawing.Color.Red;
+                    lblRemove.Text = "Error:" + ex.Message;
                 }
             }
-
         }
     }
-}
+
+
+} 
+

@@ -9,109 +9,176 @@ using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Xml.Linq;
+using System.Security.Cryptography;
+using System.Text;
 
 namespace CMPG223_project
 {
     public partial class UpdateStaff : System.Web.UI.Page
     {
-        private string connectionString = "";
+        private string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\User\\Documents\\CMPG213\\staffMaintain\\newStaff\\App_Data\\Database1.mdf;Integrated Security=True";
         protected void Page_Load(object sender, EventArgs e)
         {
-            if(!IsPostBack)
+            if (!IsPostBack)
             {
                 BindGridView();
             }
+            lblMessage.Visible = false;
         }
 
-        protected void btnRemoveStaff_Click(object sender, EventArgs e)
+
+        //mehtod to bind data to gridview
+        private void BindGridView()
         {
-            //redirect to remove staff page 
-            Response.Redirect("RemoveStaff.aspx");
+            using (SqlConnection conn = new SqlConnection(connectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "SELECT* FROM Staff";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    gridUpdate.DataSource = dt;
+                    gridUpdate.DataBind();
+
+                }
+                catch (Exception ex)
+                {
+                    lblMessage.Text = "Error:" + ex.Message;
+                }
+            }
+        }
+
+        //method to determine which field was choosen
+        private string selectedField()
+        {
+            return rblFields.SelectedValue;
+
+        }
+        //Method to hash the password 
+        private string Hashedpassword(string password)
+        {
+            using (SHA256 sha256Hash = SHA256.Create())
+            {
+                //compute hash returns byte array
+                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
+
+                //convert byte array to a string
+                StringBuilder builder = new StringBuilder();
+                for (int i = 0; i < bytes.Length; i++)
+                {
+                    builder.Append(bytes[i].ToString("x2"));
+
+                }
+                return builder.ToString();
+            }
+        }
+        //method to handle update operation
+        private void updateStaff(string newValue, string fieldToUpdate, string staffNum)
+        {
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(connectionString))
+                {
+                    conn.Open();
+                    string query = $"UPDATE Staff SET [{fieldToUpdate}]=@NewValue WHERE Staff_number=@staffNumber";
+                    using (SqlCommand cmd = new SqlCommand(query, conn))
+                    {
+                        //input validation
+                        if (fieldToUpdate == "Password" && !string.IsNullOrEmpty(newValue))
+                        {
+                            newValue = Hashedpassword(newValue);
+
+                        }
+
+
+                        cmd.Parameters.AddWithValue("@NewValue", newValue);
+                        cmd.Parameters.AddWithValue("@staffNumber", staffNum);
+
+                        try
+                        {
+                            int rowsAffected = cmd.ExecuteNonQuery();
+                            if (rowsAffected > 0)
+                            {
+                                lblMessage.ForeColor = System.Drawing.Color.Green;
+                                lblMessage.Text = "Staff details updated successfully!";
+                            }
+                            else
+                            {
+                                lblMessage.ForeColor = System.Drawing.Color.Red;
+                                lblMessage.Text = "Staff number not found.";
+                            }
+                            BindGridView();
+
+                        }
+                        catch (Exception ex)
+                        {
+                            lblMessage.ForeColor = System.Drawing.Color.Red;
+                            lblMessage.Text = "Error updating staff details." + ex.Message;
+                        }
+
+
+
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                lblMessage.Text = "Error:" + ex.Message;
+            }
+
+        }
+
+        protected void btnBack_Click(object sender, EventArgs e)
+        {
+            //go back to maintain staff page 
+            Response.Redirect("Maintain_staff.aspx");
         }
 
         protected void btnUpdateStaff_Click(object sender, EventArgs e)
         {
-            int staffNumber;
-            if (int.TryParse(txtIdUpdate.Text, out staffNumber) && IsFieldSelected())
-            {
-                string selectedField = GetSelectedField();
-                string updatedDetail = txtUpdated.Text;
+            lblMessage.Visible = true;
+            string fieldToUpdate = selectedField();
+            string staffNum = txtNum.Text.Trim();
+            string newValue = txtUpdated.Text.Trim();
 
-                UpdateStaffDetail(staffNumber, selectedField, updatedDetail);
+            //check if all fields are not empty
+            if (string.IsNullOrEmpty(staffNum))
+            {
+                lblMessage.ForeColor = System.Drawing.Color.Red;
+                lblMessage.Text = "Please enter staff number, select a field to update and enter new value";
+                return;
             }
-            else
+            if (string.IsNullOrEmpty(newValue))
             {
-                lblMessage.Text = "Please enter a valid Staff Number and select a field.";
+                lblMessage.ForeColor = System.Drawing.Color.Red;
+                lblMessage.Text = "Please enter the updated detsils.";
             }
-        }
-
-        private bool IsFieldSelected()
-        {
-            return rbName.Checked || rbSurname.Checked || rbContactNumber.Checked || rbAddress.Checked;
-        }
-
-        private string GetSelectedField()
-        {
-            if (rbName.Checked) return "Name";
-            if (rbSurname.Checked) return "Surname";
-            if (rbContactNumber.Checked) return "Contact_number";
-            if (rbAddress.Checked) return "HomeAddress";
-            return null;
-        }
-
-        private void UpdateStaffDetail(int staffNumber, string field, string newValue)
-        {
-            string query = $"UPDATE staff SET {field} = @newValue WHERE Staff_number = @staffNumber";
-
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            if (fieldToUpdate == "Contact_number")
             {
-                using (SqlCommand cmd = new SqlCommand(query, conn))
+                bool isDigit = int.TryParse(newValue, out _);
+                if (string.IsNullOrEmpty(newValue) || newValue.Length != 10 || !isDigit)
                 {
-                    cmd.Parameters.AddWithValue("@newValue", newValue);
-                    cmd.Parameters.AddWithValue("@staffNumber", staffNumber);
-
-                    try
-                    {
-                        conn.Open();
-                        int rowsAffected = cmd.ExecuteNonQuery();
-                        if (rowsAffected > 0)
-                        {
-                            lblMessage.Text = "Staff details updated successfully!";
-                        }
-                        else
-                        {
-                            lblMessage.Text = "Staff number not found.";
-                        }
-                    }
-                    catch (Exception ex)
-                    {
-                        lblMessage.Text = $"Error: {ex.Message}";
-                    }
+                    lblMessage.ForeColor = System.Drawing.Color.Red;
+                    lblMessage.Text = "Please enter a valid 10 digit number";
+                    return;
                 }
             }
-        }
-
-
-        //method to bind data to GridView
-        private void BindGridView()
-        {
-            using (SqlConnection con = new SqlConnection(connectionString))
+            if (fieldToUpdate == "Name" || fieldToUpdate == "Surname")
             {
-                try
+                bool isDigit = int.TryParse(newValue, out _);
+                if (isDigit)
                 {
-                    con.Open();
-                    SqlCommand cmd = new SqlCommand("SELECT * FROM Staff", con);
-                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
-                    DataTable dt = new DataTable();
-                    adapter.Fill(dt);
-                    GridView1.DataSource = dt;
-                    GridView1.DataBind();
-                }
-                catch (Exception ex)
-                {
-                    lblMessage.Text = "Error: " + ex.Message;
+                    lblMessage.ForeColor = System.Drawing.Color.Red;
+                    lblMessage.Text = "Please enter non-numeric values";
+                    return;
                 }
             }
+
+            //updatinf staff details
+            updateStaff(newValue, fieldToUpdate, staffNum);
 
         }
     }
