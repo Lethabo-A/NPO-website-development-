@@ -10,151 +10,222 @@
     <link href="FinancialReports.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
 
-        .form{
+        /* Create two unequal columns that floats next to each other */
+        /* Left column */
+        .leftcolumn {   
+          float: left;
+          width: 75%;
+        }
+
+        /* Right column */
+        .rightcolumn {
+          float: left;
+          width: 25%;
+          background-color: #f1f1f1;
+          padding-left: 20px;
+        }
+
+        /* Add a card effect for articles */
+        .card {
+          background-color: lightgrey;
+          padding: 20px;
+          margin-top: 20px;
+          border-radius: 15px;
+        }
+        .grids {
+            align-content: center;
+        }
+        /* Clear floats after the columns */
+        .row::after {
+          content: "";
+          display: table;
+          clear: both;
+        }
+
+        
+        .header {
+            background-color: mediumpurple;
+            text-align: center;
+            color: aliceblue;
+            font-size: 25px;
+            text-transform: uppercase;
+            padding: 6px;
+            border-radius: 0.5px;
+        }
+
+        .topnav {
+            border-radius: 0px;
+            overflow: hidden;
+            background-color: black;
+        }
+
+            .topnav a {
+                font-size: 10px;
+                float: left;
+                display: block;
+                color: #f2f2f2;
+                text-align: center;
+                padding: 14px 16px;
+                text-decoration: none;
+            }
+
+                .topnav a:hover {
+                    background-color: #ddd;
+                    color: black;
+                }
+
+        .footer {
+            border-spacing: 20px;
+            background-color: #f1f1f1;
+            padding: 10px;
+            text-align: center;
+            font-size: 10px;
+            margin-bottom: 10px;
+            color: black;
+        }
+    	.auto-style1 {
+			height: 107px;
+		}
+        /* Form design */
+        .form-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+            color: #4a148c;
+            font-size: 24px;
+            text-align:center;
+        }
+        h2 {
+            margin-bottom: 25px;
+            color: #4a148c;
+            font-size: 24px;
+            text-align:center;
+        }
+        form {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 900px;
+            text-align: center;
+            animation: fadeIn 0.7s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
+
+            form::before {
+                content: '';
+                position: absolute;
+                top: -20px;
+                left: -20px;
+                right: -20px;
+                bottom: -20px;
+                background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.5));
+                z-index: -1;
+                border-radius: 10px;
+            }
+
+            form div {
+                text-align: left;
+                position: relative;
+                padding-left: 20px;
+                margin-bottom: 15px; /* Ensures consistent spacing between fields */
+            }
+            /* Create three equal columns that floats next to each other */
+            .column {
+                  
+                  
+                  float: left;
+                  width: 33.33%;
+                  padding: 20px;
+            }
+
+            /* Clear floats after the columns */
+            .row::after {
+              content: "";
+              display: table;
+              clear: both;
+            }
+
+            /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+            @media screen and (max-width:900px) {
+                .column {
+                    width: 100%;
+                }
+            }
+            .chartCenter{
+                display: flex;
+                justify-content: center;
                 align-content: center;
-             }
-        .auto-style3 {
-            width: 113px;
-            height: 108px;
-             }
-        .auto-style4 {
-            font-size: xx-large;
-            position:center;
-        }
-        .auto-style5 {
-            font-size: x-large;
-        }
-        .auto-style6 {
-            width: 677px;
-        }
-        .auto-style7 {
-            height: 23px;
-        }
-        .auto-style8 {
-            width: 534px;
-        }
-        .auto-style9 {
-            height: 23px;
-            width: 534px;
-        }
+            }
     </style>
 </head>
 <body>
+    <div class="header">
+        <img src="images/NGOs.png" alt="logo" class="auto-style1" />&nbsp;<h1>Financial Reports</h1>
+    </div>
+
+    <div class="topnav">
+        <a href="Financial_Page_Formaspx.aspx">Back</a>
+        <a href="WebForm1.aspx">Logout</a>
+    </div>
+    <div class="form-container">
     <form id="form1" runat="server">
-
-        <div class="header">
-            <img src="images/NGOs.png" alt="logo" class="auto-style3" />&nbsp;<h1>Financial Reports</h1>
-        </div>
-
-        <div class="topnav">
-            <a href="Financial_Page_Formaspx.aspx">Back</a>
-            <a href="WebForm1.aspx">Logout</a>
-        </div>
-
-        <div>
-            <br />
-            <br />
-            <br />
-            <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="Label1" runat="server" CssClass="auto-style4" Text="Expenses VS Income"></asp:Label>
-            </strong>
-            <br />
-            <br />
-            <table style="width:100%;">
-                <tr>
-                    <td class="auto-style6">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </strong></td>
-                    <td>&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style6"><strong>
-                        <asp:Label ID="Label2" runat="server" CssClass="auto-style5" Text="Expenses"></asp:Label>
-                        </strong></td>
-                    <td><strong>
-                        <asp:Label ID="Label3" runat="server" CssClass="auto-style5" Text="Income"></asp:Label>
-                        </strong></td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style6">
-                        <asp:GridView ID="GridView1" runat="server" Height="520px" Width="442px">
-                        </asp:GridView>
-                    </td>
-                    <td>
-                        <asp:GridView ID="GridView2" runat="server" Height="493px" Width="353px">
-                        </asp:GridView>
-                    </td>
-                    <td>&nbsp;</td>
-                </tr>
-            </table>
-            <br />
-            <br />
-            <table style="width:100%;">
-                <tr>
-                    <td class="auto-style8"><strong>
-                        <asp:Label ID="Label4" runat="server" CssClass="auto-style5" Text="Chart for Expenses"></asp:Label>
-                        </strong></td>
-                    <td><strong>
-                        <asp:Label ID="Label5" runat="server" CssClass="auto-style5" Text="Chart for Income"></asp:Label>
-                        </strong></td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style8">
-                        <asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource2">
-                            <series>
-                                <asp:Series ChartType="Pie" Name="Series1" XValueMember="Expense_Category" YValueMembers="Expense_Amount">
-                                </asp:Series>
-                            </series>
-                            <chartareas>
-                                <asp:ChartArea Name="ChartArea1">
-                                </asp:ChartArea>
-                            </chartareas>
-                        </asp:Chart>
-                        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionStringMain %>" SelectCommand="SELECT [Expense_Category], [Expense_Amount] FROM [Add_Expense_Table]"></asp:SqlDataSource>
-                    </td>
-                    <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:Chart ID="Chart2" runat="server" DataSourceID="SqlDataSource1">
-                            <series>
-                                <asp:Series ChartType="Pie" Name="Series1" XValueMember="Income_Category" YValueMembers="Income_Amount">
-                                </asp:Series>
-                            </series>
-                            <chartareas>
-                                <asp:ChartArea Name="ChartArea1">
-                                </asp:ChartArea>
-                            </chartareas>
-                        </asp:Chart>
-                    </td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style9"></td>
-                    <td class="auto-style7"></td>
-                    <td class="auto-style7"></td>
-                </tr>
-            </table>
-            <br />
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionStringMain %>" SelectCommand="SELECT [Income_Category], [Income_Amount] FROM [Add_Income_Table]"></asp:SqlDataSource>
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-            <br />
-        </div>
-
         
+        <div>
+            <h2>Expenses VS Income</h2>
+        </div>
 
+        <div class="card">
+            <h1>Expenses</h1>
+             <asp:GridView ID="GridView1" CssClass="grids" runat="server"></asp:GridView>
+        </div>
+
+        <div class="card">
+            <h1>Income</h1>
+            <asp:GridView ID="GridView2" CssClass="grids" runat="server"></asp:GridView>
+        </div>
+         
+        <div>
+            
+            
+        </div>
+                    
+        <div class="column">
+            <h2>Chart for expenses</h2>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;
+            <asp:Chart ID="Chart1" runat="server" CssClass="chartCenter" DataSourceID="SqlDataSource2">
+                <series>
+                    <asp:Series ChartType="Pie" Name="Series1" XValueMember="Expense_Category" YValueMembers="Expense_Amount"></asp:Series>
+                </series>
+                <chartareas>
+                    <asp:ChartArea Name="ChartArea1"></asp:ChartArea>
+                </chartareas>
+            </asp:Chart>
+            <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionStringMain %>" SelectCommand="SELECT [Expense_Category], [Expense_Amount] FROM [Add_Expense_Table]"></asp:SqlDataSource>        
+        </div>               
+        <div class="column">
+            <h2>Chart for income</h2>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;
+            <asp:Chart ID="Chart2" runat="server" CssClass="chartCenter" DataSourceID="SqlDataSource1">
+                <series>
+                   <asp:Series ChartType="Pie" Name="Series1" XValueMember="Income_Category" YValueMembers="Income_Amount" ChartArea="ChartArea1"></asp:Series>
+                </series>
+                <chartareas>
+                   <asp:ChartArea Name="ChartArea1"></asp:ChartArea>
+                </chartareas>
+            </asp:Chart>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionStringMain %>" SelectCommand="SELECT [Income_Category], [Income_Amount] FROM [Add_Income_Table]"></asp:SqlDataSource>
+        </div>
     </form>
-
+    </div>
     <div class="footer">
             <p>Copyright © 2024 NGOs office Company. All rights reserved.</p>
         </div>

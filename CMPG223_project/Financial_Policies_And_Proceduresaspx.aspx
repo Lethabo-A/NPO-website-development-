@@ -95,12 +95,12 @@
             <p>6. Financial Report Template</p>
 
             <h1>Best Practices:</h1>
-            <p1>. Transparency and accountability</p1>
-            <p1>2. Regular financial reporting and monitoring</p1>
-            <p1>3. Internal and external audits</p1>
-            <p1>4. Compliance with laws and regulations</p1>
-            <p1>5. Risk management and internal controls</p1>
-            <p1>6. Financial planning and budgeting</p1>
+            <p>1. Transparency and accountability</p>
+            <p>2. Regular financial reporting and monitoring</p>
+            <p>3. Internal and external audits</p>
+            <p>4. Compliance with laws and regulations</p>
+            <p>5. Risk management and internal controls</p>
+            <p>6. Financial planning and budgeting</p>
 
         </div>
 
