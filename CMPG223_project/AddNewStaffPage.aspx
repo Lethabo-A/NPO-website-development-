@@ -11,6 +11,13 @@
         <h2>Add New Staff</h2>
         <asp:Label ID="lblOutput" runat="server" Text="[Output]"></asp:Label>
         
+
+         <div>
+     <asp:Label ID="Label2" runat="server" Text="ID number:"></asp:Label>
+     <asp:TextBox ID="txtID" runat="server"></asp:TextBox>
+ </div>
+
+
         <div>
             <asp:Label ID="Label9" runat="server" Text="Choose department you work for:"></asp:Label>
             <asp:DropDownList ID="staffDepart" runat="server" CssClass="dropdown-style">
