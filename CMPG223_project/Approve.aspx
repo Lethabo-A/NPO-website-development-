@@ -168,6 +168,7 @@
                 cursor: pointer;
                 transition: background-color 0.3s, box-shadow 0.3s;
                 width: calc(100% - 20px);
+                border-radius: 25px;
             }
 
             .btnNext {
@@ -178,6 +179,35 @@
                 background-color: #7b1fa2;
                 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             }
+            .topnav {
+                border-radius: 0.5px;
+                overflow: hidden;
+                background-color: black;
+            }
+
+                .topnav a {
+                    font-size: 10px;
+                    float: left;
+                    display: block;
+                    color: white;
+                    background-color: brown;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+                }
+
+                    .topnav a:hover {
+                        background-color: #ddd;
+                        color: black;
+                    }
+                    .topnav a.active {
+            background-color: #04AA6D;
+            color: white;
+        }
+
+        .topnav-right {
+            float: right;
+        }
     </style>
 </head>
 <body>
@@ -186,8 +216,10 @@
      </div>
 
      <div class="topnav">
-         <a href="DefaultOccupants.aspx">Back</a>
          <a href="WebForm1.aspx">Logout</a>
+         <div class="topnav-right">
+             <a href="DefaultOccupants.aspx">Back</a>
+         </div>
      </div>
      <div>
          <asp:Label ID="lblMessage" runat="server"></asp:Label>
@@ -230,11 +262,11 @@
           <h1>Under Criminal Background:</h1>
           <p>Conduct a criminal background check to ensure they do not pose any safety risks to other residents.</p>
           <h1>Under Social History:</h1>
-          <p>Assess thier social background , including any history of violence , substance abuse , or behavioral issues.</p>
+          <p>Assess their social background , including any history of violence , substance abuse , or behavioral issues.</p>
           <h1>Immunization:</h1>
           <p>Confirm they have necessary vaccinations , especially if they will be living with others in close quaters.</p>
           <h1>Mediacal record:</h1>
-          <p>all available mediacal records have been checked.</p>
+          <p>all available medical records have been checked.</p>
           <h1>Risk Assessment:</h1>
           <p>Assess the potential risks they may pose to themselves or others.</p>
         </div>
