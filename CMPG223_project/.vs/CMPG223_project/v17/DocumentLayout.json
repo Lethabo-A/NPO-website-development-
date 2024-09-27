@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewStaffPage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:AddNewStaffPage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewStaffPage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:AddNewStaffPage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\27685\\documents\\github\\cmpg223_group20project\\cmpg223_project\\donationsreport.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:donationsreport.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -77,14 +85,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\RemoveStaffPage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
       "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:RemoveStaffPage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewStaffPage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:AddNewStaffPage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewStaffPage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:AddNewStaffPage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -94,11 +94,11 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
               "Title": "donationsReport.aspx.cs",
               "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\donationsReport.aspx.cs",
               "RelativeDocumentMoniker": "donationsReport.aspx.cs",
@@ -111,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "donationsReport.aspx",
               "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\donationsReport.aspx",
               "RelativeDocumentMoniker": "donationsReport.aspx",
@@ -124,7 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "DisplayMedical.aspx.cs",
               "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DisplayMedical.aspx.cs",
               "RelativeDocumentMoniker": "DisplayMedical.aspx.cs",
@@ -137,7 +137,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "DisplayMedical.aspx",
               "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DisplayMedical.aspx",
               "RelativeDocumentMoniker": "DisplayMedical.aspx",
@@ -150,7 +150,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 0,
+              "Title": "AddNewStaffPage.aspx",
+              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewStaffPage.aspx",
+              "RelativeDocumentMoniker": "AddNewStaffPage.aspx",
+              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewStaffPage.aspx",
+              "RelativeToolTip": "AddNewStaffPage.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-09-25T15:07:19.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AddNewStaffPage.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewStaffPage.aspx.cs",
+              "RelativeDocumentMoniker": "AddNewStaffPage.aspx.cs",
+              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewStaffPage.aspx.cs",
+              "RelativeToolTip": "AddNewStaffPage.aspx.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwBsAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T15:08:26.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
               "Title": "WebForm1.aspx.cs",
               "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\WebForm1.aspx.cs",
               "RelativeDocumentMoniker": "WebForm1.aspx.cs",
@@ -163,7 +189,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "WebForm1.aspx",
               "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\WebForm1.aspx",
               "RelativeDocumentMoniker": "WebForm1.aspx",
@@ -176,7 +202,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "DisplayPatientInfo.aspx.cs",
               "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DisplayPatientInfo.aspx.cs",
               "RelativeDocumentMoniker": "DisplayPatientInfo.aspx.cs",
@@ -189,7 +215,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "FindPatient.aspx.cs",
               "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\FindPatient.aspx.cs",
               "RelativeDocumentMoniker": "FindPatient.aspx.cs",
@@ -202,7 +228,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "DisplayPatientInfo.aspx",
               "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DisplayPatientInfo.aspx",
               "RelativeDocumentMoniker": "DisplayPatientInfo.aspx",
@@ -215,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "MedicalReport.aspx",
               "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\MedicalReport.aspx",
               "RelativeDocumentMoniker": "MedicalReport.aspx",
@@ -228,7 +254,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "AddNewPatient.aspx.cs",
               "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewPatient.aspx.cs",
               "RelativeDocumentMoniker": "AddNewPatient.aspx.cs",
@@ -241,7 +267,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "MedicalReport.aspx.cs",
               "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\MedicalReport.aspx.cs",
               "RelativeDocumentMoniker": "MedicalReport.aspx.cs",
@@ -254,7 +280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "AddNewPatient.aspx",
               "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewPatient.aspx",
               "RelativeDocumentMoniker": "AddNewPatient.aspx",
@@ -267,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "FindPatient.aspx",
               "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\FindPatient.aspx",
               "RelativeDocumentMoniker": "FindPatient.aspx",
@@ -280,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "RemoveStaffPage.aspx.cs",
               "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\RemoveStaffPage.aspx.cs",
               "RelativeDocumentMoniker": "RemoveStaffPage.aspx.cs",
@@ -293,7 +319,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "RemoveStaffPage.aspx",
               "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\RemoveStaffPage.aspx",
               "RelativeDocumentMoniker": "RemoveStaffPage.aspx",
@@ -306,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "RemoveStaff.aspx.cs",
               "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\RemoveStaff.aspx.cs",
               "RelativeDocumentMoniker": "RemoveStaff.aspx.cs",
@@ -319,7 +345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "UpdateNewStaffPage.aspx.cs",
               "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\UpdateNewStaffPage.aspx.cs",
               "RelativeDocumentMoniker": "UpdateNewStaffPage.aspx.cs",
@@ -332,7 +358,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "UpdateNewStaffPage.aspx",
               "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\UpdateNewStaffPage.aspx",
               "RelativeDocumentMoniker": "UpdateNewStaffPage.aspx",
@@ -341,32 +367,6 @@
               "LogicalView": "7651a702-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
               "WhenOpened": "2024-09-25T15:10:20.258Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "AddNewStaffPage.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewStaffPage.aspx.cs",
-              "RelativeDocumentMoniker": "AddNewStaffPage.aspx.cs",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewStaffPage.aspx.cs",
-              "RelativeToolTip": "AddNewStaffPage.aspx.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAACYAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-25T15:08:26.834Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "AddNewStaffPage.aspx",
-              "DocumentMoniker": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewStaffPage.aspx",
-              "RelativeDocumentMoniker": "AddNewStaffPage.aspx",
-              "ToolTip": "C:\\Users\\27685\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\AddNewStaffPage.aspx",
-              "RelativeToolTip": "AddNewStaffPage.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-25T15:07:19.841Z",
               "EditorCaption": ""
             }
           ]
