@@ -31,10 +31,10 @@
     <div class="form-container">
         <form id="form1" runat="server">
             <h1>Add expense details below:</h1>
-			<p>&nbsp;</p>
+			
             <div>
                 <asp:Label ID="Label9" runat="server" Text="Choose a category:"></asp:Label>
-                <asp:DropDownList ID="DropDownList1" runat="server" CssClass="dropdown-style">
+                <asp:DropDownList ID="DropDownList1" runat="server" CssClass="dropdown-style" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
                     <asp:ListItem>Choose your option...</asp:ListItem>
                     <asp:ListItem>Administrative Expenses</asp:ListItem>
                     <asp:ListItem>Fundraising Expenses</asp:ListItem>

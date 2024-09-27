@@ -28,6 +28,10 @@ namespace CMPG223_project
             {
                 Response.Redirect("Expense report.aspx");
             }
+            else if (DropDownList4.SelectedIndex == 2)
+            {
+                Response.Redirect("Edit_Expenses.aspx");
+            }
         }
 
         protected void DropDownList5_SelectedIndexChanged(object sender, EventArgs e)
@@ -35,16 +39,7 @@ namespace CMPG223_project
             string add_income = DropDownList4.SelectedItem.ToString();
             if (DropDownList5.SelectedIndex == 1)
             {
-                /*
-                Add_Expense_Form add_Expense_Form = new Add_Expense_Form();
-                add_Expense_Form.changeLabel1("Adding Income");
-                add_Expense_Form.changeLabel2("Income category:");
-                add_Expense_Form.changeLabel6("Income name");
-                add_Expense_Form.changeLabel5("Date of income");
-                add_Expense_Form.hide_add_expense_button();
-                */
-
-                //Label1.Text = "sdeafgdfgdsfgd";
+                
                 Response.Redirect("Add_Income_Form.aspx");
             }
             else if (DropDownList5.SelectedIndex == 3)
@@ -54,6 +49,10 @@ namespace CMPG223_project
             else if (DropDownList5.SelectedIndex == 4)
             {
                 Response.Redirect("Donations.aspx");
+            }
+            else if (DropDownList5.SelectedIndex == 2)
+            {
+                Response.Redirect("Edit_Income.aspx");
             }
         }
 
