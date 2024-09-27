@@ -58,7 +58,8 @@ namespace CMPG223_project
 
         protected void DropDownList3_SelectedIndexChanged(object sender, EventArgs e)
         {
-            if(DropDownList3.SelectedIndex == 0)
+            Response.Redirect("Financial Reports.aspx");
+            if (DropDownList3.SelectedIndex == 0)
             {
                 Response.Redirect("Financial Reports.aspx");
             }
@@ -75,13 +76,15 @@ namespace CMPG223_project
 
         }
 
-        protected void DropDownList7_SelectedIndexChanged(object sender, EventArgs e)
+        protected void DropDownList7_SelectedIndexChanged1(object sender, EventArgs e)
         {
+            Response.Redirect("Financial_Policies_And_Proceduresaspx.aspx");
             if (DropDownList7.SelectedIndex == 1)
             {
 
-                Response.Redirect("Financial_Policies_And_Procedures.aspx");
+                Response.Redirect("Financial_Policies_And_Proceduresaspx.aspx");
             }
         }
+
     }
 }

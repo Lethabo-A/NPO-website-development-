@@ -1,31 +1,34 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Financial_Page_Form.aspx.cs" Inherits="CMPG223_project.Financial_Page_Form" %>
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="Financial_Page_Formaspx.aspx.cs" Inherits="CMPG223_project.Financial_Page_Formaspx" %>
 
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Finance</title>
-    <link href="Financial_Page.css" rel="stylesheet" type="text/css" />
+    <link href="FinancialP.css" rel="stylesheet" type="text/css" />
 
     <style type="text/css">
-        .auto-style1 {
-            height: 105px;
+        .form{
+	        align-content: center;
+        }
+        .auto-style3 {
+	        width: 113px;
+	        height: 108px;
         }
     </style> 
 </head>
     
 <body>
     <div class="header">
-        <img src="images/NGOs.png" alt="logo" class="auto-style1" />&nbsp;<h1>Financial Information</h1>
+        <img src="images/NGOs.png" alt="logo" class="auto-style3" />&nbsp;<h1>Financial Information</h1>
     </div>
 
     <div class="topnav">
-        <a href="Financial_Page_Form.aspx">Back</a>
         <a href="WebForm1.aspx">Logout</a>
      </div>
+
     <div class="form-container">
     <form id="form" runat="server">
-        	&nbsp; &nbsp;
         <h2>Select Option Below:</h2>
         
         <div >
@@ -61,13 +64,13 @@
         </div>
         
         <div >
-            <asp:DropDownList ID="DropDownList6" runat="server" AutoPostBack="True" Height="16px" OnSelectedIndexChanged="DropDownList6_SelectedIndexChanged" CssClass="dropdown-style">
+            <asp:DropDownList ID="DropDownList6" runat="server" AutoPostBack="True"  OnSelectedIndexChanged="DropDownList6_SelectedIndexChanged" CssClass="dropdown-style">
             <asp:ListItem>Accounts</asp:ListItem>
             </asp:DropDownList>
         </div>
         
         <div>
-            <asp:DropDownList ID="DropDownList7" runat="server" AutoPostBack="True" CssClass="dropdown-style">
+            <asp:DropDownList ID="DropDownList7" runat="server" AutoPostBack="True" CssClass="dropdown-style" OnSelectedIndexChanged="DropDownList7_SelectedIndexChanged1">
             <asp:ListItem>Financial Policies and Procedures</asp:ListItem>
            </asp:DropDownList>
         </div>
