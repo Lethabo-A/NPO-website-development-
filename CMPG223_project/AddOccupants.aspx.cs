@@ -36,7 +36,7 @@ namespace CMPG223_project
         protected void btnSubmit_Click(object sender, EventArgs e)
         {
 
-            // Check which radio button is selected
+            
             string Gender = "";
             if (Radfemale.Checked)
             {
@@ -56,17 +56,17 @@ namespace CMPG223_project
             string medicalConditions = txtMedical.Text.Trim();
             string address = txtAddress.Text.Trim();
 
-            // Validate that all required fields are filled
+            
             if (string.IsNullOrEmpty(name) || string.IsNullOrEmpty(surname) ||
                  string.IsNullOrEmpty(address) || string.IsNullOrEmpty(citizenship) ||
                 string.IsNullOrEmpty(transferHome) || string.IsNullOrEmpty(medicalConditions) ||
-                string.IsNullOrEmpty(Gender)) // Ensure selectedGender is also checked
+                string.IsNullOrEmpty(Gender)) 
             {
                 lblMessage.Text = "Please fill in all fields.";
                 return;
             }
 
-            // SQL query to insert data into the Occupants table
+            
             string query = "INSERT INTO Occupants (Name, Surname, [Identification/Passport Number], Gender, [Previous Address], Citizenship, [Transfer Home], [Mediacal Conditions] , [Relative Contact Information]) " +
                            "VALUES (@name, @surname, @idNumber, @Gender, @address, @citizenship, @transferHome, @medicalConditions , @info)"; // Use @Gender here
 
@@ -84,13 +84,13 @@ namespace CMPG223_project
                     command.Parameters.AddWithValue("@Name", name);
                     command.Parameters.AddWithValue("@Surname", surname);
                     command.Parameters.AddWithValue("@IDNumber", idNumber);
-                    command.Parameters.AddWithValue("@Gender", Gender); // Make sure this matches the query
+                    command.Parameters.AddWithValue("@Gender", Gender); 
                     command.Parameters.AddWithValue("@Address", address);
                     command.Parameters.AddWithValue("@Citizenship", citizenship);
                     command.Parameters.AddWithValue("@TransferHome", transferHome);
                     command.Parameters.AddWithValue("@MedicalConditions", medicalConditions);
                     command.Parameters.AddWithValue("@info", info);
-                    // Execute the command
+                    
                     command.ExecuteNonQuery();
                 }
 
@@ -103,7 +103,7 @@ namespace CMPG223_project
             }
             finally
             {
-                // Ensure the connection is closed
+                
                 if (con.State == ConnectionState.Open)
                 {
                     con.Close();

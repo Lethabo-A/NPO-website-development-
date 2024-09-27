@@ -29,7 +29,7 @@
         <table style="width:100%;">
             <tr>
                 <td>
-                    <asp:CheckBoxList ID="CheckBoxList1" runat="server" OnSelectedIndexChanged="CheckBoxList1_SelectedIndexChanged">
+                    <asp:CheckBoxList ID="CheckBoxList1" runat="server" AutoPostBack="true" OnSelectedIndexChanged="CheckBoxList1_SelectedIndexChanged">
                         <asp:ListItem>Legal Status</asp:ListItem>
                         <asp:ListItem>Criminal Background</asp:ListItem>
                         <asp:ListItem>Social History</asp:ListItem>

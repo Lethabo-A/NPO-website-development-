@@ -14,9 +14,28 @@ namespace CMPG223_project
 
         }
 
+
+
+        protected void CheckBoxList1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // This event handler is triggered whenever the CheckBoxList selection changes.
+
+            int selectedCount = 0;
+            foreach (ListItem item in CheckBoxList1.Items)
+            {
+                if (item.Selected)
+                {
+                    selectedCount++;
+                }
+            }
+
+            // Update the label to show the number of selected items.
+            lblMessage.Text = $"You have selected {selectedCount} out of {CheckBoxList1.Items.Count} items.";
+        }
+
         protected void btnNext_Click(object sender, EventArgs e)
         {
-            // Check if all items in CheckBoxList1 are selected
+            
             bool allSelected = true;
 
             foreach (ListItem item in CheckBoxList1.Items)
@@ -30,12 +49,12 @@ namespace CMPG223_project
 
             if (allSelected)
             {
-                // Proceed to the next page
-                Response.Redirect("AddOccupants.aspx"); // Replace with your next page URL
+                
+                Response.Redirect("AddOccupants.aspx");
             }
             else
             {
-                // Show a message indicating that not all items are selected
+                
                 lblMessage.Text = "Please select all options before proceeding.";
             }
         }
