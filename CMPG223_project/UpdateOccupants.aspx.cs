@@ -6,6 +6,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Configuration;
 
 namespace CMPG223_project
 {
@@ -24,7 +25,7 @@ namespace CMPG223_project
         // Method to bind data to the GridView
         private void BindGridView()
         {
-            using (SqlConnection con = new SqlConnection(connectionString))
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString))
             {
                 try
                 {

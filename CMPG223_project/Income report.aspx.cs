@@ -8,6 +8,7 @@ using System.Web.UI;
 using System.Web.UI.WebControls;
 using System.Windows;
 using System.IO;
+using System.Configuration;
 
 namespace CMPG223_project
 {
@@ -22,7 +23,8 @@ namespace CMPG223_project
         DataSet ds = new DataSet();
         protected void Page_Load(object sender, EventArgs e)
         {
-            conn = new SqlConnection(connectionString);
+            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
+            conn.Open();
             try
             {
                 ds = new DataSet();
@@ -46,6 +48,11 @@ namespace CMPG223_project
             }
         }
 
+        public override void VerifyRenderingInServerForm(Control control)
+        {
+            //this is required to avoid the error that pops up
+        }
+
         protected void btnReport_Click1(object sender, EventArgs e)
         {
             Response.Clear();
@@ -64,6 +71,11 @@ namespace CMPG223_project
             GridView1.RenderControl(htmltxtwrt);
             Response.Write(writer.ToString());
             Response.End();
+        }
+
+        protected void btnFilter_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

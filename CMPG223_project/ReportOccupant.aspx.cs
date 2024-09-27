@@ -6,12 +6,13 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Configuration;
 
 namespace CMPG223_project
 {
     public partial class ReportOccupant : System.Web.UI.Page
     {
-        private SqlConnection con = new SqlConnection("");
+        private SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
 
         protected void Page_Load(object sender, EventArgs e)
         {

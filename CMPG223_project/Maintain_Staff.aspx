@@ -6,132 +6,70 @@
 <head runat="server">
     <title></title>
     <style type="text/css">
-        .auto-style1 {
-            width: 100%;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightgrey; 
+            margin: 0;
+            padding: 0;
         }
-        .auto-style2 {
-            font-size: large;
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
             text-align: center;
         }
-        .auto-style3 {
-            width: 197px;
+
+        .header {
+            font-size: 32px;
+            color: #6a0dad;
+            font-weight: bold;
+            margin-top: 50px;
         }
-        .auto-style4 {
-            width: 474px;
+
+        .btn {
+            width: 200px;
+            height: 50px;
+            background-color: #8e44ad; 
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 20px;
         }
-        .auto-style5 {
-            width: 197px;
-            height: 26px;
+
+        .btn:hover {
+            background-color: #732d91; 
         }
-        .auto-style6 {
-            width: 474px;
-            height: 26px;
+
+        .logout {
+            display: block;
+            font-size: 16px;
+            margin-top: 40px;
+            color: #6a0dad;
+            text-decoration: none;
+            font-weight: bold;
         }
-        .auto-style7 {
-            height: 26px;
+
+        a:hover {
+            text-decoration: underline;
         }
+
     </style>
 </head>
-<body style="height: 561px">
+<body>
     <form id="form1" runat="server">
-        <div>
-            <table class="auto-style1">
-                <tr>
-                    <td class="auto-style2" colspan="3"><strong>Maintain Staff Details<br />
-                        </strong></td>
-                </tr>
-                <tr>
-                    <td class="auto-style3">
-                        <asp:Label ID="Label1" runat="server" Text="Name"></asp:Label>
-                    </td>
-                    <td class="auto-style4">
-                        <asp:TextBox ID="txtName" runat="server" Width="206px"></asp:TextBox>
-                    </td>
-                    <td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:Label ID="lblAdd" runat="server" Text="[add]"></asp:Label>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style3">
-                        <asp:Label ID="Label3" runat="server" Text="Surname"></asp:Label>
-                    </td>
-                    <td class="auto-style4">
-                        <asp:TextBox ID="txtSurname" runat="server" Width="206px"></asp:TextBox>
-                    </td>
-                    <td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:Label ID="lblUpdate" runat="server" Text="[update]"></asp:Label>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style3">
-                        <asp:Label ID="Label5" runat="server" Text="Contact Number"></asp:Label>
-                    </td>
-                    <td class="auto-style4">
-                        <asp:TextBox ID="txtContact" runat="server" Width="206px"></asp:TextBox>
-                    </td>
-                    <td>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:Label ID="lblRemove" runat="server" Text="[Remove]"></asp:Label>
-                    </td>
-                </tr>
-                <tr>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style3">
-                        <asp:Label ID="Label6" runat="server" Text="Home Address"></asp:Label>
-                    </td>
-                    <td class="auto-style4">
-                        <asp:TextBox ID="txtAddress" runat="server" Width="206px"></asp:TextBox>
-                    </td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style3">&nbsp;</td>
-                    <td class="auto-style4">&nbsp;</td>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
-                    <td class="auto-style5">
-                        <asp:Label ID="Label7" runat="server" Text="Password"></asp:Label>
-                    </td>
-                    <td class="auto-style6">
-                        <asp:TextBox ID="txtWord" runat="server" Width="206px"></asp:TextBox>
-                    </td>
-                    <td class="auto-style7"></td>
-                </tr>
-            </table>
+        <div class="container">
+            <div class="header">Maintain Staff Page</div>
+
+            <div>
+                <asp:Button ID="btnAddStaffPage" runat="server" OnClick="btnAdd_Click" Text="Add Page" CssClass="btn" />
+                <asp:Button ID="btnUpdateStaffPage" runat="server" Text="Update Page" CssClass="btn" OnClick="btnUpdateStaffPage_Click" />
+                <asp:Button ID="btnRemoveStaffPage" runat="server" Text="Remove Staff Page" CssClass="btn" OnClick="btnRemoveStaffPage_Click" />
+            </div>
+
+            <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/WebForm1.aspx" class="logout">Logout</asp:HyperLink>
         </div>
-        <p>
-                        <asp:Button ID="btnAdd0" runat="server" OnClick="btnAdd_Click" Text="Add Staff" Width="125px" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:Button ID="btnUpdate0" runat="server" Text="Update Staff" Width="129px" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                        <asp:Button ID="btnRemove0" runat="server" Text="Remove Staff" Width="130px" />
-        </p>
-        <p>
-            <asp:Button ID="btnSearch" runat="server" Text="Search" Width="103px" OnClick="btnSearch_Click" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:TextBox ID="txtSearch" runat="server" Width="207px"></asp:TextBox>
-        </p>
-        <p>
-            <asp:GridView ID="GridView1" runat="server" Width="425px">
-            </asp:GridView>
-&nbsp;</p>
     </form>
 </body>
 </html>

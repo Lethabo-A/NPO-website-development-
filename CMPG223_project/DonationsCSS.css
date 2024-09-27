@@ -15,7 +15,8 @@
     font-size: 25px;
     text-transform: uppercase;
     padding: 6px;
-    border-radius: 50px;
+    border-radius: 0.5px;
+    height: 200px;
 }
 
 line {
@@ -33,7 +34,7 @@ line {
     }
 /* Styling the navigation bar */
 .topnav {
-    border-radius: 10px;
+    border-radius: 0px;
     overflow: hidden;
     background-color: black;
 }
@@ -53,48 +54,7 @@ line {
             color: black;
         }
 
-/* Designing and creating a form */
-.form-container {
-    width: 40%;
-    left: 30%;
-    color: black;
-    font-size: 10px;
-    border-radius: 25px;
-    background-color: #f2f2f2;
-    padding: 20px;
-    top: 50%;
-    left: 50%;
-    border-spacing: 20px;
-}
-.form-container input[type=text], select {
-    width: 100%;
-    padding: 9px 30px;
-    margin: 8px 0;
-    box-sizing: border-box;
-    background-color: lightblue;
-    color: black;
-    display: inline-block;
-    border: 1.5px solid #ccc;
-    border-radius: 4px;
-    border-block-end-style: dashed;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-    .form-container input[type=date], input[type=submit] {
-        width: 100%;
-        padding: 9px 30px;
-        margin: 8px 0;
-        box-sizing: border-box;
-        background-color: lightblue;
-        color: black;
-        display: inline-block;
-        border: 1.5px solid #ccc;
-        border-radius: 4px;
-        border-block-end-style: dashed;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-    input[type=submit]:hover {
-        background-color: forestgreen;
-    }
+
 .footer {
     border-spacing: 20px;
     background-color: #f1f1f1;

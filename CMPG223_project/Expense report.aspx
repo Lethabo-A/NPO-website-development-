@@ -4,25 +4,30 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Expense Report</title>
+    <link href="ExpenseReportcss.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
-        .auto-style1 {
-            font-size: xx-large;
-        }
-        .auto-style2 {
-            height: 44px;
+        .form{
+            align-content: center;
         }
         .auto-style3 {
-            height: 44px;
-            width: 319px;
-        }
-        .auto-style4 {
-            width: 319px;
+            width: 113px;
+            height: 108px;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
+
+        <div class="header">
+            <img src="images/NGOs.png" alt="logo" class="auto-style3" />&nbsp;<h1>Expense Report</h1>
+        </div>
+
+        <div class="topnav">
+            <a href="Financial_Page_Formaspx.aspx">Back</a>
+            <a href="WebForm1.aspx">Logout</a>
+        </div>
+
         &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>
         <asp:Label ID="Label1" runat="server" CssClass="auto-style1" Text="Report for Expenses"></asp:Label>
         <br />
@@ -87,6 +92,11 @@
                 <td>&nbsp;</td>
             </tr>
         </table>
+
+        <div class="footer">
+            <p>Copyright © 2024 NGOs office Company. All rights reserved.</p>
+        </div>
+
     </form>
 </body>
 </html>

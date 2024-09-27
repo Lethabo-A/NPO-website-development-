@@ -23,9 +23,10 @@ namespace CMPG223_project
         DataSet ds = new DataSet();
         protected void Page_Load(object sender, EventArgs e)
         {
-            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString); ;
+            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
+            //conn = new SqlConnection(connectionString);
             conn.Open();
-            /*try
+            try
             {
                 ds = new DataSet();
                 sql = @"Select * from [patients] ";
@@ -40,7 +41,7 @@ namespace CMPG223_project
             catch (SqlException sqlEx)
             {
                 MessageBox.Show(sqlEx.Message);
-            }*/
+            }
         }
 
         protected void btnViewAll_Click(object sender, EventArgs e)
@@ -72,13 +73,13 @@ namespace CMPG223_project
         protected void btnFilter_Click(object sender, EventArgs e)
         {
             //takes value from the selected dropdownlist
-            string category = dropCat.SelectedValue;
+            string category = dropCat.SelectedItem.Text;
             try
             {
                 if (dropCat.SelectedIndex > 0)
                 {
                     ds = new DataSet();
-                    sql = @"Select " + category + "  from [patients] ";
+                    sql = @"Select '[" + category + "]'  from [patients] ";
                     cmd = new SqlCommand(sql, conn);
                     dr = cmd.ExecuteReader();
                     GridView1.DataSource = dr;

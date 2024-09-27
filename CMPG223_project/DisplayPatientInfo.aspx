@@ -4,24 +4,33 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <title>Display Patient Information</title>
+    <link href="DisplayPatientInfocss.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
-        .auto-style1 {
-            width: 100%;
-            height: 428px;
-        }
-        .auto-style2 {
-            text-align: center;
-        }
+        .form{
+             align-content: center;
+         }
         .auto-style3 {
-            font-size: xx-large;
+            width: 113px;
+            height: 108px;
         }
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
+
+        <div class="header">
+            <img src="images/NGOs.png" alt="logo" class="auto-style3" />&nbsp;<h1>Display Patients</h1>
+        </div>
+
+        <div class="topnav">
+            <a href="#">Home</a>
+            <a href="Financial_Page_Form.aspx">Back</a>
+            <a href="WebForm1.aspx">Logout</a>
+        </div>
+
         <div class="auto-style2">
-            <h4 class="auto-style3">Display patient into</h4>
+            <h4 class="auto-style3">&nbsp;</h4>
         </div>
         <table class="auto-style1">
             <tr>
@@ -67,6 +76,11 @@
             </tr>
         </table>
         <asp:HyperLink ID="HyperLink1" runat="server" NavigateUrl="~/FindPatient.aspx">back</asp:HyperLink>
+
+        <div class="footer">
+            <p>Copyright © 2024 NGOs office Company. All rights reserved.</p>
+        </div>
+
     </form>
 </body>
 </html>

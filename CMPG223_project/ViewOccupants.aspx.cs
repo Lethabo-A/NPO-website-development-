@@ -6,13 +6,14 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Configuration;
 
 namespace CMPG223_project
 {
     public partial class ViewOccupants : System.Web.UI.Page
     {
         // Established connection string
-        private SqlConnection con = new SqlConnection("Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\Tadiwa\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\App_Data\\OrganizationDatabase.mdf;Integrated Security=True;Connect Timeout=30");
+        private SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
 
         protected void Page_Load(object sender, EventArgs e)
         {

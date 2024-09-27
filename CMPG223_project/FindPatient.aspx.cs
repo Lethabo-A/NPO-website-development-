@@ -28,7 +28,8 @@ namespace CMPG223_project
             //establish connection
             try
             {
-                conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+                conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
+                //conn = new SqlConnection(connectionString);
                 conn.Open();
             }
             catch (SqlException ex) { MessageBox.Show(ex.Message); }
@@ -42,21 +43,21 @@ namespace CMPG223_project
             try
             {
 
-                sql = @"Select name from [patients] WHERE [ID] LIKE '%" + ID + "'";
+                sql = @"Select Name from [patients] WHERE [ID] LIKE '%" + ID + "'";
                 cmd = new SqlCommand(sql, conn);
                 reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
-                    name = (string)reader["name"];
+                    name = (string)reader["Name"];
                 }
                 cmd.Dispose();
                 reader.Close();
-                sql = @"Select surname from [patients] WHERE [ID] LIKE '%" + ID + "'";
+                sql = @"Select Surname from [patients] WHERE [ID] LIKE '%" + ID + "'";
                 cmd = new SqlCommand(sql, conn);
                 reader = cmd.ExecuteReader();
                 if (reader.Read())
                 {
-                    surname = (string)reader["surname"];
+                    surname = (string)reader["Surname"];
                 }
                 cmd.Dispose();
 
@@ -83,7 +84,7 @@ namespace CMPG223_project
         {
             try
             {
-                String delete = txtDeleteID.Text;
+                String delete = txtID.Text;
                 sql = @"Delete from [patients] WHERE [ID] = '" + delete + "'";
                 cmd = new SqlCommand(sql, conn);
                 int x = cmd.ExecuteNonQuery();

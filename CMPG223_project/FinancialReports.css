@@ -1,0 +1,9 @@
+﻿body {
+    font-family: 'Roboto', sans-serif;
+    background-image: url("images/ExpenseBackground.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: 1920px 1080px;
+    margin: 0;
+    justify-content: center;
+}
