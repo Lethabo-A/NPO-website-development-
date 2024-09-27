@@ -49,6 +49,7 @@
         
         <div >
             <asp:DropDownList ID="DropDownList3" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList3_SelectedIndexChanged" CssClass="dropdown-style">
+                <asp:ListItem>Financial report</asp:ListItem>
                 <asp:ListItem>Financial reports</asp:ListItem>
                 </asp:DropDownList>
         </div>
@@ -63,15 +64,11 @@
             </asp:DropDownList>
         </div>
         
-        <div >
-            <asp:DropDownList ID="DropDownList6" runat="server" AutoPostBack="True"  OnSelectedIndexChanged="DropDownList6_SelectedIndexChanged" CssClass="dropdown-style">
-            <asp:ListItem>Accounts</asp:ListItem>
-            </asp:DropDownList>
-        </div>
         
         <div>
             <asp:DropDownList ID="DropDownList7" runat="server" AutoPostBack="True" CssClass="dropdown-style" OnSelectedIndexChanged="DropDownList7_SelectedIndexChanged1">
-            <asp:ListItem>Financial Policies and Procedures</asp:ListItem>
+                <asp:ListItem>Financial Policies</asp:ListItem>
+                <asp:ListItem>Financial Policies and Procedures</asp:ListItem>
            </asp:DropDownList>
         </div>
         

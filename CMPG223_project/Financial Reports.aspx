@@ -101,7 +101,7 @@
                 </tr>
                 <tr>
                     <td class="auto-style8">
-                        <asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource1">
+                        <asp:Chart ID="Chart1" runat="server" DataSourceID="SqlDataSource2">
                             <series>
                                 <asp:Series ChartType="Pie" Name="Series1" XValueMember="Expense_Category" YValueMembers="Expense_Amount">
                                 </asp:Series>
@@ -111,6 +111,7 @@
                                 </asp:ChartArea>
                             </chartareas>
                         </asp:Chart>
+                        <asp:SqlDataSource ID="SqlDataSource2" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionStringMain %>" SelectCommand="SELECT [Expense_Category], [Expense_Amount] FROM [Add_Expense_Table]"></asp:SqlDataSource>
                     </td>
                     <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
                         <asp:Chart ID="Chart2" runat="server" DataSourceID="SqlDataSource1">
@@ -133,7 +134,7 @@
                 </tr>
             </table>
             <br />
-            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" SelectCommand="SELECT [Income_Amount], [Income_Category] FROM [Add_Income_Table]"></asp:SqlDataSource>
+            <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionStringMain %>" SelectCommand="SELECT [Income_Category], [Income_Amount] FROM [Add_Income_Table]"></asp:SqlDataSource>
             <br />
             <br />
             <br />

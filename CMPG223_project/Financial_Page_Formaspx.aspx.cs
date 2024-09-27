@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Windows;
 
 namespace CMPG223_project
 {
@@ -59,7 +60,7 @@ namespace CMPG223_project
         protected void DropDownList3_SelectedIndexChanged(object sender, EventArgs e)
         {
             Response.Redirect("Financial Reports.aspx");
-            if (DropDownList3.SelectedIndex == 0)
+            if (DropDownList3.SelectedIndex == 1)
             {
                 Response.Redirect("Financial Reports.aspx");
             }
@@ -68,13 +69,9 @@ namespace CMPG223_project
 
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
         {
-
+            
         }
 
-        protected void DropDownList6_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
 
         protected void DropDownList7_SelectedIndexChanged1(object sender, EventArgs e)
         {

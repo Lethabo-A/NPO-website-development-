@@ -27,7 +27,7 @@ namespace CMPG223_project
             try
             {
                 ds = new DataSet();
-                sql = @"Select ExpenseID,Expense_Category,Expense_Name,Date_Of_Expense from [Add_Expense_Table] ";
+                sql = @"Select ExpenseID,Expense_Category,Expense_Name,Expense_Date,Expense_Amount from [Add_Expense_Table] ";
                 cmd = new SqlCommand(sql, conn);
                 dr = cmd.ExecuteReader();
                 if (dr.HasRows == true)
@@ -39,7 +39,6 @@ namespace CMPG223_project
                 conn.Close();
                 dr.Close();
                 dr.Dispose();
-                conn.Close();
 
             }
             catch (SqlException sqlEx)
@@ -47,22 +46,23 @@ namespace CMPG223_project
                 MessageBox.Show(sqlEx.Message);
             }
 
-            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+            conn.Open();
             try
             {
                 ds = new DataSet();
-                sql = @"Select Income_ID,Income_Category,Income_Name,Date_Of_Income from [Add_Income_Table] ";
+                sql = @"Select IncomeID,Income_Category,Income_Name,Income_Date,Income_Amount from [Add_Income_Table] ";
                 cmd = new SqlCommand(sql, conn);
                 dr = cmd.ExecuteReader();
                 if (dr.HasRows == true)
                 {
-                    GridView1.DataSource = dr;
-                    GridView1.DataBind();
+                    GridView2.DataSource = dr;
+                    GridView2.DataBind();
                 }
                 cmd.Dispose();
                 conn.Close();
                 dr.Close();
                 dr.Dispose();
+                conn.Close();
 
             }
             catch (SqlException sqlEx)

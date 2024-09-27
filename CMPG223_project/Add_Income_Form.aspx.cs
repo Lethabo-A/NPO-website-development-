@@ -31,7 +31,7 @@ namespace CMPG223_project
             else
             {
                 MessageBox.Show("Error!! Enter correct type.");
-                ;
+                
             }
 
             category = DropDownList1.SelectedItem.ToString();
@@ -46,7 +46,7 @@ namespace CMPG223_project
                 connection.Open();
                 SqlCommand command;
                 SqlDataAdapter adapter = new SqlDataAdapter();
-                String insert = "insert into Add_Income_Table (Income_Category,Income_Name,Date_Of_Income,Income_Amount) values ('" + category + "','" + name + "'," + date + "'," + amount + ")";
+                String insert = "insert into Add_Income_Table (Income_Category,Income_Name,Income_Date,Income_Amount) values ('" + category + "','" + name + "','" + date + "','" + amount + "')";
                 command = new SqlCommand(insert, connection);
                 adapter.InsertCommand = new SqlCommand(insert, connection);
                 adapter.InsertCommand.ExecuteNonQuery();
@@ -59,7 +59,7 @@ namespace CMPG223_project
             }
             catch (SqlException ex)
             {
-
+                MessageBox.Show(ex.Message);
             }
         }
     }

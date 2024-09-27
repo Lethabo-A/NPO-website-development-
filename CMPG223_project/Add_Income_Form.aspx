@@ -55,11 +55,7 @@
                 <asp:TextBox ID="Amount_TextBox" runat="server" placeholder="Enter amount here.."></asp:TextBox>
             </div>
 
-            <div>
-                <asp:Label ID="Label4" runat="server" Text="Add supporting documents(receipts, invoices, bank statements):"></asp:Label>
-                <asp:FileUpload ID="FileUpload1" runat="server" />
-            </div>
-
+         
             <div class="addButton_container">
                <asp:Button ID="AddIncome_Button" runat="server" OnClick="AddIncome_Button_Click" Text="Add Income" CssClass="addIncome_button"/>
             </div>

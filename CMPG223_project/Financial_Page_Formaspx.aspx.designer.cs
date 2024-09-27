@@ -60,15 +60,6 @@ namespace CMPG223_project
         protected global::System.Web.UI.WebControls.DropDownList DropDownList5;
 
         /// <summary>
-        /// DropDownList6 control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList6;
-
-        /// <summary>
         /// DropDownList7 control.
         /// </summary>
         /// <remarks>

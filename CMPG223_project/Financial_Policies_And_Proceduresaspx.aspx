@@ -33,6 +33,26 @@
     <form id="form1" runat="server">
 
         <div class="row">
+
+            <h1>Assets and Revenue Accounts:</h1>
+            <p>ANY ABSA AND NEDBANK Branch located in South Africa</p>
+            <p>Responsible for: </p>
+            <p>                - Cash and Bank Balances, Savings Accounts, Investments </p>
+            <p>                - Grants Income,  Donations, Fundraising Events </p>
+
+
+            <h1>Liability and Expense Accounts:</h1>
+            <p>ANY CAPITEC Branch located in South Africa</p>
+            <p>Responsible for: </p>
+            <p>                 Accounts Payable, Loans and Debt, Accrued Expenses  </p>
+            <p>                - Program Expenses,  Administrative Expenses, Fundraising Expenses, Travel Expenses </p>
+
+
+
+
+
+
+
             <h1>Financial Policies:</h1>
             <p>1. Accounting and Financial Reporting: Define accounting standards, financial statement preparation, and reporting requirements.</p>
             <p>2. Budgeting: Establish budget preparation, approval, and monitoring processes.</p>

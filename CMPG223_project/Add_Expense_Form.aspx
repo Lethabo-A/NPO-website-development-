@@ -60,12 +60,8 @@
                     <asp:TextBox ID="Amount_TextBox" runat="server" placeholder="Enter cost amount.."></asp:TextBox>
                 <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="Amount_TextBox" ErrorMessage="Enter correct amount" ForeColor="Red"></asp:RequiredFieldValidator>
             </div>
+           
             
-            <div>
-                <asp:Label ID="Label4" runat="server" Text="Add supporting documents(receipts, invoices, bank statements):"></asp:Label>
-                <asp:FileUpload ID="FileUpload" runat="server" />
-            </div>
-            &nbsp;
             <div class="addButton_container">
                <asp:Button ID="AddExpense_Button" runat="server" OnClick="AddExpense_Button_Click" Text="Add Expense" CssClass="addExpense_button"/>
             </div>

@@ -24,6 +24,7 @@ namespace CMPG223_project
         protected void Page_Load(object sender, EventArgs e)
         {
             conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
+            conn.Open();
             try
             {
                 ds = new DataSet();
