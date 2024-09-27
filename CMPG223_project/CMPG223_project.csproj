@@ -149,6 +149,10 @@
     <Content Include="DisplayPatientInfocss.css" />
     <Content Include="Donations.aspx" />
     <Content Include="DonationsCSS.css" />
+    <Content Include="Edit_Expenses.aspx" />
+    <Content Include="Edit_Expenses.css" />
+    <Content Include="Edit_Income.aspx" />
+    <Content Include="Edit_Income.css" />
     <Content Include="Expense report.aspx" />
     <Content Include="ExpenseReportcss.css" />
     <Content Include="favicon.ico" />
@@ -314,6 +318,20 @@
     </Compile>
     <Compile Include="Donations.aspx.designer.cs">
       <DependentUpon>Donations.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Expenses.aspx.cs">
+      <DependentUpon>Edit_Expenses.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edit_Expenses.aspx.designer.cs">
+      <DependentUpon>Edit_Expenses.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Edit_Income.aspx.cs">
+      <DependentUpon>Edit_Income.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Edit_Income.aspx.designer.cs">
+      <DependentUpon>Edit_Income.aspx</DependentUpon>
     </Compile>
     <Compile Include="Expense report.aspx.cs">
       <DependentUpon>Expense report.aspx</DependentUpon>
