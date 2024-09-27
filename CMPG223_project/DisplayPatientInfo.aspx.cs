@@ -31,7 +31,7 @@ namespace CMPG223_project
         cookie = Request.Cookies["Info"];
         try
         {
-                conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString); 
+                conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
                 //conn = new SqlConnection(connectionString);
                 conn.Open();
         }

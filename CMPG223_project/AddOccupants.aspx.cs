@@ -12,7 +12,7 @@ namespace CMPG223_project
 {
     public partial class AddOccupants : System.Web.UI.Page
     {
-        private SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+        private SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
         protected void Page_Load(object sender, EventArgs e)
         {
 

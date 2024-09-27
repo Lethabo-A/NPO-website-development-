@@ -13,7 +13,7 @@ namespace CMPG223_project
     public partial class ViewOccupants : System.Web.UI.Page
     {
         // Established connection string
-        private SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+        private SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
 
         protected void Page_Load(object sender, EventArgs e)
         {

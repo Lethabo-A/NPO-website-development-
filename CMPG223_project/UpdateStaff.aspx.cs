@@ -30,7 +30,7 @@ namespace CMPG223_project
         //mehtod to bind data to gridview
         private void BindGridView()
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
+            using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString))
             {
                 try
                 {

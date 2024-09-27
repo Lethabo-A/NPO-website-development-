@@ -13,6 +13,7 @@ namespace CMPG223_project
 {
     public partial class AddNewStaffPage : System.Web.UI.Page
     {
+        /*
         private string connectionString = "";
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -24,7 +25,7 @@ namespace CMPG223_project
             //Initializing variables
             lblOutput.Visible = true;
             string department = staffDepart.SelectedValue;
-            string IdNumber = txtID.Text.Trim();
+           // string IdNumber = txtID.Text.Trim();
             string name = txtName.Text.Trim();
             string surname = txtSurname.Text.Trim();
             string contactNumber = txtContact.Text.Trim();
@@ -40,7 +41,7 @@ namespace CMPG223_project
                 lblOutput.Text = "Please select a department.";
                 return;
             }
-            if (string.IsNullOrEmpty(IdNumber) || IdNumber.Length != 13 || !long.TryParse(IdNumber, out _))
+            /*if (string.IsNullOrEmpty(IdNumber) || IdNumber.Length != 13 || !long.TryParse(IdNumber, out _))
             {
                 lblOutput.ForeColor = System.Drawing.Color.Red;
                 lblOutput.Text = "Please enter a 13 digit ID number.";
@@ -126,7 +127,7 @@ namespace CMPG223_project
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection(connectionString))
+                using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString))
                 {
                     conn.Open();
                     string query = "INSERT INTO Staff(Staff_number,Name,Surname,Contact_number,Home_Address,Password)" + "VALUES (@StaffNumber,@Name,@Surname,@Contactnumber,@HomeAddress,@Password)";
@@ -161,6 +162,6 @@ namespace CMPG223_project
         {
             Response.Redirect("~/Maintain_Staff.aspx");
         }
-
+        */
     }
 }
