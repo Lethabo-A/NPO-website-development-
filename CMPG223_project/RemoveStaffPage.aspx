@@ -6,42 +6,86 @@
 <head runat="server">
     <title></title>
     <style type="text/css">
-        .auto-style1 {
-            font-size: x-large;
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0; /* Light grey background */
+            margin: 0;
+            padding: 0;
         }
+
+        .container {
+            width: 80%;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .header {
+            font-size: 32px;
+            color: #6a0dad;
+            font-weight: bold;
+            margin-bottom: 40px;
+        }
+
+        .grid {
+            width: 60%;
+            margin: 20px auto;
+            border: 1px solid #ddd;
+            border-collapse: collapse;
+        }
+
+        .grid th, .grid td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ddd;
+        }
+
+        .label {
+            font-size: 18px;
+            margin-right: 10px;
+        }
+
+        .textbox {
+            width: 220px;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .btn {
+            width: 120px;
+            padding: 10px;
+            background-color: #8e44ad; /* Purple button */
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+        }
+
+        .btn:hover {
+            background-color: #732d91; /* Darker purple on hover */
+        }
+
     </style>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <strong>
-            <br />
-            <br />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Label ID="Label3" runat="server" CssClass="auto-style1" Text="Remove Staff"></asp:Label>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            </strong>
-            <strong>
-            <br />
-            </strong>
+        <div class="container">
+            <div class="header">Remove Staff</div>
+
             <asp:Label ID="lblRemove" runat="server" Text="[Output]"></asp:Label>
-            <strong>
-            <br />
-            <br />
-            <asp:GridView ID="gridRemove" runat="server" Width="314px">
-            </asp:GridView>
-            <br />
-            </strong>
-            <asp:Label ID="Label2" runat="server" Text="Enter staff number to remove:"></asp:Label>
-&nbsp;<asp:TextBox ID="txtRemove" runat="server" Width="201px"></asp:TextBox>
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br />
-            <br />
-&nbsp;<asp:Button ID="btnDeleteStaff" runat="server" OnClick="Button1_Click" Text="Delete" Width="111px" />
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-            <asp:Button ID="btnBack" runat="server" OnClick="btnBack_Click" Text="Back" Width="96px" />
-            &nbsp;&nbsp;&nbsp;
-            <br />
-            <br />
+
+            <asp:GridView ID="gridRemove" runat="server" CssClass="grid"></asp:GridView>
+
+            <div>
+                <asp:Label ID="Label2" runat="server" CssClass="label" Text="Enter staff number to remove:"></asp:Label>
+                <asp:TextBox ID="txtRemove" runat="server" CssClass="textbox"></asp:TextBox>
+            </div>
+
+            <div>
+                <asp:Button ID="btnDeleteStaff" runat="server" Text="Delete" CssClass="btn" OnClick="Button1_Click" />
+                <asp:Button ID="btnBack" runat="server" Text="Back" CssClass="btn" OnClick="btnBack_Click" />
+            </div>
         </div>
     </form>
 </body>
