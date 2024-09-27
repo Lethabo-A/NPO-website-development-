@@ -28,7 +28,7 @@ namespace CMPG223_project
             try
             {
                 ds = new DataSet();
-                sql = @"Select Income_ID,Income_Category,Income_Name,Date_Of_Income from [Add_Income_Table] ";
+                sql = @"Select IncomeID,Income_Category,Income_Name,Income_Date,Income_Amount from [Add_Income_Table] ";
                 cmd = new SqlCommand(sql, conn);
                 dr = cmd.ExecuteReader();
                 if (dr.HasRows == true)
@@ -75,6 +75,56 @@ namespace CMPG223_project
 
         protected void btnFilter_Click(object sender, EventArgs e)
         {
+            string category = DropDownList1.SelectedItem.ToString();
+            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
+            conn.Open();
+            try
+            {
+                ds = new DataSet();
+                sql = @"Select IncomeID,Income_Category,Income_Name,Income_Date,Income_Amount from [Add_Income_Table] where Income_Category = '" + category + "'";
+                cmd = new SqlCommand(sql, conn);
+                dr = cmd.ExecuteReader();
+                if (dr.HasRows == true)
+                {
+                    GridView1.DataSource = dr;
+                    GridView1.DataBind();
+                }
+                cmd.Dispose();
+                conn.Close();
+                dr.Close();
+                dr.Dispose();
+
+            }
+            catch (SqlException sqlEx)
+            {
+                MessageBox.Show(sqlEx.Message);
+            }
+        }
+
+        protected void View_Click1(object sender, EventArgs e)
+        {
+            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
+            conn.Open();
+            try
+            {
+                ds = new DataSet();
+                sql = @"Select IncomeID,Income_Category,Income_Name,Income_Date,Income_Amount from [Add_Income_Table] ";
+                cmd = new SqlCommand(sql, conn);
+                dr = cmd.ExecuteReader();
+                if (dr.HasRows == true)
+                {
+                    GridView1.DataSource = dr;
+                    GridView1.DataBind();
+                }
+                cmd.Dispose();
+                conn.Close();
+                dr.Close();
+                dr.Dispose();
+            }
+            catch (SqlException sqlEx)
+            {
+                MessageBox.Show(sqlEx.Message);
+            }
 
         }
     }

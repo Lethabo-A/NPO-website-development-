@@ -207,6 +207,11 @@ input[type="txtFilterValue"] {
     color: black;
 }
 
+    	.auto-style4 {
+			left: 0px;
+			top: 0px;
+		}
+
     </style>
 </head>
 <body>
@@ -223,17 +228,27 @@ input[type="txtFilterValue"] {
         <form id="form1" runat="server">
             <div>
                 <h2>Filter by category:</h2>
-                <asp:DropDownList ID="dropCat" runat="server">
-                     <asp:ListItem>Choose a category</asp:ListItem>
-                </asp:DropDownList>
+                <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True">
+                <asp:ListItem>Choose a category</asp:ListItem>
+                <asp:ListItem>Governemnt Funding</asp:ListItem>
+                <asp:ListItem>Investments</asp:ListItem>
+                <asp:ListItem>Fundraising</asp:ListItem>
+                <asp:ListItem>Corporate partnerships</asp:ListItem>
+                <asp:ListItem>Sales of products/goods</asp:ListItem>
+            </asp:DropDownList>
             </div>
             <div class="button-container">
                 <asp:Button ID="btnFilter" runat="server" OnClick="btnFilter_Click" cssclass="btns" Text="Filter" />
             </div>
                         
-            <div>
-                <asp:GridView ID="GridView1" runat="server" Height="517px" Width="815px"></asp:GridView>
+            <div class="auto-style4">
+                <asp:GridView ID="GridView1" runat="server" ></asp:GridView>
             </div>
+
+            <div class="button-container">
+                <asp:Button ID="Button2" runat="server" OnClick="View_Click1" cssclass="btns" Text="View All"/>
+            </div>
+
             <div class="button-container">
                 <asp:Button ID="btnReport" runat="server" OnClick="btnReport_Click1" cssclass="btns" Text="Generate Physical Report"/>
             </div>      
