@@ -17,7 +17,7 @@ namespace CMPG223_project
         
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*
+            
             //there has been changes made to the connection string to allow it to be used on all our computers please dont change it and please use this connection string when tring to connect on your pc
             connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\OrganizationDatabase.mdf;Integrated Security=True;Connect Timeout=30";
             try
@@ -33,12 +33,12 @@ namespace CMPG223_project
             {
                 connection.Close();
             }
-            */
+            
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            /*
+            
             usernumber = txtUserNumber.Text;
             password = txtPassword.Text;
             connection.Open();
@@ -77,7 +77,7 @@ namespace CMPG223_project
             {
                 connection.Close();
             }
-            */
+            
 
             //i commented out my code because i have a database error however the code works
             if (txtUserNumber.Text == "42686784" && txtPassword.Text == "password")
