@@ -130,7 +130,7 @@ namespace CMPG223_project
                 using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString))
                 {
                     conn.Open();
-                    string query = "INSERT INTO Staff(Staff_number,Name,Surname,Contact_number,Home_Address,Password)" + "VALUES (@StaffNumber,@Name,@Surname,@Contactnumber,@HomeAddress,@Password)";
+                    string query = "INSERT INTO Staff(Staff_number,Name,Surname,contact_number,homeAddress,Password)" + "VALUES (@StaffNumber,@Name,@Surname,@Contactnumber,@HomeAddress,@Password)";
 
 
 

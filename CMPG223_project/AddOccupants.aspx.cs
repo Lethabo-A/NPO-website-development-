@@ -68,8 +68,8 @@ namespace CMPG223_project
             }
 
             
-            string query = "INSERT INTO Occupants (Name, Surname, [Identification/Passport Number], Gender, [Previous Address], Citizenship, [Transfer Home], [Mediacal Conditions] , [Relative Contact Information]) " +
-                           "VALUES (@name, @surname, @idNumber, @Gender, @address, @citizenship, @transferHome, @medicalConditions , @info)"; // Use @Gender here
+            string query = "INSERT INTO Occupants (Name, Surname, [Identification/Passport Number], Gender, [Previous Address], Citizenship, [Transfer Home], [Medical Conditions] , [Relative Contact Information]) " +
+                           "VALUES (@name, @surname, @idNumber, @Gender, @address, @citizenship, @transferHome, @medicalConditions , @info)"; 
 
             try
             {

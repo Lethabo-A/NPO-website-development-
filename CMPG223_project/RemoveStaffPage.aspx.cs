@@ -12,7 +12,7 @@ namespace CMPG223_project
 {
     public partial class RemoveStaffPage : System.Web.UI.Page
     {
-        private string connectionString = "";
+       // private string connectionString = "";
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -87,8 +87,8 @@ namespace CMPG223_project
         //method to bind data to GridView
         private void BindGridView()
         {
-            using (SqlConnection conn = new SqlConnection(connectionString))
-            {
+            using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString))
+                {
                 try
                 {
                     conn.Open();

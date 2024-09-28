@@ -12,7 +12,7 @@ namespace CMPG223_project
 {
     public partial class DeleteOccupant : System.Web.UI.Page
     {
-        private string connectionString = "";
+       // private string connectionString = "";
 
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -74,8 +74,8 @@ namespace CMPG223_project
         // Delete by ID/Passport from the TextBox input
         private void DeleteByIDOrPassport(string idOrPassport)
         {
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString))
+                {
                 try
                 {
                     con.Open();
@@ -104,8 +104,8 @@ namespace CMPG223_project
         // Delete by the selected row in GridView doesnt work 
         private void DeleteBySelectedID(string selectedID)
         {
-            using (SqlConnection con = new SqlConnection(connectionString))
-            {
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString))
+                {
                 try
                 {
                     con.Open();
