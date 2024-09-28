@@ -103,7 +103,7 @@ namespace CMPG223_project
             switch (department)
             {
                 case "Doctor":
-                    prefix = "D";
+                    prefix = "Do";
                     break;
                 case "Accountant":
                     prefix = "Ac";
@@ -112,7 +112,7 @@ namespace CMPG223_project
                     prefix = "Ad";
                     break;
                 case "General staff":
-                    prefix = "G";
+                    prefix = "Gs";
                     break;
                 default:
                     lblOutput.ForeColor=System.Drawing.Color.Red;
@@ -120,7 +120,7 @@ namespace CMPG223_project
                     return null;
 
             }
-            return $"{prefix}-{IdNumber}";
+            return $"{prefix}{IdNumber}";
         }
         //Method to add to the database 
         private void AddStaff(string staffNumber, string name, string surname, string contactNumber, string homeAddress, string hashedpassword)
@@ -130,7 +130,7 @@ namespace CMPG223_project
                 using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString))
                 {
                     conn.Open();
-                    string query = "INSERT INTO Staff(Staff_number,Name,Surname,Contact_number,Home_Address,Password)" + "VALUES (@StaffNumber,@Name,@Surname,@Contactnumber,@HomeAddress,@Password)";
+                    string query = "INSERT INTO Staff(Staff_number,Name,Surname,contact_number, homeAddress,Password)" + "VALUES (@StaffNumber,@Name,@Surname,@Contactnumber,@HomeAddress,@Password)";
 
 
 
