@@ -52,7 +52,7 @@ input[type="name"] {
     <div class ="form-container">
     <form id="form1" runat="server">
 
-        <h1>Filter the expenses to choose the expense you want to update:</h1>
+        <h1>Choose the category and ID of the expense you want to update:</h1>
 
 
         <div>
@@ -69,7 +69,7 @@ input[type="name"] {
 
         <div>
             <asp:Label ID="Label12" runat="server" Text="Choose date of expense:"></asp:Label>
-            <asp:Calendar ID="Calendar3" runat="server" OnSelectionChanged="Calendar3_SelectionChanged"></asp:Calendar>
+            <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
         </div>
 
 

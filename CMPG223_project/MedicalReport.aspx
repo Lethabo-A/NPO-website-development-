@@ -54,7 +54,7 @@
  <asp:ListItem Value="pregnancy_history">Pregnancy History</asp:ListItem>
  <asp:ListItem Value="social_history">Social History</asp:ListItem>
                         </asp:DropDownList>
-                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionStringMain %>" SelectCommand="SELECT * FROM [patients]" ProviderName="<%$ ConnectionStrings:ConnectionStringMain.ProviderName %>"></asp:SqlDataSource>
+                        <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionStringMain %>" SelectCommand="SELECT * FROM [patients]"></asp:SqlDataSource>
                         <asp:Button ID="btnFilter" runat="server" OnClick="btnFilter_Click" Text="Filter" />
                     </td>
                     <td class="auto-style4">&nbsp;</td>

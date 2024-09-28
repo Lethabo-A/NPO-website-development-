@@ -22,7 +22,7 @@ namespace CMPG223_project
             connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\OrganizationDatabase.mdf;Integrated Security=True;Connect Timeout=30";
             try
             {
-                connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+                connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
                 connection.Open();
             }
             catch (SqlException ex)
@@ -62,7 +62,7 @@ namespace CMPG223_project
                             Response.Redirect("MedicalReport.aspx"); //add doctors page
                             break;
                         case "Ac":
-                            Response.Redirect("Add_Expense_Form.aspx"); //add accountants page
+                            Response.Redirect("Financial_Page_Formaspx.aspx"); //add accountants page
                             break;
                         case "Ad":
                             Response.Redirect(".aspx"); //add adminpage

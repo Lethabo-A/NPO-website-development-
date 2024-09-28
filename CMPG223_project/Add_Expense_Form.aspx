@@ -34,7 +34,7 @@
 			
             <div>
                 <asp:Label ID="Label9" runat="server" Text="Choose a category:"></asp:Label>
-                <asp:DropDownList ID="DropDownList1" runat="server" CssClass="dropdown-style" OnSelectedIndexChanged="DropDownList1_SelectedIndexChanged">
+                <asp:DropDownList ID="DropDownList1" runat="server" CssClass="dropdown-style">
                     <asp:ListItem>Choose your option...</asp:ListItem>
                     <asp:ListItem>Administrative Expenses</asp:ListItem>
                     <asp:ListItem>Fundraising Expenses</asp:ListItem>

@@ -40,13 +40,7 @@
         </asp:DropDownList>
         </div>
 
-        <div >
-            <asp:DropDownList ID="DropDownList2" runat="server" AutoPostBack="True" CssClass="dropdown-style">
-            <asp:ListItem>Budget Information</asp:ListItem>
-            <asp:ListItem>Financial year budget</asp:ListItem>
-            </asp:DropDownList>
-        </div>
-        
+
         <div >
             <asp:DropDownList ID="DropDownList3" runat="server" AutoPostBack="True" OnSelectedIndexChanged="DropDownList3_SelectedIndexChanged" CssClass="dropdown-style">
                 <asp:ListItem>Financial report</asp:ListItem>

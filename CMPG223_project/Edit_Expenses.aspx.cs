@@ -24,14 +24,12 @@ namespace CMPG223_project
         protected void Page_Load(object sender, EventArgs e)
         {
             string category = DropDownList1.SelectedItem.ToString();
-            DateTime datetime = Calendar3.SelectedDate;
-            string updateD = datetime.ToString("yyyy-MMMM-dd");
             conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
             conn.Open();
             try
             {
                 ds = new DataSet();
-                sql = @"Select ExpenseID,Expense_Category,Expense_Name,Expense_Date,Expense_Amount from [Add_Expense_Table] ";
+                sql = @"Select ExpenseID,Expense_Category,Expense_Name,Expense_Date,Expense_Amount from [Add_Expense_Table]";
                 cmd = new SqlCommand(sql, conn);
                 dr = cmd.ExecuteReader();
                 if (dr.HasRows == true)
@@ -53,43 +51,52 @@ namespace CMPG223_project
 
         protected void UpdateButton_Click(object sender, EventArgs e)
         {
-            String category, name, date,updateD;
-            double amount;
-
-            if (Double.TryParse(Amount_TextBox.Text, out amount))
-            {
-
-            }
-            else
-            {
-                MessageBox.Show("Error!! Enter correct type.");
-                
-            }
-            category = DropDownList2.SelectedItem.ToString();
-            name = ExpenseName_TextBox.Text;
-            DateTime datetime = Calendar3.SelectedDate;
-            DateTime datetime2 = Calendar1.SelectedDate;
-            date = datetime2.ToString("yyyy-MMMM-dd");
-            updateD = datetime.ToString("yyyy-MMMM-dd");
-
-
-
-
+            
             try
             {
-                SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
-                connection.Open();
-                SqlCommand command;
-                SqlDataAdapter adapter = new SqlDataAdapter();
-                String insert = "update Add_Expense_Table set Expense_Category = '" + category + "' ,Expense_Name = '" + name + "',Expense_Date = '" + date + "',Expense_Amount = '" + amount + "' where Expense_Date = '" + updateD + "'";
-                command = new SqlCommand(insert, connection);
-                adapter.InsertCommand = new SqlCommand(insert, connection);
-                adapter.InsertCommand.ExecuteNonQuery();
-                command.Dispose();
-                connection.Close();
+                String category, name, date;
+                int ID = int.Parse(TextBox1.Text);
+                double amount=0;
+                if (Amount_TextBox.Text != "")
+                {
+                    amount = double.Parse(Amount_TextBox.Text);
+                    category = DropDownList2.SelectedItem.ToString();
+                    name = ExpenseName_TextBox.Text;
+                    DateTime datetime2 = Calendar1.SelectedDate;
+                    date = datetime2.ToString("yyyy-MMMM-dd");
+                    SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
+                    connection.Open();
+                    SqlCommand command;
+                    SqlDataAdapter adapter = new SqlDataAdapter();
+                    String insert = "update Add_Expense_Table set Expense_Category = '" + category + "',Expense_Name = '" + name + "',Expense_Date = '" + date + "',Expense_Amount = '" + amount + "' where ExpenseID = '" + ID + "'";
+                    command = new SqlCommand(insert, connection);
+                    adapter.InsertCommand = new SqlCommand(insert, connection);
+                    adapter.InsertCommand.ExecuteNonQuery();
+                    command.Dispose();
+                    connection.Close();
 
-                MessageBox.Show("Added suuccessfully!");
+                    MessageBox.Show("Added suuccessfully!");
+                }
+                else
+                {
+                    category = DropDownList2.SelectedItem.ToString();
+                    name = ExpenseName_TextBox.Text;
+                    DateTime datetime2 = Calendar1.SelectedDate;
+                    date = datetime2.ToString("yyyy-MMMM-dd");
+                    SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
+                    connection.Open();
+                    SqlCommand command;
+                    SqlDataAdapter adapter = new SqlDataAdapter();
+                    String insert = "update Add_Expense_Table set Expense_Category = '" + category + "',Expense_Name = '" + name + "',Expense_Date = '" + date + "' where ExpenseID = '" + ID + "'";
+                    command = new SqlCommand(insert, connection);
+                    adapter.InsertCommand = new SqlCommand(insert, connection);
+                    adapter.InsertCommand.ExecuteNonQuery();
+                    command.Dispose();
+                    connection.Close();
 
+                    MessageBox.Show("Added suuccessfully!");
+                }
+                
 
 
             }
@@ -163,34 +170,5 @@ namespace CMPG223_project
             }
         }
 
-        protected void Calendar3_SelectionChanged(object sender, EventArgs e)
-        {
-            string category = DropDownList1.SelectedItem.ToString();
-            DateTime datetime = Calendar3.SelectedDate;
-            string updateD = datetime.ToString("yyyy-MMMM-dd");
-            conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
-            conn.Open();
-            try
-            {
-                ds = new DataSet();
-                sql = @"Select ExpenseID,Expense_Category,Expense_Name,Expense_Date,Expense_Amount from [Add_Expense_Table] where Expense_Category = '" + category + "',Expense_Date = '" + updateD + "' ";
-                cmd = new SqlCommand(sql, conn);
-                dr = cmd.ExecuteReader();
-                if (dr.HasRows == true)
-                {
-                    GridView1.DataSource = dr;
-                    GridView1.DataBind();
-                }
-                cmd.Dispose();
-                conn.Close();
-                dr.Close();
-                dr.Dispose();
-
-            }
-            catch (SqlException sqlEx)
-            {
-                MessageBox.Show(sqlEx.Message);
-            }
-        }
     }
 }
