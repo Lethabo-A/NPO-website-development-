@@ -105,9 +105,9 @@
                     <asp:ListItem Text="Home Address" Value="Home_Address"></asp:ListItem>
                     <asp:ListItem Text="Password" Value="Password"></asp:ListItem>
                 </asp:RadioButtonList>
-            </div>
-
-            <div class="input-group">
+                <br />
+                <asp:Label ID="Label3" runat="server" Text="Please enter updated detail:"></asp:Label>
+                <br />
                 <asp:TextBox ID="txtUpdated" runat="server" CssClass="textbox" Height="43px"></asp:TextBox>
             </div>
 
