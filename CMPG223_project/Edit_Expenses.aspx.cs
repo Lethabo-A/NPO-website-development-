@@ -102,36 +102,43 @@ namespace CMPG223_project
         protected void DeleteButton_Click(object sender, EventArgs e)
         {
             string category = DropDownList3.SelectedItem.ToString();
-            DateTime datetime = Calendar2.SelectedDate;
-            string updateD = datetime.ToString("yyyy-MMMM-dd");
-            try
+            int ID;
+            if  (int.TryParse(TextBox2.Text, out ID))
             {
-                SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
-                connection.Open();
-                SqlCommand command;
-                SqlDataAdapter adapter = new SqlDataAdapter();
-                String insert = "delete from Add_Expense_Table where Expense_Category = '" + category + "'";
-                command = new SqlCommand(insert, connection);
-                adapter.InsertCommand = new SqlCommand(insert, connection);
-                adapter.InsertCommand.ExecuteNonQuery();
-                command.Dispose();
+                try
+                {
+                    SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
+                    connection.Open();
+                    SqlCommand command;
+                    SqlDataAdapter adapter = new SqlDataAdapter();
+                    String insert = "delete from Add_Expense_Table where Expense_Category = '" + category + "'";
+                    command = new SqlCommand(insert, connection);
+                    adapter.InsertCommand = new SqlCommand(insert, connection);
+                    adapter.InsertCommand.ExecuteNonQuery();
+                    command.Dispose();
 
-                String insert1 = "delete from Add_Expense_Table where Expense_Date = '" + updateD + "'";
-                command = new SqlCommand(insert1, connection);
-                adapter.InsertCommand = new SqlCommand(insert1, connection);
-                adapter.InsertCommand.ExecuteNonQuery();
-                command.Dispose();
-                connection.Close();
+                    String insert1 = "delete from Add_Expense_Table where ExpenseID = '" + ID + "'";
+                    command = new SqlCommand(insert1, connection);
+                    adapter.InsertCommand = new SqlCommand(insert1, connection);
+                    adapter.InsertCommand.ExecuteNonQuery();
+                    command.Dispose();
+                    connection.Close();
 
-                MessageBox.Show("Delete suuccessful!");
+                    MessageBox.Show("Delete suuccessful!");
 
 
 
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
-            catch (SqlException ex)
+            else
             {
-                MessageBox.Show(ex.Message);
+                MessageBox.Show("Enter the ID correct data type!");
             }
+            
 
         }
 

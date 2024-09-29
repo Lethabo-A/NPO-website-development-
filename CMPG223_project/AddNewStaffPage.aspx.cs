@@ -103,7 +103,7 @@ namespace CMPG223_project
             switch (department)
             {
                 case "Doctor":
-                    prefix = "D";
+                    prefix = "Do";
                     break;
                 case "Accountant":
                     prefix = "Ac";
@@ -112,7 +112,7 @@ namespace CMPG223_project
                     prefix = "Ad";
                     break;
                 case "General staff":
-                    prefix = "G";
+                    prefix = "Gs";
                     break;
                 default:
                     lblOutput.ForeColor=System.Drawing.Color.Red;

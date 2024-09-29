@@ -59,7 +59,7 @@ namespace CMPG223_project
                     switch (rolePrefix)
                     {
                         case "Do":
-                            Response.Redirect("MedicalReport.aspx"); //add doctors page
+                            Response.Redirect("FindPatient.aspx"); //add doctors page
                             break;
                         case "Ac":
                             Response.Redirect("Financial_Page_Formaspx.aspx"); //add accountants page

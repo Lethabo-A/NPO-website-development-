@@ -136,8 +136,11 @@ input[type="name"] {
             </div>
 
         <div>
-            <asp:Label ID="Label11" runat="server" Text="Choose date of income:"></asp:Label>
-            <asp:Calendar ID="Calendar2" runat="server"></asp:Calendar>
+            <asp:Label ID="Label13" runat="server" Text="Enter ID of income:"></asp:Label>
+            <asp:TextBox ID="TextBox2" runat="server" ValidationGroup="Delete"></asp:TextBox>
+            
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox2" ErrorMessage="Enter ID!" ForeColor="Red" ValidationGroup="Delete"></asp:RequiredFieldValidator>
+            
         </div>
 
         

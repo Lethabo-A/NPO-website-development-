@@ -124,7 +124,7 @@ input[type="name"] {
         <h1>Delete by category and date of expense:</h1>
         <div>
             <asp:Label ID="Label10" runat="server" Text="Choose category:"></asp:Label>
-                <asp:DropDownList ID="DropDownList3" runat="server" CssClass="dropdown-style" ValidationGroup="Delete">
+                <asp:DropDownList ID="DropDownList3" runat="server" CssClass="dropdown-style" ValidationGroup="delete">
                     <asp:ListItem></asp:ListItem>
                     <asp:ListItem>Administrative Expenses</asp:ListItem>
                     <asp:ListItem>Fundraising Expenses</asp:ListItem>
@@ -136,8 +136,9 @@ input[type="name"] {
             </div>
 
         <div>
-            <asp:Label ID="Label11" runat="server" Text="Choose date of expense:"></asp:Label>
-            <asp:Calendar ID="Calendar2" runat="server"></asp:Calendar>
+            <asp:Label ID="Label13" runat="server" Text="Enter ID of expense:"></asp:Label>
+            <asp:TextBox ID="TextBox2" runat="server" ValidationGroup="delete"></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator6" runat="server" ControlToValidate="TextBox2" ErrorMessage="Enter ID!" ForeColor="Red" ValidationGroup="Delete"></asp:RequiredFieldValidator>
         </div>
 
         
