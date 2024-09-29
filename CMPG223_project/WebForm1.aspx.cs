@@ -65,10 +65,10 @@ namespace CMPG223_project
                             Response.Redirect("Financial_Page_Formaspx.aspx"); //add accountants page
                             break;
                         case "Ad":
-                            Response.Redirect(".aspx"); //add adminpage
+                            Response.Redirect("AdminPage.aspx"); //add adminpage
                             break;
                         case "Gs":
-                            Response.Redirect(".aspx"); //add general staff page
+                            Response.Redirect("Maintain_Staff.aspx"); //add general staff page
                             break;
                         default:
                             lblErrorMessage.Text = "Invalid role, contact admin.";
