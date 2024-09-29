@@ -38,12 +38,10 @@ namespace CMPG223_project
         catch (SqlException ex) { MessageBox.Show(ex.Message); }
         pID = cookie["ID"];
         establish();
-
     }
 
     protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)
     {
-
         txtChanges.Visible = true;
         lblChanges.Visible = true;
         btnUpdate.Visible = true;
