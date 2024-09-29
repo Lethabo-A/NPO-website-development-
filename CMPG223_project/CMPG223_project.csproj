@@ -104,10 +104,10 @@
     <Content Include="About.aspx" />
     <Content Include="AddNewPatient.aspx" />
     <Content Include="AddNewPatient.css" />
+    <Content Include="AddNewStaff.css" />
     <Content Include="AddNewStaffPage.aspx" />
     <Content Include="AddOccupants.aspx" />
     <Content Include="AddOccupants.css" />
-    <Content Include="addstaffStyleSheet.css" />
     <Content Include="Add_Expense.css" />
     <Content Include="Add_Expense_Form.aspx" />
     <Content Include="Add_Income.css" />
@@ -142,6 +142,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="defaultAdmin.aspx" />
+    <Content Include="defaultAdmin.css" />
     <Content Include="DefaultOccupants.aspx" />
     <Content Include="DefaultOccupants.css" />
     <Content Include="DeleteOccupant.aspx" />
@@ -178,6 +179,7 @@
     <Content Include="MedicalReport.aspx" />
     <Content Include="MedicalReport.css" />
     <Content Include="PoliciesAndProcedures.css" />
+    <Content Include="RemoveStaff.css" />
     <Content Include="RemoveStaffPage.aspx" />
     <Content Include="ReportOccupant.aspx" />
     <Content Include="ReportOccupant.css" />
@@ -195,6 +197,7 @@
     <Content Include="UpdateOccupants.aspx" />
     <Content Include="UpdateOccupants.css" />
     <Content Include="UpdateStaff.aspx" />
+    <Content Include="UpdateStaff.css" />
     <Content Include="ViewOccupants.aspx" />
     <Content Include="ViewOccupants.css" />
     <Content Include="WebForm1.aspx" />

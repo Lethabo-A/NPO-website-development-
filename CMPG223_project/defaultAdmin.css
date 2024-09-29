@@ -117,13 +117,13 @@ form div {
     padding-left: 20px;
 }
 
-.Button1_container, .btnUpdateStaffPage_container, .Button1_container {
+.btnOccupants_container, .btnstaff_container, .btndonations_container, .btnfinances_container, .btnpatients_container {
     display: flex;
     justify-content: flex-start;
     margin-top: 20px;
 }
 
-.Button1_button, .btnUpdateStaffPage_button, .btnRemoveStaffPage_button {
+.btnOccupants_button, .btnstaff_button, .btndonations_button, .btnfinances_button, .btnpatients_button {
     padding: 10px;
     text-align: center;
     text-decoration: none;
@@ -142,12 +142,12 @@ form div {
     box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1);
 }
 
-.Button1_button, .btnUpdateStaffPage_button, .btnRemoveStaffPage_button {
+.btnOccupants_button, .btnstaff_button, .btndonations_button, .btnfinances_button, .btnpatients_button {
     background-color: #8e24aa;
     color: white;
 }
 
-    .Button1_button:hover, .btnUpdateStaffPage_button:hover, .btnRemoveStaffPage_button:hover {
+    .btnOccupants_button:hover, .btnstaff_button:hover, .btndonations_button:hover, .btnfinances_button:hover, .btnpatients_button:hover {
         background-color: #7b1fa2;
         box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
     }

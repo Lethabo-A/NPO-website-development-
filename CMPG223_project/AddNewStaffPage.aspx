@@ -4,11 +4,34 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Add New Staff</title>
-    <link rel="stylesheet" type="text/css" href="addstaffStyleSheet.css" />
+    <link href="AddNewStaff.css" rel="stylesheet" type="text/css" />
+    <style type="text/css">
+
+        .form{
+                align-content: center;
+             }
+        .auto-style3 {
+            width: 113px;
+            height: 108px;
+             }
+    </style>
+
 </head>
 <body>
+
+    <div class="header">
+        <img src="images/NGOs.png" alt="logo" class="auto-style3" />&nbsp;<h1>Add new staff</h1>
+    </div>
+
+    <div class="topnav">
+        <a href="Maintain_Staff.aspx">Back</a>
+        <a href="WebForm1.aspx">Logout</a>
+    </div>
+
+    <div class="form-container">
+
     <form id="form1" runat="server">
-        <h2>Add New Staff</h2>
+        <h1>Enter details below:</h1>
         <asp:Label ID="lblOutput" runat="server" Text="[Output]"></asp:Label>
         
 
@@ -50,13 +73,23 @@
 
         <div>
             <asp:Label ID="Label7" runat="server" Text="Password:"></asp:Label>
-            <asp:TextBox ID="txtWord" runat="server" TextMode="Password"></asp:TextBox>
+            <asp:TextBox ID="txtWord" runat="server" TextMode="Password" CssClass="password"></asp:TextBox>
         </div>
 
-        <div class="button-container">
-            <asp:Button ID="btnAdd" runat="server" CssClass="add-button" OnClick="btnAdd_Click" Text="Add staff" />
-            <asp:Button ID="btnBack" runat="server" CssClass="back-button" OnClick="btnBack_Click" Text="Back" />
+
+        <div class="btnAdd_container">
+            <asp:Button ID="btnAdd" runat="server"  OnClick="btnAdd_Click" Text="Add staff" CssClass="btnAdd_button" />
+            
         </div>
+
+
     </form>
+
+</div>
+
+    <div class="footer">
+        <p>Copyright © 2024 NGOs office Company. All rights reserved.</p>
+    </div>
+
 </body>
 </html>

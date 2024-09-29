@@ -5,96 +5,46 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title>Update Staff</title>
+    <link href="UpdateStaff.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0; /* Light grey background */
-            margin: 0;
-            padding: 0;
-        }
 
-        .container {
-            width: 60%;
-            margin: 50px auto;
-            text-align: center;
-            padding: 20px;
-            background-color: white;
-            border-radius: 8px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .header {
-            font-size: 32px;
-            color: #6a0dad;
-            font-weight: bold;
-            margin-bottom: 20px;
-        }
-
-        .grid {
-            width: 100%;
-            margin: 20px auto;
-            border: 1px solid #ddd;
-            border-collapse: collapse;
-        }
-
-        .grid th, .grid td {
-            padding: 10px;
-            text-align: center;
-            border: 1px solid #ddd;
-        }
-
-        .label {
-            font-size: 18px;
-            margin-right: 10px;
-        }
-
-        .textbox {
-            width: 250px;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        .radio-group {
-            margin: 20px 0;
-            text-align: left; /* Align to the left for better readability */
-        }
-
-        .radio-group label {
-            margin-right: 20px;
-            font-size: 16px;
-        }
-
-        .btn {
-            width: 150px;
-            padding: 10px;
-            background-color: #8e44ad; /* Purple button */
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 10px;
-        }
-
-        .btn:hover {
-            background-color: #732d91; /* Darker purple on hover */
-        }
-
+        .form{
+                align-content: center;
+             }
+        .auto-style3 {
+            width: 113px;
+            height: 108px;
+             }
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div class="container">
-            <div class="header">Update Staff</div>
 
+    <div class="header">
+        <img src="images/NGOs.png" alt="logo" class="auto-style3" />&nbsp;<h1>Update staff</h1>
+    </div>
+
+    <div class="topnav">
+        <a href="Maintain_Staff.aspx">Back</a>
+        <a href="WebForm1.aspx">Logout</a>
+    </div>
+
+
+    <div class="form-container">
+    <form id="form1" runat="server">
+        <h1>Enter the details below:</h1>
+
+        <div>
             <asp:Label ID="lblMessage" runat="server" Text="[Output]" CssClass="label"></asp:Label>
+        </div>
+            
 
             <asp:GridView ID="gridUpdate" runat="server" CssClass="grid"></asp:GridView>
 
-            <div class="input-group">
+            <div>
                 <asp:Label ID="Label2" runat="server" CssClass="label" Text="Enter staff number to update:"></asp:Label>
                 <asp:TextBox ID="txtNum" runat="server" CssClass="textbox"></asp:TextBox>
             </div>
+
 
             <div class="radio-group">
                 <span>Please choose the field you want to update:</span><br />
@@ -106,16 +56,25 @@
                     <asp:ListItem Text="Password" Value="Password"></asp:ListItem>
                 </asp:RadioButtonList>
                 <br />
-                <asp:Label ID="Label3" runat="server" Text="Please enter updated detail:"></asp:Label>
-                <br />
-                <asp:TextBox ID="txtUpdated" runat="server" CssClass="textbox" Height="43px"></asp:TextBox>
             </div>
 
-            <div class="button-group">
-                <asp:Button ID="btnUpdateStaff" runat="server" CssClass="btn" Text="Update Staff" OnClick="btnUpdateStaff_Click" />
-                <asp:Button ID="btnBack" runat="server" CssClass="btn" Text="Back" OnClick="btnBack_Click" />
+            <div>
+                <asp:Label ID="Label3" runat="server" Text="Please enter updated detail:"></asp:Label>
+                <asp:TextBox ID="txtUpdated" runat="server" CssClass="textbox" Height="43px"></asp:TextBox>
             </div>
-        </div>
+ 
+
+            <div class="btnUpdateStaff_container">
+                <asp:Button ID="btnUpdateStaff" runat="server" CssClass="btnUpdateStaff_button" Text="Update Staff" OnClick="btnUpdateStaff_Click" />
+            </div>
+
     </form>
+
+</div>
+
+    <div class="footer">
+        <p>Copyright © 2024 NGOs office Company. All rights reserved.</p>
+    </div>
+
 </body>
 </html>
