@@ -11,6 +11,7 @@ using System.Web.UI.WebControls;
 using System.Xml.Linq;
 using System.Security.Cryptography;
 using System.Text;
+using CMPG223_project.Utilities;
 
 namespace CMPG223_project
 {
@@ -57,24 +58,7 @@ namespace CMPG223_project
             return rblFields.SelectedValue;
 
         }
-        //Method to hash the password 
-        private string Hashedpassword(string password)
-        {
-            using (SHA256 sha256Hash = SHA256.Create())
-            {
-                //compute hash returns byte array
-                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
-
-                //convert byte array to a string
-                StringBuilder builder = new StringBuilder();
-                for (int i = 0; i < bytes.Length; i++)
-                {
-                    builder.Append(bytes[i].ToString("x2"));
-
-                }
-                return builder.ToString();
-            }
-        }
+        
         //method to handle update operation
         private void updateStaff(string newValue, string fieldToUpdate, string staffNum)
         {
@@ -89,7 +73,7 @@ namespace CMPG223_project
                         //input validation
                         if (fieldToUpdate == "Password" && !string.IsNullOrEmpty(newValue))
                         {
-                            newValue = Hashedpassword(newValue);
+                            newValue = HashingUtil.HashPassword(newValue);
 
                         }
 

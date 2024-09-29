@@ -3,6 +3,7 @@ using System.Web.UI;
 using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
+using CMPG223_project.Utilities;
 
 namespace CMPG223_project
 {
@@ -40,13 +41,16 @@ namespace CMPG223_project
         {
             usernumber = txtUserNumber.Text;
             password = txtPassword.Text;
+
+            // Hash the entered password
+            string hashedPassword = HashingUtil.HashPassword(password);
             connection.Open();
             try
             {
                 sqlcommand = @"SELECT * FROM Staff WHERE Staff_number = @UserNumber AND Password = @Password";
                 SqlCommand cmd = new SqlCommand(sqlcommand, connection);
                 cmd.Parameters.AddWithValue("@UserNumber", txtUserNumber.Text);
-                cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
+                cmd.Parameters.AddWithValue("@Password", hashedPassword);
 
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 adapter.Fill(dt);
@@ -59,7 +63,7 @@ namespace CMPG223_project
                     switch (rolePrefix)
                     {
                         case "Do":
-                            Response.Redirect("FindPatient.aspx"); //add doctors page
+                            Response.Redirect("MedicalReport.aspx"); //add doctors page
                             break;
                         case "Ac":
                             Response.Redirect("Financial_Page_Formaspx.aspx"); //add accountants page
