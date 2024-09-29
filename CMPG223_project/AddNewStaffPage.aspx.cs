@@ -8,6 +8,7 @@ using System.Text;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using CMPG223_project.Utilities;
 
 namespace CMPG223_project
 {
@@ -68,7 +69,7 @@ namespace CMPG223_project
             }
 
             //hash password
-            string hashedpassword = Hashedpassword(password);
+            string hashedpassword = HashingUtil.HashPassword(password);
 
             //generate the staff number 
             string staffNumber = GenerateStaffNumber(department, IdNumber);
@@ -76,24 +77,8 @@ namespace CMPG223_project
             //add new staff to the database
             AddStaff(staffNumber, name, surname, contactNumber, homeAddress, hashedpassword);
         }
-        //method to hash the password
-        private string Hashedpassword(string password)
-        {
-            using (SHA256 sha256Hash = SHA256.Create())
-            {
-                //compute hash returns byte array
-                byte[] bytes = sha256Hash.ComputeHash(Encoding.UTF8.GetBytes(password));
-
-                //convert byte array to a string
-                StringBuilder builder = new StringBuilder();
-                for (int i = 0; i < bytes.Length; i++)
-                {
-                    builder.Append(bytes[i].ToString("x2"));
-
-                }
-                return builder.ToString();
-            }
-        }
+        
+        
 
         //method to generate staff number 
         private string GenerateStaffNumber(string department, string IdNumber)

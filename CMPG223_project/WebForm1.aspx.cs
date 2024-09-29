@@ -3,6 +3,7 @@ using System.Web.UI;
 using System.Data.SqlClient;
 using System.Data;
 using System.Configuration;
+using CMPG223_project.Utilities;
 
 namespace CMPG223_project
 {
@@ -40,13 +41,15 @@ namespace CMPG223_project
         {
             usernumber = txtUserNumber.Text;
             password = txtPassword.Text;
+            //hash entered password
+            string hashpassword=HashingUtil.HashPassword(password);
             connection.Open();
             try
             {
                 sqlcommand = @"SELECT * FROM Staff WHERE Staff_number = @UserNumber AND Password = @Password";
                 SqlCommand cmd = new SqlCommand(sqlcommand, connection);
                 cmd.Parameters.AddWithValue("@UserNumber", txtUserNumber.Text);
-                cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
+                cmd.Parameters.AddWithValue("@Password",hashpassword );
 
                 SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 adapter.Fill(dt);

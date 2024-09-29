@@ -446,6 +446,7 @@
     <Compile Include="UpdateStaff.aspx.designer.cs">
       <DependentUpon>UpdateStaff.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Utilities\HashingUtil.cs" />
     <Compile Include="ViewOccupants.aspx.cs">
       <DependentUpon>ViewOccupants.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
