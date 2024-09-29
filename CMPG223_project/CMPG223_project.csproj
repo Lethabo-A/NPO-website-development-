@@ -141,6 +141,7 @@
     <Content Include="Content\bootstrap.rtl.min.css" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
+    <Content Include="defaultAdmin.aspx" />
     <Content Include="DefaultOccupants.aspx" />
     <Content Include="DefaultOccupants.css" />
     <Content Include="DeleteOccupant.aspx" />
@@ -290,6 +291,13 @@
     </Compile>
     <Compile Include="Default.aspx.designer.cs">
       <DependentUpon>Default.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="defaultAdmin.aspx.cs">
+      <DependentUpon>defaultAdmin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="defaultAdmin.aspx.designer.cs">
+      <DependentUpon>defaultAdmin.aspx</DependentUpon>
     </Compile>
     <Compile Include="DefaultOccupants.aspx.cs">
       <DependentUpon>DefaultOccupants.aspx</DependentUpon>
