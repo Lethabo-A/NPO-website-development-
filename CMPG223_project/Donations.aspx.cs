@@ -34,7 +34,31 @@ namespace CMPG223_project
                 connection.Open();
                 SqlCommand command;
                 SqlDataAdapter adapter = new SqlDataAdapter();
-                String insert = "insert into Add_Expense_Table (Expense_Category,Expense_Name,Expense_Date,Expense_Amount) values ('" + donorName + "','" + donorLastName + "','" + donorEmail + "','" + donorPhoneNumb + "','" + date + "','" + donatedAmount + "','" + bankAccount + "')";
+                String insert = "insert into Donations (Name,Surname,Email,PhoneNumber,Date,DonatedAmount,BankAccount) values ('" + donorName + "','" + donorLastName + "','" + donorEmail + "','" + donorPhoneNumb + "','" + date + "','" + donatedAmount + "','" + bankAccount + "')";
+                command = new SqlCommand(insert, connection);
+                adapter.InsertCommand = new SqlCommand(insert, connection);
+                adapter.InsertCommand.ExecuteNonQuery();
+                command.Dispose();
+                connection.Close();
+
+                MessageBox.Show("Details added suuccessfully!");
+            }
+            catch (SqlException ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+
+            string incomeName = "Donation";
+            string category = "Fundraising";
+            double incAmount = Double.Parse(donatedAmount);
+
+            try
+            {
+                SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
+                connection.Open();
+                SqlCommand command;
+                SqlDataAdapter adapter = new SqlDataAdapter();
+                String insert = "insert into Add_Income_Table (Income_Category,Income_Name,Income_Date,Income_Amount) values ('" + category + "','" + incomeName + "','" + date + "','" + incAmount + "')";
                 command = new SqlCommand(insert, connection);
                 adapter.InsertCommand = new SqlCommand(insert, connection);
                 adapter.InsertCommand.ExecuteNonQuery();

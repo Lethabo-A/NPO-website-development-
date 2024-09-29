@@ -26,42 +26,42 @@ namespace CMPG223_project
 
             if (Double.TryParse(Amount_TextBox.Text,out amount) )
             {
+                category = DropDownList1.SelectedItem.ToString();
+                name = ExpenseName_TextBox.Text;
+                DateTime datetime = Calendar1.SelectedDate;
+                date = datetime.ToString("yyyy-MMMM-dd");
+                //var fn = "";
 
+
+
+                try
+                {
+                    SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
+                    connection.Open();
+                    SqlCommand command;
+                    SqlDataAdapter adapter = new SqlDataAdapter();
+                    String insert = "insert into Add_Expense_Table (Expense_Category,Expense_Name,Expense_Date,Expense_Amount) values ('" + category + "','" + name + "','" + date + "','" + amount + "')";
+                    command = new SqlCommand(insert, connection);
+                    adapter.InsertCommand = new SqlCommand(insert, connection);
+                    adapter.InsertCommand.ExecuteNonQuery();
+                    command.Dispose();
+                    connection.Close();
+
+                    MessageBox.Show("Added suuccessfully!");
+
+
+
+                }
+                catch (SqlException ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
             }
             else
             {
                 MessageBox.Show("Error!! Enter correct type.");
 ;            }
-            category = DropDownList1.SelectedItem.ToString();
-            name = ExpenseName_TextBox.Text;
-            DateTime datetime = Calendar1.SelectedDate;
-            date = datetime.ToString("yyyy-MMMM-dd");
-            //var fn = "";
-
             
-
-            try
-            {
-                SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
-                connection.Open();
-                SqlCommand command;
-                SqlDataAdapter adapter = new SqlDataAdapter();
-                String insert = "insert into Add_Expense_Table (Expense_Category,Expense_Name,Expense_Date,Expense_Amount) values ('" + category + "','" + name + "','" + date + "','"  + amount + "')";
-                command = new SqlCommand(insert, connection);
-                adapter.InsertCommand = new SqlCommand(insert, connection);
-                adapter.InsertCommand.ExecuteNonQuery();
-                command.Dispose();
-                connection.Close();
-
-                MessageBox.Show("Added suuccessfully!");
-
-
-
-            }
-            catch (SqlException ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
         }
 
     }

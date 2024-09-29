@@ -54,6 +54,9 @@ input[type="name"] {
 
         <h1>Choose the category and ID of the income you want to update:</h1>
 
+        <div>
+            <asp:Label ID="lblRemove" runat="server" Text="[Output]"></asp:Label>
+        </div>
 
         <div>
             <asp:Label ID="Label1" runat="server" Text="Choose category:"></asp:Label>

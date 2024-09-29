@@ -208,6 +208,10 @@
         .topnav-right {
             float: right;
         }
+    	.auto-style4 {
+			left: 4px;
+			top: 5px;
+		}
     </style>
 </head>
 <body>
@@ -227,34 +231,23 @@
     <div class="form-container">
     <form id="form1" runat="server">
        
-        <div>
+        <div class="auto-style4">
             <h3>Please make sure all neccesary categories are checked before proceeding to next page</h3>
-            <label class="container">Legal Status
-              <input type="checkbox"/>
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">Criminal Background
-              <input type="checkbox"/>
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">Social History
-              <input type="checkbox"/>
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">Medical Record
-              <input type="checkbox"/>
-              <span class="checkmark"></span>
-            </label>
-            <label class="container">Risk Assessment
-              <input type="checkbox"/>
-              <span class="checkmark"></span>
-            </label>
+            <asp:CheckBoxList ID="CheckBoxList1" runat="server">
+				<asp:ListItem>Legal Status</asp:ListItem>
+				<asp:ListItem>Criminal Background</asp:ListItem>
+				<asp:ListItem>Social History</asp:ListItem>
+				<asp:ListItem>Medical Record</asp:ListItem>
+				<asp:ListItem>Risk Assessment</asp:ListItem>
+			</asp:CheckBoxList>
         </div>
 
         <div class="button-container">
             <asp:Button ID="btnNext" runat="server" OnClick="btnNext_Click" CssClass="btnNext" Text="Next" />
         </div>
-        <h2>Category Break Down</h2>
+        <h2>Category Break Down<asp:CheckBoxList ID="CheckBoxList2" runat="server">
+			</asp:CheckBoxList>
+		</h2>
         <div class="row">
           
           <h1>Under Legal Status:</h1>

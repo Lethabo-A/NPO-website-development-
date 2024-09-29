@@ -3,24 +3,24 @@
   "WorkspaceRootPath": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\medicalreport.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:medicalreport.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\add_expense_form.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:add_expense_form.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\displaypatientinfo.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:displaypatientinfo.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
+      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\add_expense_form.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:add_expense_form.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\displaypatientinfo.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:displaypatientinfo.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\add_income_form.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:add_income_form.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\add_expense.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:add_expense.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\removestaffpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:removestaffpage.aspx.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\displaypatientinfocss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:displaypatientinfocss.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
+      "AbsoluteMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|c:\\users\\gibson\\documents\\github\\cmpg223_group20project\\cmpg223_project\\removestaffpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}",
+      "RelativeMoniker": "D:0:0:{7716D17A-6ACF-4DCD-AFC5-7E587B457EEF}|CMPG223_project.csproj|solutionrelative:removestaffpage.aspx||{57312C73-6202-49E9-B1E1-40EA1A6DC1F6}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,75 +30,75 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "MedicalReport.aspx",
-              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\MedicalReport.aspx",
-              "RelativeDocumentMoniker": "MedicalReport.aspx",
-              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\MedicalReport.aspx",
-              "RelativeToolTip": "MedicalReport.aspx",
-              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-29T20:10:43.129Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DisplayPatientInfo.aspx.cs",
-              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DisplayPatientInfo.aspx.cs",
-              "RelativeDocumentMoniker": "DisplayPatientInfo.aspx.cs",
-              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DisplayPatientInfo.aspx.cs",
-              "RelativeToolTip": "DisplayPatientInfo.aspx.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAIwC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-09-29T20:08:57.801Z",
-              "EditorCaption": ""
-            },
             {
               "$type": "Bookmark",
               "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Add_Expense.css",
-              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\Add_Expense.css",
-              "RelativeDocumentMoniker": "Add_Expense.css",
-              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\Add_Expense.css",
-              "RelativeToolTip": "Add_Expense.css",
-              "ViewState": "AgIAAG4AAAAAAAAAAAAAAJEAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-29T20:03:04.762Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DisplayPatientInfocss.css",
-              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DisplayPatientInfocss.css",
-              "RelativeDocumentMoniker": "DisplayPatientInfocss.css",
-              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DisplayPatientInfocss.css",
-              "RelativeToolTip": "DisplayPatientInfocss.css",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2024-09-29T15:52:17.319Z",
+              "DocumentIndex": 0,
+              "Title": "Add_Expense_Form.aspx",
+              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\Add_Expense_Form.aspx",
+              "RelativeDocumentMoniker": "Add_Expense_Form.aspx",
+              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\Add_Expense_Form.aspx",
+              "RelativeToolTip": "Add_Expense_Form.aspx",
+              "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
+              "WhenOpened": "2024-09-29T21:27:13.856Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "DisplayPatientInfo.aspx",
-              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DisplayPatientInfo.aspx",
-              "RelativeDocumentMoniker": "DisplayPatientInfo.aspx",
-              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\DisplayPatientInfo.aspx",
-              "RelativeToolTip": "DisplayPatientInfo.aspx",
+              "Title": "Add_Expense_Form.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\Add_Expense_Form.aspx.cs",
+              "RelativeDocumentMoniker": "Add_Expense_Form.aspx.cs",
+              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\Add_Expense_Form.aspx.cs",
+              "RelativeToolTip": "Add_Expense_Form.aspx.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAADwvxwAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T21:26:34.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Add_Income_Form.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\Add_Income_Form.aspx.cs",
+              "RelativeDocumentMoniker": "Add_Income_Form.aspx.cs",
+              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\Add_Income_Form.aspx.cs",
+              "RelativeToolTip": "Add_Income_Form.aspx.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADYAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T21:25:44.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "RemoveStaffPage.aspx.cs",
+              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\RemoveStaffPage.aspx.cs",
+              "RelativeDocumentMoniker": "RemoveStaffPage.aspx.cs",
+              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\RemoveStaffPage.aspx.cs",
+              "RelativeToolTip": "RemoveStaffPage.aspx.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAGkAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-29T21:05:37.477Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "RemoveStaffPage.aspx",
+              "DocumentMoniker": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\RemoveStaffPage.aspx",
+              "RelativeDocumentMoniker": "RemoveStaffPage.aspx",
+              "ToolTip": "C:\\Users\\Gibson\\Documents\\GitHub\\CMPG223_group20Project\\CMPG223_project\\RemoveStaffPage.aspx",
+              "RelativeToolTip": "RemoveStaffPage.aspx",
               "LogicalView": "7651a703-06e5-11d1-8ebd-00a0c90f26ea",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000195|",
-              "WhenOpened": "2024-09-29T15:51:55.179Z",
+              "WhenOpened": "2024-09-29T21:05:12.174Z",
               "EditorCaption": ""
             }
           ]

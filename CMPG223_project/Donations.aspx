@@ -90,7 +90,7 @@
 				<label for="banks">Bank Account</label>
 				<select id="banks" name="banks">
 					<option value="">Select bank account donated in..</option>
-					<option value="fnb">FNB</option>
+					<option value="fnb">ABSA Group</option>
 					<option value="nedbank">NedBank</option>
 					<option value="capitec">Capitec</option>
 				</select>&nbsp;

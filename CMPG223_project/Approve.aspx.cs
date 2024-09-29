@@ -13,11 +13,9 @@ namespace CMPG223_project
         {
 
         }
-
-
-       /* protected void CheckBoxList1_SelectedIndexChanged(object sender, EventArgs e)
+        protected void CheckBoxList1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            
+
 
             int selectedCount = 0;
             foreach (ListItem item in CheckBoxList1.Items)
@@ -28,13 +26,13 @@ namespace CMPG223_project
                 }
             }
 
-            
+
             lblMessage.Text = $"You have selected {selectedCount} out of {CheckBoxList1.Items.Count} items.";
         }
 
         protected void btnNext_Click(object sender, EventArgs e)
         {
-            
+
             bool allSelected = true;
 
             foreach (ListItem item in CheckBoxList1.Items)
@@ -48,14 +46,16 @@ namespace CMPG223_project
 
             if (allSelected)
             {
-                
+
                 Response.Redirect("AddOccupants.aspx");
             }
             else
             {
-                
+
                 lblMessage.Text = "Please select all options before proceeding.";
             }
-        }*/
+        }
+
+        
     }
 }

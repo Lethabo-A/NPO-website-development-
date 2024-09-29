@@ -22,6 +22,12 @@ namespace CMPG223_project
         DataSet ds = new DataSet();
         protected void Page_Load(object sender, EventArgs e)
         {
+            if (!IsPostBack)
+            {
+                BindGridView();
+            }
+            lblRemove.Visible = false;
+
             string category = DropDownList1.SelectedItem.ToString();
             conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
             conn.Open();
@@ -74,7 +80,7 @@ namespace CMPG223_project
                         adapter.InsertCommand.ExecuteNonQuery();
                         command.Dispose();
                         connection.Close();
-
+                        BindGridView();
                         MessageBox.Show("Updated suuccessful!");
                     }
                     else
@@ -122,7 +128,7 @@ namespace CMPG223_project
                     adapter.InsertCommand.ExecuteNonQuery();
                     command.Dispose();
                     connection.Close();
-
+                    BindGridView();
                     MessageBox.Show("Delete suuccessful!");
 
 
@@ -168,7 +174,30 @@ namespace CMPG223_project
                 MessageBox.Show(sqlEx.Message);
             }
         }
+        private void BindGridView()
+        {
+            using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString))
+            {
+                try
+                {
+                    conn.Open();
+                    string query = "SELECT * FROM Add_Income_Table";
+                    SqlCommand cmd = new SqlCommand(query, conn);
+                    SqlDataAdapter adapter = new SqlDataAdapter(cmd);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    GridView1.DataSource = dt;
+                    GridView1.DataBind();
 
-       
+                }
+                catch (Exception ex)
+                {
+                    lblRemove.ForeColor = System.Drawing.Color.Red;
+                    lblRemove.Text = "Error:" + ex.Message;
+                }
+            }
+        }
+
+
     }
 }
