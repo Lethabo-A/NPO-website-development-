@@ -55,50 +55,42 @@ namespace CMPG223_project
             try
             {
                 String category, name, date;
-                int ID = int.Parse(TextBox1.Text);
-                double amount=0;
-                if (Amount_TextBox.Text != "")
+                int ID;
+                double amount;
+                if (int.TryParse(TextBox1.Text,out ID))
                 {
-                    amount = double.Parse(Amount_TextBox.Text);
-                    category = DropDownList2.SelectedItem.ToString();
-                    name = ExpenseName_TextBox.Text;
-                    DateTime datetime2 = Calendar1.SelectedDate;
-                    date = datetime2.ToString("yyyy-MMMM-dd");
-                    SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
-                    connection.Open();
-                    SqlCommand command;
-                    SqlDataAdapter adapter = new SqlDataAdapter();
-                    String insert = "update Add_Expense_Table set Expense_Category = '" + category + "',Expense_Name = '" + name + "',Expense_Date = '" + date + "',Expense_Amount = '" + amount + "' where ExpenseID = '" + ID + "'";
-                    command = new SqlCommand(insert, connection);
-                    adapter.InsertCommand = new SqlCommand(insert, connection);
-                    adapter.InsertCommand.ExecuteNonQuery();
-                    command.Dispose();
-                    connection.Close();
+                    if (double.TryParse(Amount_TextBox.Text, out amount))
+                    {
+                        category = DropDownList2.SelectedItem.ToString();
+                        name = ExpenseName_TextBox.Text;
+                        DateTime datetime2 = Calendar1.SelectedDate;
+                        date = datetime2.ToString("yyyy-MMMM-dd");
+                        SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
+                        connection.Open();
+                        SqlCommand command;
+                        SqlDataAdapter adapter = new SqlDataAdapter();
+                        String insert = "update Add_Expense_Table set Expense_Category = '" + category + "',Expense_Name = '" + name + "',Expense_Date = '" + date + "',Expense_Amount = '" + amount + "' where ExpenseID = '" + ID + "'";
+                        command = new SqlCommand(insert, connection);
+                        adapter.InsertCommand = new SqlCommand(insert, connection);
+                        adapter.InsertCommand.ExecuteNonQuery();
+                        command.Dispose();
+                        connection.Close();
 
-                    MessageBox.Show("Added suuccessfully!");
+                        MessageBox.Show("Update suuccessful!");
+                    }
+                    else
+                    {
+                        MessageBox.Show("Enter the AMOUNT correct data type!");
+                    }
                 }
                 else
                 {
-                    category = DropDownList2.SelectedItem.ToString();
-                    name = ExpenseName_TextBox.Text;
-                    DateTime datetime2 = Calendar1.SelectedDate;
-                    date = datetime2.ToString("yyyy-MMMM-dd");
-                    SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
-                    connection.Open();
-                    SqlCommand command;
-                    SqlDataAdapter adapter = new SqlDataAdapter();
-                    String insert = "update Add_Expense_Table set Expense_Category = '" + category + "',Expense_Name = '" + name + "',Expense_Date = '" + date + "' where ExpenseID = '" + ID + "'";
-                    command = new SqlCommand(insert, connection);
-                    adapter.InsertCommand = new SqlCommand(insert, connection);
-                    adapter.InsertCommand.ExecuteNonQuery();
-                    command.Dispose();
-                    connection.Close();
-
-                    MessageBox.Show("Added suuccessfully!");
+                    MessageBox.Show("Enter the ID correct data type!");
                 }
                 
-
-
+                
+                
+                
             }
             catch (SqlException ex)
             {
@@ -131,7 +123,7 @@ namespace CMPG223_project
                 command.Dispose();
                 connection.Close();
 
-                MessageBox.Show("Added suuccessfully!");
+                MessageBox.Show("Delete suuccessful!");
 
 
 
@@ -140,6 +132,7 @@ namespace CMPG223_project
             {
                 MessageBox.Show(ex.Message);
             }
+
         }
 
         protected void DropDownList1_SelectedIndexChanged(object sender, EventArgs e)

@@ -70,6 +70,8 @@ input[type="name"] {
             <asp:Label ID="Label12" runat="server" Text="Enter ID of income:"></asp:Label>
             <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
             
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator4" runat="server" ControlToValidate="TextBox1" ErrorMessage="Enter ID!" ForeColor="Red"></asp:RequiredFieldValidator>
+            
         </div>
 
 
@@ -84,18 +86,21 @@ input[type="name"] {
         <div>
             <asp:Label ID="Label9" runat="server" Text="Update category:"></asp:Label>
             <asp:DropDownList ID="DropDownList2" runat="server" CssClass="dropdown-style">
+                <asp:ListItem></asp:ListItem>
                 <asp:ListItem>Governemnt Funding</asp:ListItem>
                 <asp:ListItem>Investments</asp:ListItem>
                 <asp:ListItem>Fundraising</asp:ListItem>
                 <asp:ListItem>Corporate partnerships</asp:ListItem>
                 <asp:ListItem>Sales of products/goods</asp:ListItem>
             </asp:DropDownList>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator3" runat="server" ControlToValidate="DropDownList2" ErrorMessage="Choose a category!" ForeColor="Red"></asp:RequiredFieldValidator>
         </div>
 
 
         <div>
             <asp:Label ID="Label3" runat="server" Text="Update name:"></asp:Label>
             <asp:TextBox ID="ExpenseName_TextBox" runat="server" placeholder="Enter expense name.."></asp:TextBox>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator1" runat="server" ControlToValidate="ExpenseName_TextBox" ErrorMessage="Enter income name!" ForeColor="Red"></asp:RequiredFieldValidator>
         </div>
 
 
@@ -108,6 +113,7 @@ input[type="name"] {
         <div>
             <asp:Label ID="Label7" runat="server" Text="Update amount:"></asp:Label>
             <asp:TextBox ID="Amount_TextBox" runat="server" placeholder="Enter cost amount.."></asp:TextBox>     
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator2" runat="server" ControlToValidate="Amount_TextBox" ErrorMessage="Enter income amount!" ForeColor="Red"></asp:RequiredFieldValidator>
         </div>
 
         <div class="UpdateButton_container">
@@ -118,13 +124,15 @@ input[type="name"] {
         <h1>Delete by category and date of income:</h1>
         <div>
             <asp:Label ID="Label10" runat="server" Text="Choose category:"></asp:Label>
-                <asp:DropDownList ID="DropDownList3" runat="server" CssClass="dropdown-style">
+                <asp:DropDownList ID="DropDownList3" runat="server" CssClass="dropdown-style" ValidationGroup="Delete">
+                    <asp:ListItem></asp:ListItem>
                     <asp:ListItem>Governemnt Funding</asp:ListItem>
                     <asp:ListItem>Investments</asp:ListItem>
                     <asp:ListItem>Fundraising</asp:ListItem>
                     <asp:ListItem>Corporate partnerships</asp:ListItem>
                     <asp:ListItem>Sales of products/goods</asp:ListItem>
                 </asp:DropDownList>
+            <asp:RequiredFieldValidator ID="RequiredFieldValidator5" runat="server" ControlToValidate="DropDownList3" ErrorMessage="Choose a category!" ForeColor="Red" ValidationGroup="Delete"></asp:RequiredFieldValidator>
             </div>
 
         <div>
@@ -134,7 +142,7 @@ input[type="name"] {
 
         
         <div class="DeleteButton_container">
-            <asp:Button ID="DeleteButton" runat="server" Text="Delete" CssClass="DeleteButton" OnClick="DeleteButton_Click" />
+            <asp:Button ID="DeleteButton" runat="server" Text="Delete" CssClass="DeleteButton" OnClick="DeleteButton_Click" ValidationGroup="Delete" />
         </div>
         
 
