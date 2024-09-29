@@ -16,7 +16,7 @@ namespace CMPG223_project
 {
     public partial class UpdateStaff : System.Web.UI.Page
     {
-        private string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\User\\Documents\\CMPG213\\staffMaintain\\newStaff\\App_Data\\Database1.mdf;Integrated Security=True";
+       // private string connectionString = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\User\\Documents\\CMPG213\\staffMaintain\\newStaff\\App_Data\\Database1.mdf;Integrated Security=True";
         protected void Page_Load(object sender, EventArgs e)
         {
             if (!IsPostBack)
@@ -80,8 +80,8 @@ namespace CMPG223_project
         {
             try
             {
-                using (SqlConnection conn = new SqlConnection(connectionString))
-                {
+                using (SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString))
+                    {
                     conn.Open();
                     string query = $"UPDATE Staff SET [{fieldToUpdate}]=@NewValue WHERE Staff_number=@staffNumber";
                     using (SqlCommand cmd = new SqlCommand(query, conn))
