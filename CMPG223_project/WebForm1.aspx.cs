@@ -17,12 +17,12 @@ namespace CMPG223_project
         
         protected void Page_Load(object sender, EventArgs e)
         {
-            /*
+            
             //there has been changes made to the connection string to allow it to be used on all our computers please dont change it and please use this connection string when tring to connect on your pc
             connectionString = @"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=|DataDirectory|\OrganizationDatabase.mdf;Integrated Security=True;Connect Timeout=30";
             try
             {
-                connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString);
+                connection = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
                 connection.Open();
             }
             catch (SqlException ex)
@@ -33,64 +33,73 @@ namespace CMPG223_project
             {
                 connection.Close();
             }
-            */
+            
         }
 
         protected void btnLogin_Click(object sender, EventArgs e)
         {
-            /*
             usernumber = txtUserNumber.Text;
             password = txtPassword.Text;
             connection.Open();
             try
             {
-                
-                sqlcommand = @"SELECT * FROM Staff where usernumber ='" + txtUserNumber.Text + "' AND password = '" + txtPassword.Text + "'";
-                adapter = new SqlDataAdapter(sqlcommand, connection);
+                sqlcommand = @"SELECT * FROM Staff WHERE Staff_number = @UserNumber AND Password = @Password";
+                SqlCommand cmd = new SqlCommand(sqlcommand, connection);
+                cmd.Parameters.AddWithValue("@UserNumber", txtUserNumber.Text);
+                cmd.Parameters.AddWithValue("@Password", txtPassword.Text);
+
+                SqlDataAdapter adapter = new SqlDataAdapter(cmd);
                 adapter.Fill(dt);
+
                 if (dt.Rows.Count > 0)
                 {
-                    usernumber = txtUserNumber.Text;
-                    password = txtPassword.Text;
-                    Response.Redirect("Financial_Page_Form.aspx");
+                    string staffNumber = dt.Rows[0]["Staff_number"].ToString();
+                    string rolePrefix = staffNumber.Substring(0, 2);
+
+                    switch (rolePrefix)
+                    {
+                        case "Do":
+                            Response.Redirect("MedicalReport.aspx"); //add doctors page
+                            break;
+                        case "Ac":
+                            Response.Redirect("Financial_Page_Formaspx.aspx"); //add accountants page
+                            break;
+                        case "Ad":
+                            Response.Redirect(".aspx"); //add adminpage
+                            break;
+                        case "Gs":
+                            Response.Redirect(".aspx"); //add general staff page
+                            break;
+                        default:
+                            lblErrorMessage.Text = "Invalid role, contact admin.";
+                            break;
+                    }
+
+                   
                     password = "";
                     usernumber = "";
                 }
                 else
                 {
-                    lblErrorMessage.Text = "incorrect login details please try again";
+                    lblErrorMessage.Text = "Incorrect login details, please try again.";
                     txtUserNumber.Focus();
                     txtPassword.Text = "";
                 }
-                connection.Close();
             }
-            catch(SqlException ex)
+            catch (SqlException ex)
             {
                 ShowAlert("Connection error: " + ex.Message);
-
             }
             catch (Exception ex)
             {
-                ShowAlert("error" + ex.Message);
+                ShowAlert("Error: " + ex.Message);
             }
             finally
             {
                 connection.Close();
             }
-            */
-
-            //i commented out my code because i have a database error however the code works
-            if (txtUserNumber.Text == "42686784" && txtPassword.Text == "password")
-            {
-                Response.Redirect("Financial_Page_Form.aspx"); 
-            }
-            else
-            {
-                lblErrorMessage.Text = "incorrect login details please try again";
-                txtUserNumber.Focus();
-                txtPassword.Text = "";
-            }
         }
+
         private void ShowAlert(string message)
         {
             string script = $"<script type=\"text/javascript\">alert('{message}');</script>";
