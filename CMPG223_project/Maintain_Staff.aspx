@@ -32,11 +32,11 @@
         <h1>Select a page:</h1>
             
         <div class="Button1_container">
-            <asp:Button ID="Button1" runat="server" OnClick="btnAdd_Click" Text="Add Page" CssClass="Button1_button" />
+            <asp:Button ID="Button1" runat="server" OnClick="btnAdd_Click" Text="Add Staff Page" CssClass="Button1_button" />
         </div>
 
         <div class="btnUpdateStaffPage_container">
-            <asp:Button ID="btnUpdateStaffPage" runat="server" Text="Update Page" CssClass="btnUpdateStaffPage_button" OnClick="btnUpdateStaffPage_Click" />
+            <asp:Button ID="btnUpdateStaffPage" runat="server" Text="Update Staff Page" CssClass="btnUpdateStaffPage_button" OnClick="btnUpdateStaffPage_Click" />
         </div>
 
 
