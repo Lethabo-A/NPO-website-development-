@@ -200,6 +200,9 @@
            
             <h4>Detailed Report</h4>
             <div>
+                <asp:Label ID="lblDateTime" CSSclass="Label" runat="server"></asp:Label>
+            </div>
+            <div>
                 <h3>Select category to filter the report by:</h3>
             </div>
             <div>

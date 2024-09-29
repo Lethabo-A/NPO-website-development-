@@ -227,6 +227,9 @@ input[type="txtFilterValue"] {
     <div class="form-container">
         <form id="form1" runat="server">
             <div>
+                <asp:Label ID="lblDateTime" CSSclass="Label" runat="server"></asp:Label>
+            </div>
+            <div>
                 <h2>Filter by category:</h2>
                 <asp:DropDownList ID="DropDownList1" runat="server" AutoPostBack="True">
                 <asp:ListItem>Choose a category</asp:ListItem>

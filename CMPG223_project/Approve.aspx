@@ -190,7 +190,7 @@
                     float: left;
                     display: block;
                     color: white;
-                    background-color: brown;
+                    background-color: black;
                     text-align: center;
                     padding: 14px 16px;
                     text-decoration: none;
@@ -200,14 +200,8 @@
                         background-color: #ddd;
                         color: black;
                     }
-                    .topnav a.active {
-            background-color: #04AA6D;
-            color: white;
-        }
-
-        .topnav-right {
-            float: right;
-        }
+                    
+        
     	.auto-style4 {
 			left: 4px;
 			top: 5px;

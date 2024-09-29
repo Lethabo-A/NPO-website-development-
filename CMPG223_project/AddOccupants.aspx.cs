@@ -51,7 +51,7 @@ namespace CMPG223_project
             string name = txtname.Text.Trim();
             string surname = txtsurname.Text.Trim();
             string info = txtinfo.Text.Trim();
-            int idNumber = int.Parse(txtdate.Text);
+            string idNumber = txtdate.Text.Trim();
             string citizenship = txtcitizen.Text.Trim();
             string transferHome = txtTransfer.Text.Trim();
             string medicalConditions = txtMedical.Text.Trim();
