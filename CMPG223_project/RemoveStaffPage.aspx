@@ -5,75 +5,38 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
     <title></title>
+    <link href="RemoveStaff.css" rel="stylesheet" type="text/css" />
     <style type="text/css">
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #f0f0f0; /* Light grey background */
-            margin: 0;
-            padding: 0;
-        }
 
-        .container {
-            width: 80%;
-            margin: 50px auto;
-            text-align: center;
-        }
-
-        .header {
-            font-size: 32px;
-            color: #6a0dad;
-            font-weight: bold;
-            margin-bottom: 40px;
-        }
-
-        .grid {
-            width: 60%;
-            margin: 20px auto;
-            border: 1px solid #ddd;
-            border-collapse: collapse;
-        }
-
-        .grid th, .grid td {
-            padding: 10px;
-            text-align: center;
-            border: 1px solid #ddd;
-        }
-
-        .label {
-            font-size: 18px;
-            margin-right: 10px;
-        }
-
-        .textbox {
-            width: 220px;
-            padding: 8px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-        }
-
-        .btn {
-            width: 120px;
-            padding: 10px;
-            background-color: #8e44ad; /* Purple button */
-            color: white;
-            border: none;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 10px;
-        }
-
-        .btn:hover {
-            background-color: #732d91; /* Darker purple on hover */
-        }
-
+        .form{
+                align-content: center;
+             }
+        .auto-style3 {
+            width: 113px;
+            height: 108px;
+             }
     </style>
 </head>
 <body>
-    <form id="form1" runat="server">
-        <div class="container">
-            <div class="header">Remove Staff</div>
 
+    <div class="header">
+        <img src="images/NGOs.png" alt="logo" class="auto-style3" />&nbsp;<h1>Remove staff</h1>
+    </div>
+
+    <div class="topnav">
+        <a href="Maintain_Staff.aspx">Back</a>
+        <a href="WebForm1.aspx">Logout</a>
+    </div>
+
+
+    <div class="form-container">
+    <form id="form1" runat="server">
+        <h1>Enter the details below:</h1>
+
+        <div>
             <asp:Label ID="lblRemove" runat="server" Text="[Output]"></asp:Label>
+        </div>
+            
 
             <asp:GridView ID="gridRemove" runat="server" CssClass="grid"></asp:GridView>
 
@@ -82,11 +45,17 @@
                 <asp:TextBox ID="txtRemove" runat="server" CssClass="textbox"></asp:TextBox>
             </div>
 
-            <div>
-                <asp:Button ID="btnDeleteStaff" runat="server" Text="Delete" CssClass="btn" OnClick="Button1_Click" />
-                <asp:Button ID="btnBack" runat="server" Text="Back" CssClass="btn" OnClick="btnBack_Click" />
+            <div class="btnDeleteStaff_container">
+                <asp:Button ID="btnDeleteStaff" runat="server" Text="Delete" CssClass="btnDeleteStaff_button" OnClick="Button1_Click" />
             </div>
-        </div>
     </form>
+
+
+</div>
+
+    <div class="footer">
+        <p>Copyright © 2024 NGOs office Company. All rights reserved.</p>
+    </div>
+
 </body>
 </html>

@@ -65,7 +65,7 @@ namespace CMPG223_project
                             Response.Redirect("Financial_Page_Formaspx.aspx"); //add accountants page
                             break;
                         case "Ad":
-                            Response.Redirect("AdminPage.aspx"); //add adminpage
+                            Response.Redirect("defaultAdmin.aspx"); //add adminpage
                             break;
                         case "Gs":
                             Response.Redirect("Maintain_Staff.aspx"); //add general staff page

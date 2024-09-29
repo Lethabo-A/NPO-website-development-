@@ -131,11 +131,6 @@ namespace CMPG223_project
 
         }
 
-        protected void btnBack_Click(object sender, EventArgs e)
-        {
-            //go back to maintain staff page 
-            Response.Redirect("Maintain_staff.aspx");
-        }
 
         protected void btnUpdateStaff_Click(object sender, EventArgs e)
         {

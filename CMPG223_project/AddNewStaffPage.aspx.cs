@@ -158,10 +158,7 @@ namespace CMPG223_project
                 lblOutput.Text = $"Error adding staff:{ex.Message}";
             }
         }
-        protected void btnBack_Click(object sender, EventArgs e)
-        {
-            Response.Redirect("~/Maintain_Staff.aspx");
-        }
+        
         
     }
 }
