@@ -12,6 +12,7 @@ using System.Windows;
 using System.Net;
 using System.Security.Cryptography;
 using System.Windows.Controls;
+using System.Data.SqlTypes;
 
 namespace CMPG223_project
 {
@@ -27,8 +28,10 @@ namespace CMPG223_project
     SqlDataReader dr;
     string pID;
     protected void Page_Load(object sender, EventArgs e)
-    {//establish cookeis and open connection
-        cookie = Request.Cookies["Info"];
+    {
+            lblDateTime.Text = "Report generated on: " + DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss");
+            //establish cookeis and open connection
+            cookie = Request.Cookies["Info"];
         try
         {
                 conn = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionStringMain"].ConnectionString);
@@ -58,7 +61,7 @@ namespace CMPG223_project
             string updatedValue = txtChanges.Text;
             if (listCat.SelectedIndex > 0 && updatedValue != "")
             {
-                string updateQuery = "UPDATE [patients] SET '[" + index + "]' = @update WHERE ID = @id";
+                string updateQuery = "UPDATE [patients] SET ["+index +"] = @update WHERE ID = @id";
                 cmd = new SqlCommand(updateQuery, conn);
                 using (cmd)
                 {

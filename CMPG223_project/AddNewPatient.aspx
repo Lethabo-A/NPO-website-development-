@@ -22,7 +22,8 @@
     </div>
 
     <div class="topnav">
-        <a href="WebForm1.aspx">Back to Log in</a>
+        <a href="FindPatient.aspx">Back</a>
+        <a href="WebForm1.aspx">Log Out</a>
     </div>
     <div class ="form-container">
     <form id="form1" runat="server">
@@ -63,7 +64,7 @@
                 <div>
                     <asp:Label ID="Label6" runat="server" Text="Age:  "></asp:Label>
                     <asp:TextBox ID="txtAge" runat="server"></asp:TextBox>
-                    <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="txtAge" ErrorMessage="[Enter a valid age]" ForeColor="Red" MinimumValue="1"></asp:RangeValidator>
+                    <asp:RangeValidator ID="RangeValidator1" runat="server" ControlToValidate="txtAge" ErrorMessage="[Enter a valid age]" ForeColor="Red" MinimumValue="1" MaximumValue="110"></asp:RangeValidator>
                 </div>
             
                 <div>

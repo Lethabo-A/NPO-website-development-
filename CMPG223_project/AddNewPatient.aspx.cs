@@ -44,7 +44,7 @@ namespace CMPG223_project
             //declare variables and assign them to values inputted by the user
             string name = txtName.Text;
             string surname = txtSurname.Text;
-            int ID = int.Parse(txtID.Text);
+            string ID = txtID.Text;
             int age = int.Parse(txtAge.Text);
             string gender = txtGender.Text;
             string allergies = txtAllergies.Text;
@@ -58,7 +58,7 @@ namespace CMPG223_project
             try
             {
                 //try and insert a value
-                sql = "Insert patients ([ID], [name], surname, age, gender, allergies, prescriptions, current_diagnosis, past_medical_history, past_surgical_history, vaccine_status, pregnancy_history, social_history) values ('" + ID + "','" + name + "','" + surname + "','" + age + "','" + gender + "','" + allergies + "','" + prescriptions + "','" + currentDiagnosis + "','" + pastMed + "','" + pastSurg + "','" + vaccineStatus + "','" + preg + "','" + social + "')";
+                sql = "Insert patients ([ID], [Name], Surname, Age, Gender, Allergies, Prescriptions, [Current Diagnosis], [Past Medical History], [Past Surgical History], [Vaccine Status], [Pregnancy History], [Social History]) values ('" + ID + "','" + name + "','" + surname + "','" + age + "','" + gender + "','" + allergies + "','" + prescriptions + "','" + currentDiagnosis + "','" + pastMed + "','" + pastSurg + "','" + vaccineStatus + "','" + preg + "','" + social + "')";
                 cmd = new SqlCommand(sql, conn);
                 adapter.InsertCommand = cmd;
                 int c = adapter.InsertCommand.ExecuteNonQuery();

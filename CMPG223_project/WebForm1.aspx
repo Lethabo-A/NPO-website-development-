@@ -20,12 +20,7 @@
             <asp:TextBox ID="txtPassword" runat="server" TextMode="Password"></asp:TextBox>
         </div>
 
-        <!-- Register Link Label directly under the password textbox -->
-        <div>
-            <asp:HyperLink ID="lnkRegister" runat="server" NavigateUrl="~/AddNewStaffPage.aspx" CssClass="register-link">
-                New user? Register here
-            </asp:HyperLink>
-        </div>
+        
         
         <!-- Error message label -->
         <div>

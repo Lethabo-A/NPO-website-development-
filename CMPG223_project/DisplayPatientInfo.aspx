@@ -65,7 +65,7 @@
             border-radius: 10px;
             box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
             width: 100%;
-            max-width: 900px;
+            max-width: 1100px;
             text-align: center;
             animation: fadeIn 0.7s ease-in-out;
             position: relative;
@@ -141,6 +141,9 @@
         <form id="form1" runat="server">
             <div>
                 <asp:Label ID="lblDisplay" runat="server" Text="Label"></asp:Label>
+            </div>
+            <div>
+                <asp:Label ID="lblDateTime" CSSclass="Label" runat="server"></asp:Label>
             </div>
             <div>
                 <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:ConnectionString %>" ProviderName="<%$ ConnectionStrings:ConnectionString.ProviderName %>" SelectCommand="SELECT * FROM [patients]"></asp:SqlDataSource>

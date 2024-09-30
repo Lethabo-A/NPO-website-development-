@@ -15,6 +15,18 @@
             width: 113px;
             height: 108px;
              }
+        form {
+            background-color: #ffffff;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+            width: 100%;
+            max-width: 1100px;
+            text-align: center;
+            animation: fadeIn 0.7s ease-in-out;
+            position: relative;
+            overflow: hidden;
+        }
     </style>
 </head>
 <body>
