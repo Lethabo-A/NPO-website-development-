@@ -5,6 +5,20 @@ using System.Data;
 using System.Configuration;
 using CMPG223_project.Utilities;
 
+
+/*
+ * Name and student numbers:
+ 
+ * KC NGWARI – 38008106
+ * EM ADLAM – 43975208
+ * ME MAMPE – 31886094
+ * B MAILULA - 37571427
+ * NG MLAMBO - 41027892
+ * M THEMANE -41993128
+ * LO ANYANWU - 42686784
+
+ */
+
 namespace CMPG223_project
 {
     public partial class WebForm1 : System.Web.UI.Page
